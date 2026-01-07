@@ -252,6 +252,72 @@
             margin-right: 8px;
             font-size: 0.8rem;
         }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 30px 15px;
+            }
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .summary-section, .books-section {
+                padding: 0 15px;
+                margin: 20px auto;
+            }
+            .summary-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            .summary-card {
+                padding: 15px;
+            }
+            .summary-card .number {
+                font-size: 1.8rem;
+            }
+            .summary-card .label {
+                font-size: 0.75rem;
+            }
+            .book-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            .section-title {
+                font-size: 1.3rem;
+            }
+            .pipeline-stages {
+                gap: 8px;
+            }
+            .stage-badge {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+            .dropdown-menu {
+                min-width: 200px;
+                right: auto;
+                left: 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .summary-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .summary-card .number {
+                font-size: 1.5rem;
+            }
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 <body>

@@ -210,6 +210,41 @@
         }
         
         .modal-close:hover { color: #2d3436; }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            .header p {
+                font-size: 0.9rem;
+            }
+            .summary-container {
+                padding: 15px;
+            }
+            .summary-cards {
+                grid-template-columns: 1fr;
+            }
+            .quality-cards {
+                grid-template-columns: 1fr;
+            }
+            .quality-card {
+                padding: 15px;
+            }
+            .modal-content {
+                padding: 20px;
+                margin: 10px;
+                max-height: 90vh;
+            }
+            .navbar {
+                flex-wrap: wrap;
+                padding: 10px 15px;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+        }
     </style>
 </head>
 <body>

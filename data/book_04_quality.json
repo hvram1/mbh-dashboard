@@ -1,0 +1,239 @@
+{
+  "book_number": 4,
+  "total_duplicate_ids": 7,
+  "total_duplicate_entries": 14,
+  "duplicates": [
+    {
+      "id": "sriranga_04_029_012",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "साम्ना दानेन भेदेन दण्डेन बलिकर्मणा । न्यायेनाक्रम्य च परान् बलाच्चानम्य दुर्बलान् ॥१२॥",
+          "chapter": 29,
+          "verse": 12,
+          "parva_name": "विराटपर्व"
+        },
+        {
+          "text_preview": "सान्त्वयित्वा तु मित्राणि बलं चाभाष्यतां सुखम् । सुकोशबलसंवृद्धः सम्यक् सिद्धिमवाप्स्यसि ॥१२॥",
+          "chapter": 29,
+          "verse": 12,
+          "parva_name": "विराटपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_04_045_038",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "निवातकवचैः सार्धं पौलोमैश्च महाबलैः । युध्यतो देवराजार्थे कः सहायस्तदाऽभवत्॥३८॥",
+          "chapter": 45,
+          "verse": 38,
+          "parva_name": "विराटपर्व"
+        },
+        {
+          "text_preview": "स्वयंवरे तु पाञ्चाल्या राजभिः सह संयुगे । युध्यतो बहुभिस्तात कः सहायस्तदाऽभवत् ॥३८॥",
+          "chapter": 45,
+          "verse": 38,
+          "parva_name": "विराटपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_04_047_022",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "तथा हि दृष्ट्वा बीभत्सुमुपायान्तं प्रशंसति । यथा सेना न भज्येत तथा नीतिर्विधीयताम् ॥२२॥",
+          "chapter": 47,
+          "verse": 22,
+          "parva_name": "विराटपर्व"
+        },
+        {
+          "text_preview": "गोधनेषु प्रतोलीषु वरद्वारमुखेषु च । अन्नसंस्कारदोषेषु पण्डितास्तत्र शोभनाः ॥२२॥",
+          "chapter": 47,
+          "verse": 22,
+          "parva_name": "विराटपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_04_050_026",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "अन्तकः पवनो मृत्युस्तथाऽग्निर्वडवामुखः । कुर्युरेते क्वचिच्छेषं न तु क्रुद्धो धनञ्जयः ॥२६॥",
+          "chapter": 50,
+          "verse": 26,
+          "parva_name": "विराटपर्व"
+        },
+        {
+          "text_preview": "युध्यन्तां कामतो योधा नाहं योत्स्ये धनञ्जयम् । मत्स्यो ह्यस्माभिरायोध्यो यद्यागच्छेद्गवां पदम् ॥२६॥",
+          "chapter": 50,
+          "verse": 26,
+          "parva_name": "विराटपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_04_051_012",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "सर्वे संहत्य युध्यामः पाकशासनिमागतम् ॥१२॥",
+          "chapter": 51,
+          "verse": 12,
+          "parva_name": "विराटपर्व"
+        },
+        {
+          "text_preview": "बलस्य व्यसनानीह यान्युक्तानि मनीषिभिः । मुख्यो भेदो हि तेषां तु पापिष्ठो विदुषां मतः ॥१३॥",
+          "chapter": 51,
+          "verse": 12,
+          "parva_name": "विराटपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_04_055_045",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "अत्रैव वाऽवरोहैनमेष धर्मः सनातनः । यदि मे प्रथमं द्रोणः शरीरे प्रहरिष्यति ॥४५॥",
+          "chapter": 55,
+          "verse": 45,
+          "parva_name": "विराटपर्व"
+        },
+        {
+          "text_preview": "ततोऽस्य प्रहरिष्यामि नास्य कोपो भवेदिति ॥४५॥",
+          "chapter": 55,
+          "verse": 45,
+          "parva_name": "विराटपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_04_058_075",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "आवृत्य तु महाबाहुर्यतो द्रौणिस्ततो हयान् । अन्तरं प्रददौ पार्थो द्रोणस्य व्यपसर्पितुम् ॥७५॥",
+          "chapter": 58,
+          "verse": 75,
+          "parva_name": "विराटपर्व"
+        },
+        {
+          "text_preview": "स तु लब्ध्वाऽन्तरं तूर्णमपायाज्जवनैर्हयैः । छिन्नवर्मध्वजः शूरो निकृत्तः परमेषुभिः ॥७५॥",
+          "chapter": 58,
+          "verse": 75,
+          "parva_name": "विराटपर्व"
+        }
+      ]
+    }
+  ],
+  "total_chapters_with_gaps": 7,
+  "total_missing_verses": 25,
+  "gaps": [
+    {
+      "chapter": 4,
+      "adhyaya_name": "चतुर्थोऽध्यायः",
+      "upaparva_name": "पाण्डवप्रवेशपर्व",
+      "range": "1-68",
+      "found_count": 58,
+      "missing_count": 10,
+      "missing_numbers": [
+        36,
+        37,
+        38,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "chapter": 29,
+      "adhyaya_name": "एकोनत्रिंशोऽध्यायः",
+      "upaparva_name": "गोहरणपर्व",
+      "range": "1-14",
+      "found_count": 14,
+      "missing_count": 1,
+      "missing_numbers": [
+        11
+      ]
+    },
+    {
+      "chapter": 33,
+      "adhyaya_name": "त्रयस्त्रिंशोऽध्यायः",
+      "upaparva_name": "गोहरणपर्व",
+      "range": "1-61",
+      "found_count": 60,
+      "missing_count": 1,
+      "missing_numbers": [
+        55
+      ]
+    },
+    {
+      "chapter": 47,
+      "adhyaya_name": "सप्तचत्वारिंशोऽध्यायः",
+      "upaparva_name": "गोहरणपर्व",
+      "range": "1-34",
+      "found_count": 34,
+      "missing_count": 1,
+      "missing_numbers": [
+        32
+      ]
+    },
+    {
+      "chapter": 51,
+      "adhyaya_name": "एकपञ्चाशत्तमोऽध्यायः",
+      "upaparva_name": "गोहरणपर्व",
+      "range": "1-22",
+      "found_count": 22,
+      "missing_count": 1,
+      "missing_numbers": [
+        13
+      ]
+    },
+    {
+      "chapter": 64,
+      "adhyaya_name": "चतुःषष्टितमोऽध्यायः",
+      "upaparva_name": "गोहरणपर्व",
+      "range": "1-49",
+      "found_count": 48,
+      "missing_count": 1,
+      "missing_numbers": [
+        44
+      ]
+    },
+    {
+      "chapter": 66,
+      "adhyaya_name": "षट्षष्टितमोऽध्यायः",
+      "upaparva_name": "गोहरणपर्व",
+      "range": "1-40",
+      "found_count": 30,
+      "missing_count": 10,
+      "missing_numbers": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    }
+  ]
+}

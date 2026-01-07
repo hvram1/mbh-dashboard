@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahabharata Book 17 - Mahaprasthanika Parva | Shloka Dashboard</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">🕉️ Mahabharata Pipeline Dashboard</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="corpus_structure.html">📊 Structure</a>
+            <a href="book_17.html" class="active">Book 17</a>
+        </div>
+    </nav>
+
+    <main id="app">
+        <div class="loading">
+            <div class="loading-spinner"></div>
+            <p>Initializing dashboard...</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Mahabharata Matching Pipeline Dashboard | Goal 2: Sanskrit Text Matching</p>
+        </div>
+    </footer>
+
+    <script src="static/paths.js"></script>
+    <script src="static/dashboard.js"></script>
+    <script>
+        initDashboard(17);
+    </script>
+</body>
+</html>

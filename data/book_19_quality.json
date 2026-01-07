@@ -1,0 +1,447 @@
+{
+  "book_number": 19,
+  "total_duplicate_ids": 13,
+  "total_duplicate_entries": 26,
+  "duplicates": [
+    {
+      "id": "sriranga_19_001_001",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "नारायणं नमस्कृत्य नरं चैव नरोत्तमम्। देवीं सरस्वतीं चैव ततो जयमुदीरयेत्॥१॥",
+          "chapter": 1,
+          "verse": 1,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "आद्यं पुरुषमीशानं पुरुहूतं पुरुष्टुतम्। ऋतमेकाक्षरं ब्रह्म व्यक्ताव्यक्तं सनातनम्॥१॥",
+          "chapter": 1,
+          "verse": 1,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_19_001_002",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "द्वैपायनोष्ठपुटनिःसृतमप्रमेयं पुण्यं पवित्रमथ पापहरं शिवं च। यो भारतं समधिगच्छति वाच्यमानं किं तस्य ...",
+          "chapter": 1,
+          "verse": 2,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "असच्च सदसच्चैव यद्विश्वं सदसत्परम्। परावराणां स्रष्टारं पुराणं परमव्ययम्॥२॥",
+          "chapter": 1,
+          "verse": 2,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_19_001_003",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "जयति पराशरसूनुः सत्यवतीहृदयनन्दनो व्यासः। यस्यास्यकमलगलितं वाङ्मयममृतं जगत्पिबति॥३॥",
+          "chapter": 1,
+          "verse": 3,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "मङ्गल्यं मङ्गलं विष्णुं वरेण्यमनघं शुचिम्। नमस्कृत्य हृषीकेशं चराचरगुरुं हरिम्॥३॥",
+          "chapter": 1,
+          "verse": 3,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_19_001_004",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "यो गोशतं कनकशृङ्गमयं ददाति विप्राय वेदविदुषे बहुविश्रुताय। पुण्यां च भारतकथां शृणुयाच्च तद्वत्तुल्यं...",
+          "chapter": 1,
+          "verse": 4,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "नैमिषारण्ये कुलपतिः शौनकस्तु महामुनिः। सौतिं पप्रच्छ धर्मात्मा सर्वशास्त्रविशारदः॥४॥",
+          "chapter": 1,
+          "verse": 4,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_19_001_005",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "शताश्वमेधस्य यदत्र पुण्यं चतुःसहस्रस्य शतक्रतोश्च। भवेदनन्तं हरिवंशदानात् प्रकीर्तितं व्यासमहर्षिणा ...",
+          "chapter": 1,
+          "verse": 5,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "शौनक उवाच\n              सौते सुमहदाख्यानं भवता परिकीर्तितम्। भारतानां च सर्वेषां पार्थिवानां तथैव च॥...",
+          "chapter": 1,
+          "verse": 5,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_19_001_006",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "यद्वाजपेयेन तु राजसूयाद् दृष्टं फलं हस्तिरथेन चान्यत्। तल्लभ्यते व्यासवचः प्रमाणं गीतं च वाल्मीकिमहर...",
+          "chapter": 1,
+          "verse": 6,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "देवानां दानवानां च गन्धर्वोरगरक्षसाम्। दैत्यानामथ सिद्धानां गुह्यकानां तथैव च॥६॥",
+          "chapter": 1,
+          "verse": 6,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_19_001_007",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "यो हरिवंशं लेखयति यथाविधिना महातपाः सपदि। स जयति हरिपदकमलं मधुपो हि यथा रसेन लुब्धः॥७॥",
+          "chapter": 1,
+          "verse": 7,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "अत्यद्भुतानि कर्माणि विक्रमा धर्मनिश्चयाः। विचित्राश्च कथायोगा जन्म चाग्र्यमनुत्तमम्॥७॥",
+          "chapter": 1,
+          "verse": 7,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_19_001_008",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "पितामहाद्यं प्रवदन्ति षष्ठं महर्षिमक्षय्यविभूतियुक्तम्। नारायणस्यांशजमेकपुत्रं द्वैपायनं वेद महानिधा...",
+          "chapter": 1,
+          "verse": 8,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "कथितं भवता पुण्यं पुराणं श्लक्ष्णया गिरा। मनःकर्णसुखं सौते प्रीणात्यमृतसम्मितम्॥८॥",
+          "chapter": 1,
+          "verse": 8,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_19_005_048",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "सा लोकान्ब्रह्मलोकादीन्गत्वा वैन्यभयात्तदा। प्रददर्शाग्रतो वैन्यं प्रगृहीतशरासनम्॥४८॥",
+          "chapter": 5,
+          "verse": 48,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "ज्वलद्भिर्निशितैर्बाणैर्दीप्ततेजसमच्युतम्। महायोगं महात्मानं दुर्धर्षममरैरपि॥४८॥",
+          "chapter": 5,
+          "verse": 48,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_19_050_002",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "वैशम्पायन उवाच।\n              ऋषिभिः पूजितस्तैस्तु विवेश हरिरीश्वरः। पौराणं ब्रह्मसदनं दिव्यं नारायण...",
+          "chapter": 50,
+          "verse": 2,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "स तद्विवेश हृष्टात्मा तानामन्त्र्य सदोगतान्। प्रणम्य चादिदेवाय ब्रह्मणे पद्मयोनये॥२॥",
+          "chapter": 50,
+          "verse": 2,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_19_071_002",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "वनं वनचरा गोपाः सदा गोधनजीविनः। गावोऽस्मद्दैवतं विद्धि गिरयश्च वनानि च॥२॥",
+          "chapter": 71,
+          "verse": 2,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "सितवर्णाम्बुदोष्णीषं हंसचामरवीजितम्। पूर्णचन्द्रामलच्छत्रं साभिषेकमिवाम्बरम्॥२-१६-१७॥",
+          "chapter": 71,
+          "verse": 2,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_19_082_007",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "तमुवाच ततः कृष्णो यास्यावावामतर्कितौ। प्रेक्षन्तौ मथुरां वीर राजमार्गं च धार्मिक॥७॥",
+          "chapter": 82,
+          "verse": 7,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "तस्यैव तु गृहं साधो गच्छावो यदि मन्यसे॥७॥",
+          "chapter": 82,
+          "verse": 7,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_19_082_047",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "आरोपयामास बली नामयामास चासकृत्। आनाम्यमानं कृष्णेन प्रकर्षादुरगोपमम्॥४७॥",
+          "chapter": 82,
+          "verse": 47,
+          "parva_name": "हरिवंशः"
+        },
+        {
+          "text_preview": "द्विधाभूतमभून्मध्ये धनुरायोगभूषितम्॥४७॥",
+          "chapter": 82,
+          "verse": 47,
+          "parva_name": "हरिवंशः"
+        }
+      ]
+    }
+  ],
+  "total_chapters_with_gaps": 17,
+  "total_missing_verses": 19,
+  "gaps": [
+    {
+      "chapter": 3,
+      "adhyaya_name": "मरुतुत्पत्तिकथनम्",
+      "upaparva_name": "हरिवंशपर्व",
+      "range": "1-140",
+      "found_count": 139,
+      "missing_count": 1,
+      "missing_numbers": [
+        33
+      ]
+    },
+    {
+      "chapter": 5,
+      "adhyaya_name": "पृथूपाख्यानम्",
+      "upaparva_name": "हरिवंशपर्व",
+      "range": "1-56",
+      "found_count": 56,
+      "missing_count": 1,
+      "missing_numbers": [
+        47
+      ]
+    },
+    {
+      "chapter": 64,
+      "adhyaya_name": "वृन्दावनप्रवेशः-००९",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-35",
+      "found_count": 34,
+      "missing_count": 1,
+      "missing_numbers": [
+        5
+      ]
+    },
+    {
+      "chapter": 71,
+      "adhyaya_name": "शरद्वर्णनम्-०१६",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-45",
+      "found_count": 44,
+      "missing_count": 2,
+      "missing_numbers": [
+        3,
+        17
+      ]
+    },
+    {
+      "chapter": 74,
+      "adhyaya_name": "गोविन्दाभिषेकः-०१९",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-102",
+      "found_count": 101,
+      "missing_count": 1,
+      "missing_numbers": [
+        52
+      ]
+    },
+    {
+      "chapter": 83,
+      "adhyaya_name": "कंसस्य जन्मादिवृत्तम्-०२८",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-118",
+      "found_count": 117,
+      "missing_count": 1,
+      "missing_numbers": [
+        85
+      ]
+    },
+    {
+      "chapter": 89,
+      "adhyaya_name": "जरासन्धेन मथुरोपरोधः-०३४",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-22",
+      "found_count": 21,
+      "missing_count": 1,
+      "missing_numbers": [
+        20
+      ]
+    },
+    {
+      "chapter": 100,
+      "adhyaya_name": "रामकृष्णयोर्मथुरागमनम्-०४५",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-19",
+      "found_count": 18,
+      "missing_count": 1,
+      "missing_numbers": [
+        10
+      ]
+    },
+    {
+      "chapter": 102,
+      "adhyaya_name": "रुक्मिणीस्वयंवरार्थंकृष्णस्य कुण्डिनपुरं प्रति गमनम्-०४७",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-46",
+      "found_count": 45,
+      "missing_count": 1,
+      "missing_numbers": [
+        4
+      ]
+    },
+    {
+      "chapter": 105,
+      "adhyaya_name": "भीष्मकसंसदि कृष्णेना",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-89",
+      "found_count": 88,
+      "missing_count": 1,
+      "missing_numbers": [
+        24
+      ]
+    },
+    {
+      "chapter": 106,
+      "adhyaya_name": "कृष्णभीष्मकसंवादः-०५१",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-71",
+      "found_count": 70,
+      "missing_count": 1,
+      "missing_numbers": [
+        42
+      ]
+    },
+    {
+      "chapter": 108,
+      "adhyaya_name": "कालयवनं प्रति जरासन्धसन्देशः-०५३",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-57",
+      "found_count": 55,
+      "missing_count": 2,
+      "missing_numbers": [
+        4,
+        31
+      ]
+    },
+    {
+      "chapter": 115,
+      "adhyaya_name": "रुक्मिपराजयः-०६०",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-45",
+      "found_count": 44,
+      "missing_count": 1,
+      "missing_numbers": [
+        30
+      ]
+    },
+    {
+      "chapter": 124,
+      "adhyaya_name": "इन्द्रस्य पारिजातदानेऽसंमतिः-०६९",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-73",
+      "found_count": 72,
+      "missing_count": 1,
+      "missing_numbers": [
+        3
+      ]
+    },
+    {
+      "chapter": 153,
+      "adhyaya_name": "पुनर्विशेषतो द्वारवतीनिर्माणम्-०९८",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-76",
+      "found_count": 75,
+      "missing_count": 1,
+      "missing_numbers": [
+        60
+      ]
+    },
+    {
+      "chapter": 174,
+      "adhyaya_name": "अनिरुद्धस्योषया सह गान्धर्वेण विवाहो बाणतत्सैन्याभ्यां युद्धं च-११९",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-203",
+      "found_count": 202,
+      "missing_count": 1,
+      "missing_numbers": [
+        145
+      ]
+    },
+    {
+      "chapter": 175,
+      "adhyaya_name": "अनिरुद्धकृतार्यास्तवो तद्वरलाभश्च-१२०",
+      "upaparva_name": "विष्णुपर्व",
+      "range": "1-48",
+      "found_count": 47,
+      "missing_count": 1,
+      "missing_numbers": [
+        44
+      ]
+    }
+  ]
+}

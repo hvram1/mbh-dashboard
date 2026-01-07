@@ -1,0 +1,33 @@
+{
+  "book_number": 11,
+  "total_duplicate_ids": 0,
+  "total_duplicate_entries": 0,
+  "duplicates": [],
+  "total_chapters_with_gaps": 2,
+  "total_missing_verses": 3,
+  "gaps": [
+    {
+      "chapter": 1,
+      "adhyaya_name": "प्रथमोऽध्यायः",
+      "upaparva_name": "जलप्रदानिकपर्व",
+      "range": "1-44",
+      "found_count": 43,
+      "missing_count": 1,
+      "missing_numbers": [
+        33
+      ]
+    },
+    {
+      "chapter": 15,
+      "adhyaya_name": "पञ्चदशोऽध्यायः",
+      "upaparva_name": "जलप्रदानिकपर्व",
+      "range": "1-44",
+      "found_count": 42,
+      "missing_count": 2,
+      "missing_numbers": [
+        31,
+        41
+      ]
+    }
+  ]
+}

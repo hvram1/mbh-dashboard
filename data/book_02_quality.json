@@ -1,0 +1,323 @@
+{
+  "book_number": 2,
+  "total_duplicate_ids": 11,
+  "total_duplicate_entries": 22,
+  "duplicates": [
+    {
+      "id": "sriranga_02_017_048",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "सा तं बालमुपादाय मेघलेखेन भास्करम्। कृत्वा च मानुषं रूपमुवाच वसुधाधिपम्॥४८॥",
+          "chapter": 17,
+          "verse": 48,
+          "parva_name": "सभापर्व"
+        },
+        {
+          "text_preview": "राक्षस्युवाच।\n            बृहद्रथ सुतस्तेऽयं मया दत्तः प्रगृह्यताम्। तव पत्नीद्वये जातो द्विजातिवरशा...",
+          "chapter": 17,
+          "verse": 48,
+          "parva_name": "सभापर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_02_024_054",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "घातयित्वा जरासन्धं बुद्धिपूर्वमरिन्दमः। धर्मराजमनुज्ञाप्य पृथां कृष्णां च भारत॥५४॥",
+          "chapter": 24,
+          "verse": 54,
+          "parva_name": "सभापर्व"
+        },
+        {
+          "text_preview": "ततो युधिष्ठिरमुखाः पाण्डवा भरतर्षभ। प्रदक्षिणमकुर्वन्त कृष्णमक्लिष्टकारिणम्॥५४॥",
+          "chapter": 24,
+          "verse": 54,
+          "parva_name": "सभापर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_02_024_055",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "सुभद्रां भीमसेनं च फाल्गुनं यमजौ तथा। धौम्यमामन्त्रयित्वा च प्रययौ स्वां पुरीं प्रति॥५५॥",
+          "chapter": 24,
+          "verse": 55,
+          "parva_name": "सभापर्व"
+        },
+        {
+          "text_preview": "ततो गते भगवति कृष्णे देवकिनन्दने। जयं लब्ध्वा सुविपुलं राज्ञां दत्त्वाऽभयं तदा॥५५॥",
+          "chapter": 24,
+          "verse": 55,
+          "parva_name": "सभापर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_02_026_009",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "स तानपि महेष्वासान्विजिग्ये भरतर्षभ। तैरेव सहितः सर्वैः प्रग्ज्योतिषमुपाद्रवत्॥९॥",
+          "chapter": 26,
+          "verse": 9,
+          "parva_name": "सभापर्व"
+        },
+        {
+          "text_preview": "स किरातैश्च चीनैश्च वृतः प्राग्ज्योतिषोऽभवत्। अन्यैश्च बहुभिर्योधैः सागरानुपवासिभिः॥९॥",
+          "chapter": 26,
+          "verse": 9,
+          "parva_name": "सभापर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_02_026_013",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "उपपन्नं महाबाहो त्वयि कौरवनन्दन। पाकशासनदायादे वीर्यमाहवशोभिनि॥१३॥",
+          "chapter": 26,
+          "verse": 13,
+          "parva_name": "सभापर्व"
+        },
+        {
+          "text_preview": "त्वमीप्सितं पाण्डवेयं ब्रूहि किं करवाणि ते। यद्वक्ष्यसि महाबाहो तत्करिष्यामि पुत्रक॥१३॥",
+          "chapter": 26,
+          "verse": 13,
+          "parva_name": "सभापर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_02_026_014",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "अहं सखा महेन्द्रस्य शक्रादनवरो रणे। न शक्ष्यामि च ते तात स्थातुं प्रमुखतो युधि॥१४॥",
+          "chapter": 26,
+          "verse": 14,
+          "parva_name": "सभापर्व"
+        },
+        {
+          "text_preview": "अर्जुन उवाच।\n              कुरूणामृषभो राजा धर्मपुत्रो युधिष्ठिरः। धर्मज्ञः सत्यसन्धश्च यज्वा विपुलद...",
+          "chapter": 26,
+          "verse": 14,
+          "parva_name": "सभापर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_02_052_029",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "पांशुराष्ट्राद्वसुदानो राजा षड्विंशतिं गजान्। अश्वानां चसहस्रे द्वे राजन्काञ्चनमालिनाम्॥२९॥",
+          "chapter": 52,
+          "verse": 29,
+          "parva_name": "सभापर्व"
+        },
+        {
+          "text_preview": "यज्ञसेनेन दासीनां सहस्राणि चतुर्दश। दासानामयुतं चैव सदाराणां विशाम्पते। गजयुक्ता महाराज रथाः षड्विंश...",
+          "chapter": 52,
+          "verse": 29,
+          "parva_name": "सभापर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_02_064_017",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "यस्तु धर्मपरश्च स्याद्धित्वा भर्तुः प्रियाप्रिये। अप्रियाण्याह पथ्यानि तेन राजा सहायवान्॥१७॥",
+          "chapter": 64,
+          "verse": 17,
+          "parva_name": "सभापर्व"
+        },
+        {
+          "text_preview": "अव्याधिजं कटुजं तीक्ष्णमुष्णं यशोमुषं परुषं पूतिगन्धिम्। सतां पेयं यन्न पिबन्त्यसन्तो मन्युं महाराज ...",
+          "chapter": 64,
+          "verse": 17,
+          "parva_name": "सभापर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_02_067_024",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "ततः सूतस्तस्य वशानुगामी भीतश्च कोपाद्द्रुपदात्मजायाः। विहाय मानं पुनरेव सभ्यानुवाच कृष्णां किमहं ब्र...",
+          "chapter": 67,
+          "verse": 24,
+          "parva_name": "सभापर्व"
+        },
+        {
+          "text_preview": "एह्येहि पाञ्चालि जितासि कृष्णे दुर्योधनं पश्य विमुक्तलज्जा। कुरून्भजस्वायतपत्रनेत्रे धर्मेण लब्धाऽसि...",
+          "chapter": 67,
+          "verse": 24,
+          "parva_name": "सभापर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_02_081_001",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "वैशम्पायन उवाच।\n              वनं गतेषु पार्थेषु निर्जितेषु दुरोदरे। धृतराष्ट्रं महाराज तदा चिन्ता स...",
+          "chapter": 81,
+          "verse": 1,
+          "parva_name": "सभापर्व"
+        },
+        {
+          "text_preview": "एतत्सर्वं सभापर्वं मयाख्यातं महर्षयः। अध्यायाः सप्ततिर्ज्ञ्रेयास्तथा द्वौ चात्र संख्यया॥१॥",
+          "chapter": 81,
+          "verse": 1,
+          "parva_name": "सभापर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_02_081_002",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "तं चिन्तयानमासीनं धृतराष्ट्रं जनेश्वरम्। निःश्वसन्तमनेकाग्रमिति होवाच सञ्जयः॥२॥",
+          "chapter": 81,
+          "verse": 2,
+          "parva_name": "सभापर्व"
+        },
+        {
+          "text_preview": "श्लोकानां द्वे सहस्रे तु सप्तश्लोकशतानि च। श्लोकाश्चैकादश तथा पर्वण्यस्मिन्प्रकीर्तिताः॥२॥",
+          "chapter": 81,
+          "verse": 2,
+          "parva_name": "सभापर्व"
+        }
+      ]
+    }
+  ],
+  "total_chapters_with_gaps": 9,
+  "total_missing_verses": 13,
+  "gaps": [
+    {
+      "chapter": 11,
+      "adhyaya_name": "एकादशोऽध्यायः",
+      "upaparva_name": "लोकपालसभाख्यानपर्व",
+      "range": "1-62",
+      "found_count": 61,
+      "missing_count": 1,
+      "missing_numbers": [
+        40
+      ]
+    },
+    {
+      "chapter": 17,
+      "adhyaya_name": "सप्तदशोऽध्यायः",
+      "upaparva_name": "राजसूयारम्भपर्व",
+      "range": "1-52",
+      "found_count": 52,
+      "missing_count": 1,
+      "missing_numbers": [
+        49
+      ]
+    },
+    {
+      "chapter": 24,
+      "adhyaya_name": "चतुर्विंशतितमोऽध्यायः",
+      "upaparva_name": "जरासन्धवधपर्वः",
+      "range": "1-60",
+      "found_count": 60,
+      "missing_count": 2,
+      "missing_numbers": [
+        57,
+        58
+      ]
+    },
+    {
+      "chapter": 26,
+      "adhyaya_name": "षड्विंशतितमोऽध्यायः",
+      "upaparva_name": "दिग्विजयपर्व",
+      "range": "1-16",
+      "found_count": 16,
+      "missing_count": 3,
+      "missing_numbers": [
+        7,
+        11,
+        12
+      ]
+    },
+    {
+      "chapter": 47,
+      "adhyaya_name": "सप्तचत्वारिंशत्तमोऽध्यायः",
+      "upaparva_name": "द्यूतपर्व",
+      "range": "1-40",
+      "found_count": 39,
+      "missing_count": 1,
+      "missing_numbers": [
+        5
+      ]
+    },
+    {
+      "chapter": 52,
+      "adhyaya_name": "द्विपञ्चाशत्तमोऽध्यायः",
+      "upaparva_name": "द्यूतपर्व",
+      "range": "1-49",
+      "found_count": 49,
+      "missing_count": 1,
+      "missing_numbers": [
+        27
+      ]
+    },
+    {
+      "chapter": 67,
+      "adhyaya_name": "सप्तषष्टितमोऽध्यायः",
+      "upaparva_name": "द्यूतपर्व",
+      "range": "1-54",
+      "found_count": 54,
+      "missing_count": 1,
+      "missing_numbers": [
+        27
+      ]
+    },
+    {
+      "chapter": 69,
+      "adhyaya_name": "नवषष्टितमोऽध्यायः",
+      "upaparva_name": "द्यूतपर्व",
+      "range": "1-21",
+      "found_count": 20,
+      "missing_count": 1,
+      "missing_numbers": [
+        12
+      ]
+    },
+    {
+      "chapter": 79,
+      "adhyaya_name": "नवसप्ततितमोऽध्यायः",
+      "upaparva_name": "अनुद्यूतपर्व",
+      "range": "1-38",
+      "found_count": 36,
+      "missing_count": 2,
+      "missing_numbers": [
+        35,
+        37
+      ]
+    }
+  ]
+}

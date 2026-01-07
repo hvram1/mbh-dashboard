@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahabharata Pipeline Dashboard | Home</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <style>
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-toggle {
+            cursor: pointer;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: #2d3436;
+            min-width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            z-index: 1000;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 15px;
+            color: #dfe6e9;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .dropdown-menu a:hover {
+            background: #636e72;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        /* Index-specific styles */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .summary-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .summary-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .summary-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .summary-card .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .summary-card .label {
+            font-size: 0.9rem;
+            color: #636e72;
+            text-transform: uppercase;
+        }
+        
+        .summary-card.matched .number { color: #28a745; }
+        .summary-card.unmatched .number { color: #dc3545; }
+        .summary-card.rate .number { color: #17a2b8; }
+        .summary-card.stages .number { color: #667eea; }
+        
+        .books-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: #2d3436;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .book-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .book-card.available {
+            cursor: pointer;
+        }
+        
+        .book-card.unavailable {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .book-header {
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .book-number {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .book-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        
+        .book-stats {
+            padding: 20px;
+        }
+        
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .stat-label {
+            color: #636e72;
+        }
+        
+        .stat-value {
+            font-weight: bold;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a745, #20c997);
+            transition: width 0.5s ease;
+        }
+        
+        .book-action {
+            padding: 15px 20px;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+        }
+        
+        .book-action a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .book-action a:hover {
+            text-decoration: underline;
+        }
+        
+        .book-action.pending {
+            color: #636e72;
+            font-style: italic;
+        }
+        
+        .pipeline-section {
+            background: #f8f9fa;
+            padding: 60px 20px;
+        }
+        
+        .pipeline-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .pipeline-stages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+        
+        .stage-badge {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 0.9rem;
+        }
+        
+        .stage-badge .stage-num {
+            background: #667eea;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">🕉️ Mahabharata Pipeline Dashboard</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="corpus_structure.html">📊 Structure</a>
+            <a href="quality_index_dynamic.html">🔍 Quality</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">📚 Books ▼</a>
+                <div class="dropdown-menu">
+                    <a href="book_01.html">Book 01 - Adi Parva</a>
+                    <a href="book_02.html">Book 02 - Sabha Parva</a>
+                    <a href="book_03.html">Book 03 - Vana Parva</a>
+                    <a href="book_04.html">Book 04 - Virata Parva</a>
+                    <a href="book_05.html">Book 05 - Udyoga Parva</a>
+                    <a href="book_06.html">Book 06 - Bhishma Parva</a>
+                    <a href="book_07.html">Book 07 - Drona Parva</a>
+                    <a href="book_08.html">Book 08 - Karna Parva</a>
+                    <a href="book_09.html">Book 09 - Shalya Parva</a>
+                    <a href="book_10.html">Book 10 - Sauptika Parva</a>
+                    <a href="book_11.html">Book 11 - Stri Parva</a>
+                    <a href="book_12.html">Book 12 - Shanti Parva</a>
+                    <a href="book_13.html">Book 13 - Anushasana Parva</a>
+                    <a href="book_14.html">Book 14 - Ashvamedhika Parva</a>
+                    <a href="book_15.html">Book 15 - Ashramavasika Parva</a>
+                    <a href="book_16.html">Book 16 - Mausala Parva</a>
+                    <a href="book_17.html">Book 17 - Mahaprasthanika Parva</a>
+                    <a href="book_18.html">Book 18 - Svargarohana Parva</a>
+                    <hr style="margin: 5px 0; border-color: #555;">
+                    <a href="book_19.html">Book 19 - Harivamsa (Khila)</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>🕉️ Mahabharata Matching Pipeline</h1>
+        <p>
+            Mapping 73,000+ Sanskrit shlokas from Sriranga XML to MN Dutt's English translation 
+            using a 9-stage matching pipeline with Bloom filters, vector similarity, and cross-reference search.
+        </p>
+    </section>
+
+    <!-- Overall Summary -->
+    <section class="summary-section">
+        <h2 class="section-title">📊 Overall Statistics</h2>
+        <div class="summary-grid">
+            <div class="summary-card">
+                <div class="number" id="total-shlokas">--</div>
+                <div class="label">Total Shlokas</div>
+            </div>
+            <div class="summary-card matched">
+                <div class="number" id="matched-count">--</div>
+                <div class="label">Matched</div>
+            </div>
+            <div class="summary-card unmatched">
+                <div class="number" id="unmatched-count">--</div>
+                <div class="label">Unmatched</div>
+            </div>
+            <div class="summary-card rate">
+                <div class="number" id="match-rate">--%</div>
+                <div class="label">Match Rate</div>
+            </div>
+            <div class="summary-card stages">
+                <div class="number">9</div>
+                <div class="label">Pipeline Stages</div>
+            </div>
+            <div class="summary-card">
+                <div class="number" id="books-processed">--</div>
+                <div class="label">Books Processed</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pipeline Stages -->
+    <section class="pipeline-section">
+        <div class="pipeline-container">
+            <h2 class="section-title">🔄 Pipeline Architecture</h2>
+            <div class="pipeline-stages">
+                <div class="stage-badge"><span class="stage-num">1</span>Bloom Filter</div>
+                <div class="stage-badge"><span class="stage-num">2</span>Pada-Level Matching</div>
+                <div class="stage-badge"><span class="stage-num">3</span>Segment Recovery</div>
+                <div class="stage-badge"><span class="stage-num">4</span>Edit Distance</div>
+                <div class="stage-badge"><span class="stage-num">5</span>Cross-Book Matching</div>
+                <div class="stage-badge"><span class="stage-num">6</span>Final Mapping</div>
+                <div class="stage-badge"><span class="stage-num">7</span>Bidirectional Verification</div>
+                <div class="stage-badge"><span class="stage-num">8</span>Critical Edition</div>
+                <div class="stage-badge"><span class="stage-num">9</span>SARIT Reference</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Grid -->
+    <section class="books-section">
+        <h2 class="section-title">📚 Books</h2>
+        <div class="book-grid" id="books-grid">
+            <!-- Book cards will be rendered here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Mahabharata Matching Pipeline Dashboard | Goal 2: Sanskrit Text Matching</p>
+            <p style="font-size: 0.8rem; margin-top: 5px;">
+                Matching Sriranga Sanskrit XML to MN Dutt's English translations
+            </p>
+        </div>
+    </footer>
+
+    <script src="static/paths.js"></script>
+    <script>
+        // Book metadata - base template (will be updated from JSON)
+        const booksData = [
+            { number: 1, name: 'Adi Parva', available: false, total: 0, matched: 0, ceRefs: 0, saritRefs: 0 },
+            { number: 2, name: 'Sabha Parva', available: false, total: 0, matched: 0 },
+            { number: 3, name: 'Vana Parva', available: false, total: 0, matched: 0 },
+            { number: 4, name: 'Virata Parva', available: false, total: 0, matched: 0 },
+            { number: 5, name: 'Udyoga Parva', available: false, total: 0, matched: 0 },
+            { number: 6, name: 'Bhishma Parva', available: false, total: 0, matched: 0 },
+            { number: 7, name: 'Drona Parva', available: false, total: 0, matched: 0 },
+            { number: 8, name: 'Karna Parva', available: false, total: 0, matched: 0 },
+            { number: 9, name: 'Shalya Parva', available: false, total: 0, matched: 0 },
+            { number: 10, name: 'Sauptika Parva', available: false, total: 0, matched: 0 },
+            { number: 11, name: 'Stri Parva', available: false, total: 0, matched: 0 },
+            { number: 12, name: 'Shanti Parva', available: false, total: 0, matched: 0 },
+            { number: 13, name: 'Anushasana Parva', available: false, total: 0, matched: 0 },
+            { number: 14, name: 'Ashvamedhika Parva', available: false, total: 0, matched: 0 },
+            { number: 15, name: 'Ashramavasika Parva', available: false, total: 0, matched: 0 },
+            { number: 16, name: 'Mausala Parva', available: false, total: 0, matched: 0 },
+            { number: 17, name: 'Mahaprasthanika Parva', available: false, total: 0, matched: 0 },
+            { number: 18, name: 'Svargarohana Parva', available: false, total: 0, matched: 0 },
+            { number: 19, name: 'Harivamsa (Khila)', available: false, total: 0, matched: 0 },
+        ];
+        
+        function renderBookCards() {
+            const grid = document.getElementById('books-grid');
+            let html = '';
+            
+            for (const book of booksData) {
+                const matchRate = book.total > 0 
+                    ? ((book.matched / book.total) * 100).toFixed(1) 
+                    : 0;
+                const unmatched = book.total - book.matched;
+                
+                html += `
+                    <div class="book-card ${book.available ? 'available' : 'unavailable'}"
+                         ${book.available ? `onclick="window.location='book_${String(book.number).padStart(2, '0')}.html'"` : ''}>
+                        <div class="book-header">
+                            <div class="book-number">Book ${String(book.number).padStart(2, '0')}</div>
+                            <div class="book-name">${book.name}</div>
+                        </div>
+                        <div class="book-stats">
+                            ${book.available ? `
+                                <div class="stat-row">
+                                    <span class="stat-label">Total Shlokas</span>
+                                    <span class="stat-value">${formatNumber(book.total)}</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label">Matched</span>
+                                    <span class="stat-value" style="color: #28a745;">${formatNumber(book.matched)}</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label">Unmatched</span>
+                                    <span class="stat-value" style="color: #dc3545;">${formatNumber(unmatched)}</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label">CE References</span>
+                                    <span class="stat-value" style="color: #667eea;">${formatNumber(book.ceRefs || 0)}</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: ${matchRate}%"></div>
+                                </div>
+                                <div style="text-align: center; margin-top: 10px; font-weight: bold; color: #17a2b8;">
+                                    ${matchRate}% Match Rate
+                                </div>
+                            ` : `
+                                <div style="text-align: center; padding: 30px 0; color: #636e72;">
+                                    <p>Pipeline not yet run</p>
+                                </div>
+                            `}
+                        </div>
+                        <div class="book-action ${book.available ? '' : 'pending'}">
+                            ${book.available 
+                                ? '<a href="#">View Dashboard →</a>' 
+                                : 'Coming Soon'}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            grid.innerHTML = html;
+        }
+        
+        // Load summary statistics from JSON
+        async function loadSummaryStats() {
+            try {
+                const response = await fetch('data/all_books_summary.json');
+                const books = await response.json();
+                
+                // Calculate totals from all books (currently just book 1)
+                let total = 0, matched = 0, unmatched = 0;
+                
+                let booksProcessed = 0;
+                
+                for (const book of books) {
+                    total += book.total || 0;
+                    matched += book.matched || 0;
+                    unmatched += book.unmatched || 0;
+                    booksProcessed++;
+                    
+                    // Update booksData array with data from JSON
+                    const bookNum = book.book_number || book.book;
+                    if (bookNum && bookNum >= 1 && bookNum <= 19) {
+                        const bookEntry = booksData[bookNum - 1];
+                        bookEntry.available = true;
+                        bookEntry.total = book.total || 0;
+                        bookEntry.matched = book.matched || 0;
+                        // Get CE/SARIT counts from direct fields or by_method
+                        const byMethod = book.by_method || {};
+                        bookEntry.ceRefs = book.ce_references || byMethod['critical_edition_reference'] || 0;
+                        bookEntry.saritRefs = book.sarit_references || byMethod['sarit_reference'] || 0;
+                    }
+                }
+                
+                // Update the summary cards
+                document.getElementById('total-shlokas').textContent = total.toLocaleString();
+                document.getElementById('matched-count').textContent = matched.toLocaleString();
+                document.getElementById('unmatched-count').textContent = unmatched.toLocaleString();
+                document.getElementById('books-processed').textContent = booksProcessed;
+                
+                const rate = total > 0 ? ((matched / total) * 100).toFixed(1) : 0;
+                document.getElementById('match-rate').textContent = rate + '%';
+                
+                // Re-render book cards with updated data
+                renderBookCards();
+                
+            } catch (error) {
+                console.error('Failed to load summary stats:', error);
+            }
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderBookCards();
+            loadSummaryStats();
+        });
+    </script>
+</body>
+</html>

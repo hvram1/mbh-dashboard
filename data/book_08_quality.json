@@ -1,0 +1,801 @@
+{
+  "book_number": 8,
+  "total_duplicate_ids": 24,
+  "total_duplicate_entries": 48,
+  "duplicates": [
+    {
+      "id": "sriranga_08_009_027",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "दुर्योधनो नाभ्यगृह्णान्मूढः पथ्यमिवौषधम् । शरतल्पे शयानेन भीष्मेण सुमहात्मना ॥२७॥",
+          "chapter": 9,
+          "verse": 27,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "भ्रातृभावेन पृथिवीं भुङ्क्ष्व पाण्डुसुतैः सह । अकुर्वन्वचनं तस्य नूनं शोचति पुत्रकः ॥२७॥",
+          "chapter": 9,
+          "verse": 27,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_009_028",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "पानीयं याचितः पार्थः सोऽविध्यन्मेदिनीतलम् । जलस्य धारां जनितां दृष्ट्वा पाण्डुसुतेन च ॥२८॥",
+          "chapter": 9,
+          "verse": 28,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "तदिदं समनुप्राप्तं वचनं दीर्घदर्शिनः । अहं तु निहतामात्यो हतपुत्रश्च सञ्जय ॥२८॥",
+          "chapter": 9,
+          "verse": 28,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_009_029",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "अब्रवीत्स महाबाहुस्तात संशाम्य पाण्डवैः । प्रशमाद्धि भवेच्छान्तिर्मदन्तं युद्धमस्तु वः ॥२९॥",
+          "chapter": 9,
+          "verse": 29,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "द्यूततः कृच्छ्रमापन्नो लूनपक्ष इव द्विजः । यथा हि शकुनिं गृह्य छित्त्वा पक्षौ च सञ्जय ॥२९॥",
+          "chapter": 9,
+          "verse": 29,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_030_041",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "कौरवेष्वपयातेषु तदा राजन्दिनक्षये । जयं सुमनसः प्राप्य पार्थाः स्वशिबिरं ययुः ॥४१॥",
+          "chapter": 30,
+          "verse": 41,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "वादित्रशब्दैर्विविधैः सिंहनादैः सगर्जितैः । परानुपहसन्तश्च स्तुवन्तश्चाच्युतार्जुनौ ॥४१॥",
+          "chapter": 30,
+          "verse": 41,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_031_037",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "इदं तु मे यथाप्रज्ञं शृणु वाक्यं विशांपते । अनिहत्य रणे पार्थं नाहमेष्यामि भारत ॥३७॥",
+          "chapter": 31,
+          "verse": 37,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "क्रियतामेष कामो मे मा वः कालोऽत्यगादयम् । एवं कृते कृतं सह्यं सर्वकामैर्भविष्यति ॥३७॥",
+          "chapter": 31,
+          "verse": 37,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_031_038",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "हतप्रवीरे सैन्येऽस्मिन्मयि चावस्थिते युधि । अभियास्यति मां पार्थः शक्रशक्तिविनाकृतम् ॥३८॥",
+          "chapter": 31,
+          "verse": 38,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "ततो द्रक्ष्यसि संग्रामे यत्करिष्यामि भारत । सर्वथा पाण्डवान्संख्ये विजेष्ये वै समागतान् ॥३८॥",
+          "chapter": 31,
+          "verse": 38,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_031_039",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "ततः श्रेयस्करं यच्च तन्निबोध जनेश्वर । आयुधानां च मे वीर्यं दिव्यानामर्जुनस्य च ॥३९॥",
+          "chapter": 31,
+          "verse": 39,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "न हि मे समरे शक्ताः समुद्यातुं सुरासुराः । किमु पाण्डुसुता राजन् रणे मानुषयोनयः ॥३९॥",
+          "chapter": 31,
+          "verse": 39,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_031_040",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "कार्यस्य महतो भेदे लाघवे दूरपातने । सौष्ठवे चास्त्रपाते च सव्यसाची न मत्समः ॥४०॥",
+          "chapter": 31,
+          "verse": 40,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "सञ्जय उवाच।\n              एवमुक्तस्तव सुतः कर्णेनाहवशोभिना । संपूज्य संप्रहृष्टात्मा ततो राधेयमब्रवी...",
+          "chapter": 31,
+          "verse": 40,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_031_041",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "प्राणे शौर्येऽथ विज्ञाने विक्रमे चापि भारत । निमित्तज्ञानयोगे च सव्यसाची न मत्समः॥४१॥",
+          "chapter": 31,
+          "verse": 41,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "दुर्योधन उवाच।\n              एवमेतत्करिष्यामि यथा त्वं कर्ण मन्यसे । सोपासङ्गा रथाः साश्वाः स्वनुयास...",
+          "chapter": 31,
+          "verse": 41,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_031_042",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "सर्वायुधमहामात्रं विजयं नाम तद्धनुः । इन्द्रार्थं प्रियकामेन निर्मितं विश्वकर्मणा ॥४२॥",
+          "chapter": 31,
+          "verse": 42,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "नाराचान्गार्घ्रपत्रांश्च शकटानि वहन्तु ते । अनुयास्याम कर्ण त्वां वयं सर्वे च पार्थिवाः ॥४२॥",
+          "chapter": 31,
+          "verse": 42,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_031_043",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "येन दैत्यगणान्राजञ्जितवान्वै शतक्रतुः । यस्य घोषेण दैत्यानां व्यामुह्यन्त दिशो दश ॥४३॥",
+          "chapter": 31,
+          "verse": 43,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "सञ्जय उवाच।\n              एवमुक्त्वा महाराज तव पुत्रः प्रतापवान् । अभिगम्याब्रवीद्राजा मद्रराजमिदं व...",
+          "chapter": 31,
+          "verse": 43,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_034_019",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "कुड्मलश्चाभवद्विष्णुस्तस्मिन्निषुवरे तदा । रथं वसुन्धरां देवीं विशालपुरमालिनीम् ॥१९॥",
+          "chapter": 34,
+          "verse": 19,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "यथैव भगवान् ब्रह्मा लोकधाता पितामहः । सारथ्यमकरोत्तत्र रुद्रस्य परमोऽव्ययः ॥१९॥",
+          "chapter": 34,
+          "verse": 19,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_037_027",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "नन्वेवाहं न गमिष्यामि मध्ये तेषां शूराणामिति मां शल्य विद्धि । मित्रद्रोहो मर्षणीयो न मेऽयं त्यक्त्व...",
+          "chapter": 37,
+          "verse": 27,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "वैयाघ्रचर्माणमकूजनाक्षं हैमं त्रिकोशं रजतत्रिवेणुम् । रथप्रबर्हं तुरगप्रबर्हैर्युक्तं प्रादान्मह्यमि...",
+          "chapter": 37,
+          "verse": 27,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_037_028",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "प्राज्ञस्य मूढस्य च जीवितान्ते नास्ति प्रमोक्षोऽन्तकसत्कृतस्य । अतो विद्वन्नभियास्यामि पार्थान् दिष्...",
+          "chapter": 37,
+          "verse": 28,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "धनूंषि चित्राणि निरीक्ष्य शल्य ध्वजान् गदाः सायकांश्चोग्ररूपान् । असिं च दीप्तं परमायुधं च शङ्खं च श...",
+          "chapter": 37,
+          "verse": 28,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_037_029",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "कल्याणवृत्तः सततं हि राजा वैचित्रवीर्यस्य सुतो ममासीत् । तस्यार्थसिद्ध्यर्थमहं त्यजामि प्रियान् भोगा...",
+          "chapter": 37,
+          "verse": 29,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "पताकिनं वज्रनिपातनिःस्वनं सिताश्वयुक्तं शुभतूणशोभितम् । इमं समास्थाय रथं रथर्षभं रणे हनिष्याम्यहमर्ज...",
+          "chapter": 37,
+          "verse": 29,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_041_012",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "राज्ञो धर्मप्रधानस्य राष्ट्रे वसति निर्भयः । पुत्राणां तस्य बालानां कुमाराणां यशस्विनाम् ॥१२॥",
+          "chapter": 41,
+          "verse": 12,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "तं तथा हीयमानं तु हंसो दृष्ट्वाऽब्रवीदिदम् । उज्जिहीर्षुर्निमज्जन्तं स्मरन्सत्पुरुषव्रतम् ॥१२॥",
+          "chapter": 41,
+          "verse": 12,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_060_074",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "कृपकर्णाद‌यो वीरा ऋषभाणामिवर्षभाः । भीमास्त्रेण सुनिर्भग्नान् धार्तराष्ट्रान्महारथान् ॥७४॥",
+          "chapter": 60,
+          "verse": 74,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "रथाश्चैते सुवित्रस्ता भीमसेनभयार्दिताः । पश्य भीमेन नाराचैर्भिन्ना नागाः पतन्त्यमी ॥७४॥",
+          "chapter": 60,
+          "verse": 74,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_060_075",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "धृष्टद्युम्नमुखा वीरा घ्नन्ति शत्रून् सहस्रशः । पञ्चालेष्वभिभूतेषु द्विषद्भिरपभीर्नदन् ॥७५॥",
+          "chapter": 60,
+          "verse": 75,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "वज्रिवज्रहतानीव शिखराणि धराभृताम् । भीमसेनस्य निर्विद्धा बाणैः सन्नतपर्वभिः ॥७५॥",
+          "chapter": 60,
+          "verse": 75,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_060_076",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "शत्रुपक्षमवस्कन्द्य शरानस्यति मारुतिः । विषण्णभूयिष्ठतरा धार्तराष्ट्री महाचमूः ॥७६॥",
+          "chapter": 60,
+          "verse": 76,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "स्वान्यनीकानि मृद्नन्तो द्रवन्त्येते महागजाः । अभिजानीहि भीमस्य सिंहनादं सुदुःसहम् ॥७६॥",
+          "chapter": 60,
+          "verse": 76,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_064_040",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "ततो दुर्योधनः कर्णमब्रवीत्प्रणयादिव । पश्य कर्ण महासेना पञ्चालैरर्दिता भृशम् ॥४०॥",
+          "chapter": 64,
+          "verse": 40,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "युद्धं कृत्वा तु कौन्तेयो द्रोणपुत्रेण भारत । दुःसहं वज्रिणा संख्ये पराजित्य गुरोः सुतम् ॥४०॥",
+          "chapter": 64,
+          "verse": 40,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_069_007",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "कस्माद्भवान्महाखड्गं परिगृह्णाति सत्वरः । तत्त्वां पृच्छामि कौन्तेय किमिदं ते चिकीर्षितम् ॥७॥",
+          "chapter": 69,
+          "verse": 7,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "तस्माद्भवान्परं धर्मं वेद सर्वं यथातथम् । अवध्यं पाण्डवं मन्ये धर्मराजं युधिष्ठिरम् ॥७॥",
+          "chapter": 69,
+          "verse": 7,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_069_045",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "तद्भूतं सर्वभूतानामभावाय किलार्जुन । तपस्तप्त्वा वरं प्राप्तं कृतमन्धं स्वयंभुवा ॥४५॥",
+          "chapter": 69,
+          "verse": 45,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "तद्धत्वा सर्वभूतानामभावकृतनिश्चयम् । ततो बलाकः स्वरगादेवं धर्मः सुदुर्विदः ॥४५॥",
+          "chapter": 69,
+          "verse": 45,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_087_094",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "कपिश्रेष्ठस्तु पार्थस्य व्यादितास्य इवान्तकः । दंष्ट्राभिर्भीषयन् भाभिर्दुर्निरीक्ष्यो रविर्यथा ॥९४॥",
+          "chapter": 87,
+          "verse": 94,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "सा किङ्किणीकाभरणा कालपाशोपमायसी । अभ्यद्रवत्सुसंरब्धा हस्तिकक्ष्याऽथ तं कपिम् ॥९४॥",
+          "chapter": 87,
+          "verse": 94,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    },
+    {
+      "id": "sriranga_08_095_017",
+      "count": 2,
+      "texts_are_identical": false,
+      "entries": [
+        {
+          "text_preview": "हते कर्णे महाराज निराशाः कुरवोऽभवन् । जीवितेष्वपि राज्येषु दारेषु च धनेषु च ॥१७॥",
+          "chapter": 95,
+          "verse": 17,
+          "parva_name": "कर्णपर्व"
+        },
+        {
+          "text_preview": "तान्समानीय पुत्रस्ते यत्नेन महता विभुः । निवेशाय मनो दध्रे दुःखशोकसमन्वितः ॥१७॥",
+          "chapter": 95,
+          "verse": 17,
+          "parva_name": "कर्णपर्व"
+        }
+      ]
+    }
+  ],
+  "total_chapters_with_gaps": 29,
+  "total_missing_verses": 44,
+  "gaps": [
+    {
+      "chapter": 5,
+      "adhyaya_name": "पञ्चमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-60",
+      "found_count": 59,
+      "missing_count": 1,
+      "missing_numbers": [
+        29
+      ]
+    },
+    {
+      "chapter": 9,
+      "adhyaya_name": "नवमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-97",
+      "found_count": 97,
+      "missing_count": 3,
+      "missing_numbers": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "chapter": 10,
+      "adhyaya_name": "दशमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-56",
+      "found_count": 55,
+      "missing_count": 1,
+      "missing_numbers": [
+        41
+      ]
+    },
+    {
+      "chapter": 19,
+      "adhyaya_name": "एकोनविंशोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-58",
+      "found_count": 57,
+      "missing_count": 1,
+      "missing_numbers": [
+        23
+      ]
+    },
+    {
+      "chapter": 22,
+      "adhyaya_name": "द्वाविंशोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-30",
+      "found_count": 29,
+      "missing_count": 1,
+      "missing_numbers": [
+        23
+      ]
+    },
+    {
+      "chapter": 26,
+      "adhyaya_name": "षड्विंशोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-38",
+      "found_count": 36,
+      "missing_count": 2,
+      "missing_numbers": [
+        26,
+        37
+      ]
+    },
+    {
+      "chapter": 30,
+      "adhyaya_name": "त्रिंशोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-44",
+      "found_count": 44,
+      "missing_count": 1,
+      "missing_numbers": [
+        38
+      ]
+    },
+    {
+      "chapter": 33,
+      "adhyaya_name": "त्रयस्त्रिंशोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-63",
+      "found_count": 62,
+      "missing_count": 1,
+      "missing_numbers": [
+        6
+      ]
+    },
+    {
+      "chapter": 34,
+      "adhyaya_name": "चतुस्त्रिंशोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-162",
+      "found_count": 161,
+      "missing_count": 2,
+      "missing_numbers": [
+        17,
+        118
+      ]
+    },
+    {
+      "chapter": 37,
+      "adhyaya_name": "सप्तत्रिंशोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-45",
+      "found_count": 45,
+      "missing_count": 3,
+      "missing_numbers": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "chapter": 38,
+      "adhyaya_name": "अष्टत्रिंशोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-26",
+      "found_count": 25,
+      "missing_count": 1,
+      "missing_numbers": [
+        19
+      ]
+    },
+    {
+      "chapter": 41,
+      "adhyaya_name": "एकचत्वारिंशोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-87",
+      "found_count": 87,
+      "missing_count": 1,
+      "missing_numbers": [
+        52
+      ]
+    },
+    {
+      "chapter": 44,
+      "adhyaya_name": "चतुश्चत्वारिंशोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-47",
+      "found_count": 46,
+      "missing_count": 1,
+      "missing_numbers": [
+        6
+      ]
+    },
+    {
+      "chapter": 45,
+      "adhyaya_name": "पञ्चचत्वारिंशोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-48",
+      "found_count": 47,
+      "missing_count": 1,
+      "missing_numbers": [
+        42
+      ]
+    },
+    {
+      "chapter": 53,
+      "adhyaya_name": "त्रिपञ्चाशत्तमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-46",
+      "found_count": 45,
+      "missing_count": 1,
+      "missing_numbers": [
+        11
+      ]
+    },
+    {
+      "chapter": 56,
+      "adhyaya_name": "षट्पञ्चाशत्तमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-147",
+      "found_count": 146,
+      "missing_count": 1,
+      "missing_numbers": [
+        112
+      ]
+    },
+    {
+      "chapter": 59,
+      "adhyaya_name": "ऊनषष्टितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-67",
+      "found_count": 65,
+      "missing_count": 2,
+      "missing_numbers": [
+        10,
+        30
+      ]
+    },
+    {
+      "chapter": 60,
+      "adhyaya_name": "षष्टितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-92",
+      "found_count": 91,
+      "missing_count": 4,
+      "missing_numbers": [
+        12,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "chapter": 61,
+      "adhyaya_name": "एकषष्टितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-74",
+      "found_count": 73,
+      "missing_count": 1,
+      "missing_numbers": [
+        70
+      ]
+    },
+    {
+      "chapter": 69,
+      "adhyaya_name": "ऊनसप्ततितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-88",
+      "found_count": 88,
+      "missing_count": 2,
+      "missing_numbers": [
+        44,
+        70
+      ]
+    },
+    {
+      "chapter": 70,
+      "adhyaya_name": "सप्ततितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-60",
+      "found_count": 59,
+      "missing_count": 1,
+      "missing_numbers": [
+        37
+      ]
+    },
+    {
+      "chapter": 72,
+      "adhyaya_name": "द्विसप्ततितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-40",
+      "found_count": 39,
+      "missing_count": 1,
+      "missing_numbers": [
+        35
+      ]
+    },
+    {
+      "chapter": 74,
+      "adhyaya_name": "चतुःसप्ततितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-58",
+      "found_count": 57,
+      "missing_count": 1,
+      "missing_numbers": [
+        22
+      ]
+    },
+    {
+      "chapter": 81,
+      "adhyaya_name": "एकाशीतितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-57",
+      "found_count": 56,
+      "missing_count": 1,
+      "missing_numbers": [
+        16
+      ]
+    },
+    {
+      "chapter": 83,
+      "adhyaya_name": "त्र्यशीतितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-52",
+      "found_count": 50,
+      "missing_count": 2,
+      "missing_numbers": [
+        23,
+        30
+      ]
+    },
+    {
+      "chapter": 87,
+      "adhyaya_name": "सप्ताशीतितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-117",
+      "found_count": 115,
+      "missing_count": 3,
+      "missing_numbers": [
+        97,
+        105,
+        108
+      ]
+    },
+    {
+      "chapter": 90,
+      "adhyaya_name": "नवतितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-116",
+      "found_count": 115,
+      "missing_count": 1,
+      "missing_numbers": [
+        17
+      ]
+    },
+    {
+      "chapter": 95,
+      "adhyaya_name": "पञ्चनवतितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-18",
+      "found_count": 18,
+      "missing_count": 1,
+      "missing_numbers": [
+        16
+      ]
+    },
+    {
+      "chapter": 96,
+      "adhyaya_name": "षण्णवतितमोऽध्यायः",
+      "upaparva_name": "कर्णपर्व",
+      "range": "1-67",
+      "found_count": 65,
+      "missing_count": 2,
+      "missing_numbers": [
+        65,
+        66
+      ]
+    }
+  ]
+}

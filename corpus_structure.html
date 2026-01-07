@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpus Structure Comparison - Mahabharata</title>
+    <style>
+        :root {
+            --primary: #2d3436;
+            --secondary: #636e72;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --info: #17a2b8;
+            --light: #f8f9fa;
+            --border: #e9ecef;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f6fa;
+            color: var(--primary);
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+        
+        .header a {
+            color: white;
+            opacity: 0.8;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        
+        .header a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        .nav-links {
+            margin-top: 15px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        
+        /* Summary Cards */
+        .summary-section {
+            margin-bottom: 40px;
+        }
+        
+        .summary-section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .corpus-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--info);
+        }
+        
+        .corpus-card.sriranga { border-left-color: #667eea; }
+        .corpus-card.mndutt { border-left-color: #28a745; }
+        .corpus-card.ce { border-left-color: #fd7e14; }
+        .corpus-card.sarit { border-left-color: #6f42c1; }
+        
+        .corpus-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .corpus-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 10px;
+            background: var(--light);
+            border-radius: 8px;
+        }
+        
+        .stat-value {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+        
+        /* Book Comparison Table */
+        .book-section {
+            margin-bottom: 40px;
+        }
+        
+        .book-section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 12px 16px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .comparison-table th {
+            background: var(--light);
+            font-weight: 600;
+            color: var(--secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+        
+        .comparison-table th.book-col {
+            text-align: left;
+            width: 200px;
+        }
+        
+        .comparison-table td.book-col {
+            text-align: left;
+            font-weight: 500;
+        }
+        
+        .comparison-table tr:hover {
+            background: #f8f9ff;
+        }
+        
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .corpus-header {
+            background: var(--light);
+        }
+        
+        .corpus-header th {
+            padding: 8px 16px;
+            font-size: 0.9rem;
+        }
+        
+        .corpus-header th.sriranga { color: #667eea; }
+        .corpus-header th.mndutt { color: #28a745; }
+        .corpus-header th.ce { color: #fd7e14; }
+        .corpus-header th.sarit { color: #6f42c1; }
+        
+        .sub-header th {
+            font-size: 0.7rem;
+            padding: 6px 16px;
+            color: var(--secondary);
+        }
+        
+        .value-cell {
+            font-family: 'SF Mono', monospace;
+            font-size: 0.9rem;
+        }
+        
+        .value-cell.highlight {
+            font-weight: bold;
+            color: var(--primary);
+        }
+        
+        .value-cell.mismatch {
+            background: #fff3cd;
+        }
+        
+        .value-cell.zero {
+            color: #adb5bd;
+        }
+        
+        .book-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .book-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Detail Expansion */
+        .expand-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--info);
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+        
+        .expand-btn:hover {
+            background: var(--light);
+        }
+        
+        .detail-row {
+            display: none;
+        }
+        
+        .detail-row.show {
+            display: table-row;
+        }
+        
+        .detail-content {
+            background: #f8f9ff;
+            padding: 20px;
+            text-align: left;
+        }
+        
+        .upaparva-table {
+            width: 100%;
+            font-size: 0.85rem;
+            margin-top: 10px;
+        }
+        
+        .upaparva-table th {
+            background: white;
+            padding: 8px 12px;
+        }
+        
+        .upaparva-table td {
+            padding: 6px 12px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        /* Legend */
+        .legend {
+            margin-top: 20px;
+            padding: 15px 20px;
+            background: white;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: var(--secondary);
+        }
+        
+        .legend-item {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        .legend-color {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: var(--secondary);
+        }
+        
+        .error {
+            text-align: center;
+            padding: 60px;
+            color: var(--danger);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .comparison-table {
+                overflow-x: auto;
+            }
+            
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 Corpus Structure Comparison</h1>
+        <p>Comparing structural organization across Mahabharata corpora</p>
+        <div class="nav-links">
+            <a href="index.html">← Back to Dashboard</a>
+            <a href="quality_index.html">🔍 Quality Reports</a>
+            <a href="book_01.html">Book 1 Matching</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div id="content">
+            <div class="loading">Loading corpus structure data...</div>
+        </div>
+    </div>
+    
+    <script>
+        // Corpus display config
+        const CORPUS_CONFIG = {
+            sriranga: { name: 'Sriranga', color: '#667eea' },
+            mndutt: { name: 'MN Dutt', color: '#28a745' },
+            ce: { name: 'Critical Edition', color: '#fd7e14' },
+            sarit: { name: 'SARIT', color: '#6f42c1' }
+        };
+        
+        const PARVA_NAMES = {
+            1: 'Ādi Parva',
+            2: 'Sabhā Parva',
+            3: 'Vana Parva',
+            4: 'Virāṭa Parva',
+            5: 'Udyoga Parva',
+            6: 'Bhīṣma Parva',
+            7: 'Droṇa Parva',
+            8: 'Karṇa Parva',
+            9: 'Śalya Parva',
+            10: 'Sauptika Parva',
+            11: 'Strī Parva',
+            12: 'Śānti Parva',
+            13: 'Anuśāsana Parva',
+            14: 'Āśvamedhika Parva',
+            15: 'Āśramavāsika Parva',
+            16: 'Mausala Parva',
+            17: 'Mahāprasthānika Parva',
+            18: 'Svargārohaṇa Parva'
+        };
+        
+        function formatNumber(n) {
+            return n.toLocaleString();
+        }
+        
+        async function loadData() {
+            try {
+                const response = await fetch('data/corpus_structure.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                return await response.json();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                return null;
+            }
+        }
+        
+        function renderSummary(data) {
+            const corpora = data.summary.corpora;
+            
+            let html = `
+                <div class="summary-section">
+                    <h2>Overall Totals by Corpus</h2>
+                    <div class="summary-grid">
+            `;
+            
+            for (const corpus of corpora) {
+                const config = CORPUS_CONFIG[corpus.name] || { name: corpus.display_name, color: '#666' };
+                
+                html += `
+                    <div class="corpus-card ${corpus.name}">
+                        <h3>${corpus.display_name}</h3>
+                        <div class="corpus-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">${corpus.total_books}</div>
+                                <div class="stat-label">Books</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${corpus.total_upaparvas || '—'}</div>
+                                <div class="stat-label">Upaparvas</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${formatNumber(corpus.total_adhyayas)}</div>
+                                <div class="stat-label">Adhyāyas</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">${formatNumber(corpus.total_shlokas)}</div>
+                                <div class="stat-label">Ślokas</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            html += `
+                    </div>
+                </div>
+            `;
+            
+            return html;
+        }
+        
+        function renderBookComparison(data) {
+            const books = data.books;
+            const corpora = data.summary.corpora.map(c => c.name);
+            
+            let html = `
+                <div class="book-section">
+                    <h2>Book-by-Book Comparison</h2>
+                    <div class="comparison-table">
+                        <table>
+                            <thead>
+                                <tr class="corpus-header">
+                                    <th class="book-col" rowspan="2">Book</th>
+            `;
+            
+            // Corpus headers
+            for (const corpus of corpora) {
+                const config = CORPUS_CONFIG[corpus] || { name: corpus };
+                html += `<th colspan="3" class="${corpus}">${config.name}</th>`;
+            }
+            
+            html += `</tr><tr class="sub-header">`;
+            
+            // Sub-headers for each corpus
+            for (const corpus of corpora) {
+                html += `
+                    <th>Upa.</th>
+                    <th>Adh.</th>
+                    <th>Ślokas</th>
+                `;
+            }
+            
+            html += `</tr></thead><tbody>`;
+            
+            // Data rows
+            for (const book of books) {
+                const parvaName = PARVA_NAMES[book.book_number] || book.parva_name || `Book ${book.book_number}`;
+                
+                html += `
+                    <tr>
+                        <td class="book-col">
+                            <a href="book_${String(book.book_number).padStart(2, '0')}.html" class="book-link">
+                                Book ${book.book_number}
+                            </a>
+                            <br><small style="color: #666">${parvaName}</small>
+                        </td>
+                `;
+                
+                for (const corpus of corpora) {
+                    const stats = book.corpora[corpus] || { upaparva_count: 0, adhyaya_count: 0, shloka_count: 0 };
+                    
+                    const upaClass = stats.upaparva_count === 0 ? 'zero' : '';
+                    const adhClass = stats.adhyaya_count === 0 ? 'zero' : '';
+                    const shlClass = stats.shloka_count === 0 ? 'zero' : 'highlight';
+                    
+                    html += `
+                        <td class="value-cell ${upaClass}">${stats.upaparva_count || '—'}</td>
+                        <td class="value-cell ${adhClass}">${stats.adhyaya_count || '—'}</td>
+                        <td class="value-cell ${shlClass}">${formatNumber(stats.shloka_count)}</td>
+                    `;
+                }
+                
+                html += `</tr>`;
+            }
+            
+            // Totals row
+            html += `<tr style="background: #f0f0f0; font-weight: bold;"><td class="book-col">TOTAL</td>`;
+            
+            for (const corpus of corpora) {
+                const corpusInfo = data.summary.corpora.find(c => c.name === corpus);
+                html += `
+                    <td class="value-cell">${corpusInfo?.total_upaparvas || '—'}</td>
+                    <td class="value-cell">${formatNumber(corpusInfo?.total_adhyayas || 0)}</td>
+                    <td class="value-cell highlight">${formatNumber(corpusInfo?.total_shlokas || 0)}</td>
+                `;
+            }
+            
+            html += `</tr>`;
+            
+            html += `
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="legend">
+                    <span class="legend-item">
+                        <span class="legend-color" style="background: #667eea"></span> Sriranga (Source)
+                    </span>
+                    <span class="legend-item">
+                        <span class="legend-color" style="background: #28a745"></span> MN Dutt (Primary Target)
+                    </span>
+                    <span class="legend-item">
+                        <span class="legend-color" style="background: #fd7e14"></span> Critical Edition (BORI)
+                    </span>
+                    <span class="legend-item">
+                        <span class="legend-color" style="background: #6f42c1"></span> SARIT
+                    </span>
+                </div>
+            </div>
+            `;
+            
+            return html;
+        }
+        
+        async function init() {
+            const data = await loadData();
+            const container = document.getElementById('content');
+            
+            if (!data) {
+                container.innerHTML = `
+                    <div class="error">
+                        <p>Failed to load corpus structure data.</p>
+                        <p style="margin-top: 10px; font-size: 0.9rem;">
+                            Run <code>python analyze_corpus_structure.py</code> to generate the data.
+                        </p>
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = renderSummary(data);
+            html += renderBookComparison(data);
+            
+            container.innerHTML = html;
+        }
+        
+        init();
+    </script>
+</body>
+</html>

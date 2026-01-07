@@ -879,9 +879,46 @@ body {
 }
 
 /* ==========================================================================
+   Mobile Tabs (hidden on desktop)
+   ========================================================================== */
+.mobile-tabs {
+    display: none;
+}
+
+/* ==========================================================================
    Responsive
    ========================================================================== */
 @media (max-width: 768px) {
+    /* Mobile Tab Bar */
+    .mobile-tabs {
+        display: flex;
+        background: #2d3436;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    
+    .mobile-tab {
+        flex: 1;
+        padding: 12px 15px;
+        border: none;
+        background: #2d3436;
+        color: #b2bec3;
+        font-size: 0.95rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    
+    .mobile-tab.active {
+        background: #667eea;
+        color: white;
+    }
+    
+    .mobile-hidden {
+        display: none !important;
+    }
+    
     .book-container {
         flex-direction: column;
         height: auto;
@@ -899,11 +936,17 @@ body {
     }
     
     .tree-content {
-        height: 50vh;
-        max-height: 400px;
+        height: 60vh;
+        max-height: 500px;
         overflow-y: scroll !important;
         -webkit-overflow-scrolling: touch;
         display: block;
+    }
+    
+    .details-panel {
+        width: 100%;
+        min-height: 70vh;
+        padding: 15px;
     }
     
     /* Compact stats bar on mobile */

@@ -97,7 +97,13 @@ class MahabharataDashboard {
     render() {
         this.container.innerHTML = `
             <div class="book-container">
-                <div class="tree-panel">
+                <!-- Mobile Tab Bar -->
+                <div class="mobile-tabs" id="mobile-tabs">
+                    <button class="mobile-tab active" data-tab="tree">📚 Tree</button>
+                    <button class="mobile-tab" data-tab="details">📖 Details</button>
+                </div>
+                
+                <div class="tree-panel" id="tree-panel">
                     <div class="panel-header">
                         <h2>📚 Book ${this.bookNumber} - Navigation</h2>
                     </div>
@@ -108,15 +114,51 @@ class MahabharataDashboard {
                 <div class="details-panel" id="details-panel">
                     <div class="detail-placeholder">
                         <div class="detail-placeholder-icon">📖</div>
-                        <p>Select a shloka from the left panel to view details</p>
+                        <p>Select a shloka from the tree to view details</p>
                     </div>
                 </div>
             </div>
         `;
         
+        this.setupMobileTabs();
         this.renderStatsBar();
         this.renderFilters();
         this.renderTree();
+    }
+    
+    setupMobileTabs() {
+        const tabs = document.querySelectorAll('.mobile-tab');
+        const treePanel = document.getElementById('tree-panel');
+        const detailsPanel = document.getElementById('details-panel');
+        
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                
+                if (tab.dataset.tab === 'tree') {
+                    treePanel.classList.remove('mobile-hidden');
+                    detailsPanel.classList.add('mobile-hidden');
+                } else {
+                    treePanel.classList.add('mobile-hidden');
+                    detailsPanel.classList.remove('mobile-hidden');
+                }
+            });
+        });
+    }
+    
+    // Auto-switch to details tab on mobile when shloka selected
+    switchToDetailsTab() {
+        if (window.innerWidth <= 768) {
+            const tabs = document.querySelectorAll('.mobile-tab');
+            const treePanel = document.getElementById('tree-panel');
+            const detailsPanel = document.getElementById('details-panel');
+            
+            tabs.forEach(t => t.classList.remove('active'));
+            tabs[1].classList.add('active'); // Details tab
+            treePanel.classList.add('mobile-hidden');
+            detailsPanel.classList.remove('mobile-hidden');
+        }
     }
     
     renderStatsBar() {
@@ -378,6 +420,7 @@ class MahabharataDashboard {
         
         this.selectedShloka = shloka;
         this.renderShlokaDetails(shloka);
+        this.switchToDetailsTab();  // Auto-switch on mobile
     }
     
     renderShlokaDetails(shloka) {

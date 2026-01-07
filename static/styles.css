@@ -896,12 +896,21 @@ body {
         min-height: 400px;
         display: flex;
         flex-direction: column;
+        overflow: hidden;  /* Prevent panel itself from scrolling */
+    }
+    
+    /* Ensure fixed elements don't grow */
+    .tree-panel .panel-header,
+    .tree-panel .stats-bar,
+    .tree-panel .filters {
+        flex-shrink: 0;
     }
     
     .tree-content {
         flex: 1;
-        min-height: 200px;
-        overflow-y: auto;
+        min-height: 0;  /* Critical for flex child to allow overflow */
+        overflow-y: scroll;  /* Force scrollbar */
+        -webkit-overflow-scrolling: touch;  /* Smooth scrolling on iOS */
     }
     
     /* Compact stats bar on mobile */

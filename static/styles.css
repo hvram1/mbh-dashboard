@@ -892,8 +892,35 @@ body {
     .tree-panel {
         flex: none;
         width: 100%;
-        height: 50vh;
-        min-height: 300px;
+        height: 70vh;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tree-content {
+        flex: 1;
+        min-height: 200px;
+        overflow-y: auto;
+    }
+    
+    /* Compact stats bar on mobile */
+    .stats-bar > div {
+        padding: 10px 15px !important;
+    }
+    
+    .stats-bar > div > div {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .stats-bar > div > div > div {
+        flex: 1 1 45%;
+        min-width: 80px;
+    }
+    
+    .stats-bar > div > div > div > div:first-child {
+        font-size: 1.2rem !important;
     }
     
     .details-panel {
@@ -934,22 +961,40 @@ body {
     
     /* Panel headers */
     .panel-header {
-        padding: 12px 15px;
+        padding: 10px 15px;
     }
     
     .panel-header h2 {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     
-    /* Filters */
+    /* Filters - make them compact */
     .filters {
-        padding: 10px 15px;
-        gap: 10px;
+        padding: 8px 12px;
+        gap: 8px;
+    }
+    
+    .filter-group {
+        gap: 5px;
+    }
+    
+    .filter-label {
+        font-size: 0.65rem;
+    }
+    
+    .filter-btn {
+        padding: 4px 10px;
+        font-size: 0.7rem;
     }
     
     /* Tree items */
     .chapter-item, .shloka-item {
         padding: 8px 10px;
+    }
+    
+    .tree-node {
+        padding: 8px 10px;
+        font-size: 0.9rem;
     }
 }
 

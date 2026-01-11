@@ -215,6 +215,49 @@ class MahabharataDashboard {
         `;
     }
     
+    /**
+     * Generate compact indicator badges for tree nodes
+     * Shows: matched count, unmatched, partial, relationships, corpora
+     */
+    renderTreeIndicators(stats) {
+        let html = '';
+        
+        // Always show matched count (green) - clickable to filter
+        html += `<span class="tree-badge matched" data-filter="matched" title="Click to filter: High confidence matches (≥90%)">${stats.matched}</span>`;
+        
+        // Show unmatched if > 0 (red)
+        if (stats.unmatched > 0) {
+            html += `<span class="tree-badge unmatched" data-filter="unmatched" title="Click to filter: Unmatched shlokas">✗${stats.unmatched}</span>`;
+        }
+        
+        // Show partial if > 0 (orange) - but only if not already counted in unmatched
+        if (stats.partial > 0) {
+            html += `<span class="tree-badge partial" data-filter="partial" title="Click to filter: Partial matches (<90%)">~${stats.partial}</span>`;
+        }
+        
+        // Show one-to-many if > 0 (purple)
+        if (stats.oneToMany > 0) {
+            html += `<span class="tree-badge one-to-many" data-filter="one-to-many" title="Click to filter: One source → Many targets">⇉${stats.oneToMany}</span>`;
+        }
+        
+        // Show many-to-one if > 0 (blue)
+        if (stats.manyToOne > 0) {
+            html += `<span class="tree-badge many-to-one" data-filter="many-to-one" title="Click to filter: Many sources → One target">⇆${stats.manyToOne}</span>`;
+        }
+        
+        // Show CE if > 0 (teal)
+        if (stats.ce > 0) {
+            html += `<span class="tree-badge ce" data-filter="ce" title="Click to filter: Critical Edition matches">CE${stats.ce}</span>`;
+        }
+        
+        // Show SARIT if > 0 (indigo)
+        if (stats.sarit > 0) {
+            html += `<span class="tree-badge sarit" data-filter="sarit" title="Click to filter: SARIT matches">S${stats.sarit}</span>`;
+        }
+        
+        return html;
+    }
+    
     renderTree() {
         const treeContent = document.getElementById('tree-content');
         let html = '<ul class="tree-list">';
@@ -232,8 +275,7 @@ class MahabharataDashboard {
                     <div class="tree-node" data-id="${parvaId}" data-type="parva">
                         <span class="tree-arrow">▶</span>
                         <span class="tree-label">${parvaName}</span>
-                        <span class="tree-badge matched">${parva.stats.matched}</span>
-                        <span class="tree-badge unmatched">${parva.stats.unmatched}</span>
+                        <span class="tree-indicators">${this.renderTreeIndicators(parva.stats)}</span>
                     </div>
                     <div class="tree-children" id="${parvaId}-children">
                         ${this.renderUpaparvas(parvaKey, parva.upaparvas)}
@@ -261,8 +303,7 @@ class MahabharataDashboard {
                     <div class="tree-node" data-id="${upaparvaId}" data-type="upaparva">
                         <span class="tree-arrow">▶</span>
                         <span class="tree-label">${upaparvaName}</span>
-                        <span class="tree-badge matched">${upaparva.stats.matched}</span>
-                        <span class="tree-badge unmatched">${upaparva.stats.unmatched}</span>
+                        <span class="tree-indicators">${this.renderTreeIndicators(upaparva.stats)}</span>
                     </div>
                     <div class="tree-children" id="${upaparvaId}-children">
                         ${this.renderAdhyayas(parvaKey, upaparvaKey, upaparva.adhyayas)}
@@ -290,8 +331,7 @@ class MahabharataDashboard {
                     <div class="tree-node" data-id="${adhyayaId}" data-type="adhyaya">
                         <span class="tree-arrow">▶</span>
                         <span class="tree-label">${adhyayaName}</span>
-                        <span class="tree-badge matched">${adhyaya.stats.matched}</span>
-                        <span class="tree-badge unmatched">${adhyaya.stats.unmatched}</span>
+                        <span class="tree-indicators">${this.renderTreeIndicators(adhyaya.stats)}</span>
                     </div>
                     <div class="tree-children" id="${adhyayaId}-children">
                         ${this.renderShlokas(adhyaya.shlokas)}
@@ -374,6 +414,14 @@ class MahabharataDashboard {
     attachEventListeners() {
         // Tree node click handlers
         this.container.addEventListener('click', (e) => {
+            // Handle tree badge clicks - filter by category
+            const treeBadge = e.target.closest('.tree-badge');
+            if (treeBadge && treeBadge.dataset.filter) {
+                e.stopPropagation(); // Prevent tree node toggle
+                this.applyFilter(treeBadge.dataset.filter);
+                return;
+            }
+            
             const node = e.target.closest('.tree-node');
             if (node) {
                 this.toggleTreeNode(node);
@@ -515,6 +563,37 @@ class MahabharataDashboard {
                                 `;
                             }).join('')}
                         </ul>
+                    </div>
+                </div>
+                ` : ''}
+                
+                ${shloka.one_to_many && shloka.additional_target_ids && shloka.additional_target_ids.length > 0 ? `
+                <!-- One-to-Many Relationship -->
+                <div class="detail-section relationship-section one-to-many-section">
+                    <div class="detail-section-header">
+                        <span class="detail-section-title">🔗 One → Many Mapping</span>
+                        <span class="diff-legend">🟢 matching | 🟡 different</span>
+                    </div>
+                    <div class="relationship-info">
+                        <p>This Sriranga shloka maps to <strong>${shloka.additional_target_ids.length + 1}</strong> target shlokas:</p>
+                        
+                        <!-- Additional Targets with diff highlighting -->
+                        ${(() => {
+                            const additionalMatches = shloka.metadata?.additional_matches || [];
+                            return additionalMatches.map(match => {
+                                const additionalDiff = this.computeDiffTexts(shloka.source_text, match.target_text || '');
+                                const similarity = match.similarity ? (match.similarity * 100).toFixed(1) : 'N/A';
+                                return `
+                                <div class="additional-target-block">
+                                    <div class="additional-target-header">
+                                        <span class="source-id">${match.target_id}</span>
+                                        <span class="similarity-badge ${parseFloat(similarity) >= 90 ? 'high' : 'partial'}">${similarity}% similar</span>
+                                    </div>
+                                    <div class="additional-target-text">${additionalDiff.targetHtml}</div>
+                                </div>
+                                `;
+                            }).join('');
+                        })()}
                     </div>
                 </div>
                 ` : ''}
@@ -816,6 +895,29 @@ class MahabharataDashboard {
         }).join(' ');
         
         return { sourceHtml, targetHtml };
+    }
+    
+    /**
+     * Compute word-level diff between two text strings directly.
+     * Used for additional targets in one-to-many mappings.
+     */
+    computeDiffTexts(sourceText, targetText) {
+        // Tokenize texts (split by spaces and dandas)
+        const tokenize = (text) => {
+            return (text || '')
+                .replace(/।/g, ' । ')
+                .replace(/॥/g, ' ॥ ')
+                .replace(/\s+/g, ' ')
+                .trim()
+                .split(' ')
+                .filter(t => t.length > 0);
+        };
+        
+        const sourceWords = tokenize(sourceText);
+        const targetWords = tokenize(targetText);
+        
+        // Use simple LCS-based diff
+        return this.diffWithLCS(sourceWords, targetWords);
     }
     
     /**

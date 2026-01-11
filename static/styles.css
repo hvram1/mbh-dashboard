@@ -461,17 +461,62 @@ body {
     align-items: center;
     justify-content: center;
     min-width: 24px;
-    height: 24px;
+    height: 22px;
     padding: 0 6px;
-    border-radius: 12px;
-    font-size: 0.75rem;
+    border-radius: 11px;
+    font-size: 0.7rem;
     font-weight: 600;
     color: white;
+    margin-left: 3px;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    user-select: none;
 }
 
-.tree-badge.matched { background: var(--success-color); }
-.tree-badge.partial { background: var(--warning-color); color: var(--text-primary); }
-.tree-badge.unmatched { background: var(--danger-color); }
+.tree-badge:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    opacity: 0.9;
+}
+
+.tree-badge:active {
+    transform: scale(0.95);
+}
+
+.tree-indicators {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    margin-left: auto;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    max-width: 200px;
+}
+
+/* Badge colors with better contrast */
+.tree-badge.matched { 
+    background: linear-gradient(135deg, #27ae60, #2ecc71); 
+}
+.tree-badge.partial { 
+    background: linear-gradient(135deg, #e67e22, #f39c12); 
+    color: white; 
+}
+.tree-badge.unmatched { 
+    background: linear-gradient(135deg, #c0392b, #e74c3c); 
+}
+.tree-badge.one-to-many { 
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);  /* Purple */
+}
+.tree-badge.many-to-one { 
+    background: linear-gradient(135deg, #2980b9, #3498db);  /* Blue */
+}
+.tree-badge.ce { 
+    background: linear-gradient(135deg, #00838f, #00acc1);  /* Cyan/Teal */
+}
+.tree-badge.sarit { 
+    background: linear-gradient(135deg, #3949ab, #5c6bc0);  /* Indigo */
+}
 
 .tree-children {
     display: none;
@@ -746,6 +791,57 @@ body {
     padding: 2px 8px;
     border-radius: 10px;
     font-weight: normal;
+}
+
+.sharing-sources .additional-badge {
+    font-size: 0.7rem;
+    background: #ffeaa7;
+    color: #2d3436;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: normal;
+}
+
+.sharing-sources li.linked-target {
+    background: #ffeaa7;
+    color: #2d3436;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* One-to-Many Additional Target Display */
+.one-to-many-section .additional-target-block {
+    background: #fff8e1;
+    border: 1px solid #ffc107;
+    border-radius: var(--radius-md);
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.one-to-many-section .additional-target-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ffe082;
+}
+
+.one-to-many-section .additional-target-header .source-id {
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    color: #f57c00;
+}
+
+.one-to-many-section .additional-target-text {
+    font-family: 'Noto Sans Devanagari', 'Tiro Devanagari Sanskrit', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: var(--text-primary);
+    padding: 10px;
+    background: white;
+    border-radius: var(--radius-sm);
 }
 
 /* Translation (future) */
@@ -1040,6 +1136,33 @@ body {
     .tree-node {
         padding: 8px 10px;
         font-size: 0.9rem;
+    }
+    
+    /* Mobile tree badges - smaller and compact */
+    .tree-badge {
+        min-width: 20px;
+        height: 18px;
+        padding: 0 4px;
+        font-size: 0.6rem;
+        margin-left: 2px;
+        border-radius: 9px;
+    }
+    
+    .tree-indicators {
+        gap: 2px;
+        max-width: 160px;
+    }
+    
+    /* Hide less important badges on very small screens */
+    @media (max-width: 480px) {
+        .tree-badge.ce,
+        .tree-badge.sarit {
+            display: none;
+        }
+        
+        .tree-indicators {
+            max-width: 120px;
+        }
     }
 }
 

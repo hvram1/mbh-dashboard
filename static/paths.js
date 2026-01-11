@@ -180,6 +180,18 @@ function parseSrirangaId(id) {
 function groupByHierarchy(shlokas) {
     const hierarchy = {};
     
+    // Helper to create empty stats object
+    const createStats = () => ({
+        matched: 0, 
+        unmatched: 0, 
+        total: 0,
+        partial: 0,        // similarity < 0.9
+        manyToOne: 0,      // many sources → one target
+        oneToMany: 0,      // one source → many targets
+        ce: 0,             // Critical Edition matches
+        sarit: 0           // SARIT matches
+    });
+    
     shlokas.forEach(shloka => {
         // Use the new hierarchy parser that looks at parva_id, upaparva_id, adhyaya_id
         const parsed = parseSrirangaHierarchy(shloka);
@@ -193,42 +205,65 @@ function groupByHierarchy(shlokas) {
         if (!hierarchy[parva]) {
             hierarchy[parva] = { 
                 upaparvas: {}, 
-                stats: { matched: 0, unmatched: 0, total: 0 },
+                stats: createStats(),
                 name: parvaName
             };
         }
         if (!hierarchy[parva].upaparvas[upaparva]) {
             hierarchy[parva].upaparvas[upaparva] = { 
                 adhyayas: {}, 
-                stats: { matched: 0, unmatched: 0, total: 0 },
+                stats: createStats(),
                 name: upaparvaName
             };
         }
         if (!hierarchy[parva].upaparvas[upaparva].adhyayas[adhyaya]) {
             hierarchy[parva].upaparvas[upaparva].adhyayas[adhyaya] = { 
                 shlokas: [], 
-                stats: { matched: 0, unmatched: 0, total: 0 },
+                stats: createStats(),
                 name: adhyayaName
             };
         }
         
         hierarchy[parva].upaparvas[upaparva].adhyayas[adhyaya].shlokas.push(shloka);
         
-        // Update stats
+        // Update basic stats
         const isMatched = shloka.has_match;
-        hierarchy[parva].stats.total++;
-        hierarchy[parva].upaparvas[upaparva].stats.total++;
-        hierarchy[parva].upaparvas[upaparva].adhyayas[adhyaya].stats.total++;
+        const statsToUpdate = [
+            hierarchy[parva].stats,
+            hierarchy[parva].upaparvas[upaparva].stats,
+            hierarchy[parva].upaparvas[upaparva].adhyayas[adhyaya].stats
+        ];
         
-        if (isMatched) {
-            hierarchy[parva].stats.matched++;
-            hierarchy[parva].upaparvas[upaparva].stats.matched++;
-            hierarchy[parva].upaparvas[upaparva].adhyayas[adhyaya].stats.matched++;
-        } else {
-            hierarchy[parva].stats.unmatched++;
-            hierarchy[parva].upaparvas[upaparva].stats.unmatched++;
-            hierarchy[parva].upaparvas[upaparva].adhyayas[adhyaya].stats.unmatched++;
-        }
+        statsToUpdate.forEach(stats => {
+            stats.total++;
+            
+            if (isMatched) {
+                stats.matched++;
+                
+                // Track partial matches (< 90% similarity)
+                if (shloka.similarity < 0.9) {
+                    stats.partial++;
+                }
+                
+                // Track relationships
+                if (shloka.many_to_one) {
+                    stats.manyToOne++;
+                }
+                if (shloka.one_to_many) {
+                    stats.oneToMany++;
+                }
+                
+                // Track corpus types
+                if (shloka.match_corpus === 'ce' || shloka.match_stage === 'stage8_critical_edition') {
+                    stats.ce++;
+                }
+                if (shloka.match_corpus === 'sarit' || shloka.match_stage === 'stage9_sarit') {
+                    stats.sarit++;
+                }
+            } else {
+                stats.unmatched++;
+            }
+        });
     });
     
     return hierarchy;

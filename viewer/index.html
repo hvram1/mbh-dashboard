@@ -569,18 +569,34 @@
         const adhyayaList = document.getElementById('adhyayaList');
         const mainContent = document.getElementById('mainContent');
 
-        // Data path prefix
-        const DATA_PATH = 'data/';
+        // Data path prefix - works for both local and GitHub Pages
+        function getBasePath() {
+            let path = window.location.pathname;
+            // If path ends with /, it's a directory - use it directly
+            // If path ends with a file (like index.html), get its directory
+            if (!path.endsWith('/')) {
+                path = path.substring(0, path.lastIndexOf('/') + 1);
+            }
+            return path + 'data/';
+        }
+        const DATA_PATH = getBasePath();
+        
+        console.log('Data path:', DATA_PATH);
 
         // Initialize
         async function init() {
             try {
-                const response = await fetch(`${DATA_PATH}books_summary.json`);
+                const url = `${DATA_PATH}books_summary.json`;
+                console.log('Fetching:', url);
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
                 state.booksData = await response.json();
                 populateBookSelect();
             } catch (error) {
                 console.error('Failed to load books summary:', error);
-                showError('Failed to load data. Please ensure data files are generated.');
+                showError(`Failed to load data: ${error.message}<br><small>Path: ${DATA_PATH}books_summary.json</small>`);
             }
         }
 
@@ -612,12 +628,17 @@
 
             try {
                 const paddedNum = String(bookNumber).padStart(2, '0');
-                const response = await fetch(`${DATA_PATH}book_${paddedNum}_viewer.json`);
+                const url = `${DATA_PATH}book_${paddedNum}_viewer.json`;
+                console.log('Fetching book:', url);
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
                 state.currentBookData = await response.json();
                 populateAdhyayaList();
             } catch (error) {
                 console.error('Failed to load book data:', error);
-                adhyayaList.innerHTML = '<p style="padding: 15px; color: #d32f2f;">डेटा लोड करने में त्रुटि</p>';
+                adhyayaList.innerHTML = `<p style="padding: 15px; color: #d32f2f;">डेटा लोड करने में त्रुटि<br><small>${error.message}</small></p>`;
             }
         }
 

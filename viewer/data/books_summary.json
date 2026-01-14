@@ -1,0 +1,119 @@
+[
+  {
+    "book_number": 1,
+    "parva_name": "आदिपर्व",
+    "total_shlokas": 8620,
+    "exact_matches": 5525,
+    "partial_matches": 3094,
+    "no_matches": 1,
+    "adhyaya_count": 234
+  },
+  {
+    "book_number": 2,
+    "parva_name": "सभापर्व",
+    "total_shlokas": 2712,
+    "exact_matches": 1651,
+    "partial_matches": 1060,
+    "no_matches": 1,
+    "adhyaya_count": 81
+  },
+  {
+    "book_number": 3,
+    "parva_name": "वनपर्व",
+    "total_shlokas": 11831,
+    "exact_matches": 5809,
+    "partial_matches": 6014,
+    "no_matches": 8,
+    "adhyaya_count": 315
+  },
+  {
+    "book_number": 4,
+    "parva_name": "विराटपर्व",
+    "total_shlokas": 2269,
+    "exact_matches": 924,
+    "partial_matches": 1329,
+    "no_matches": 16,
+    "adhyaya_count": 72
+  },
+  {
+    "book_number": 5,
+    "parva_name": "उद्योगपर्व",
+    "total_shlokas": 6613,
+    "exact_matches": 3616,
+    "partial_matches": 2991,
+    "no_matches": 6,
+    "adhyaya_count": 196
+  },
+  {
+    "book_number": 6,
+    "parva_name": "भीष्मपर्व",
+    "total_shlokas": 5858,
+    "exact_matches": 2827,
+    "partial_matches": 3022,
+    "no_matches": 9,
+    "adhyaya_count": 122
+  },
+  {
+    "book_number": 8,
+    "parva_name": "कर्णपर्व",
+    "total_shlokas": 4986,
+    "exact_matches": 1456,
+    "partial_matches": 3524,
+    "no_matches": 6,
+    "adhyaya_count": 96
+  },
+  {
+    "book_number": 10,
+    "parva_name": "सौप्तिकपर्व",
+    "total_shlokas": 803,
+    "exact_matches": 316,
+    "partial_matches": 470,
+    "no_matches": 17,
+    "adhyaya_count": 18
+  },
+  {
+    "book_number": 11,
+    "parva_name": "स्त्रीपर्व",
+    "total_shlokas": 822,
+    "exact_matches": 481,
+    "partial_matches": 341,
+    "no_matches": 0,
+    "adhyaya_count": 27
+  },
+  {
+    "book_number": 16,
+    "parva_name": "मौसलपर्व",
+    "total_shlokas": 287,
+    "exact_matches": 113,
+    "partial_matches": 169,
+    "no_matches": 5,
+    "adhyaya_count": 8
+  },
+  {
+    "book_number": 17,
+    "parva_name": "महाप्रस्थानिकपर्व",
+    "total_shlokas": 110,
+    "exact_matches": 46,
+    "partial_matches": 64,
+    "no_matches": 0,
+    "adhyaya_count": 3
+  },
+  {
+    "book_number": 18,
+    "parva_name": "स्वर्गारोहणपर्व",
+    "total_shlokas": 215,
+    "exact_matches": 164,
+    "partial_matches": 51,
+    "no_matches": 0,
+    "adhyaya_count": 5
+  },
+  {
+    "book_number": 19,
+    "parva_name": "हरिवंशः",
+    "total_shlokas": 10891,
+    "exact_matches": 8066,
+    "partial_matches": 2663,
+    "no_matches": 162,
+    "adhyaya_count": 183
+  }
+]

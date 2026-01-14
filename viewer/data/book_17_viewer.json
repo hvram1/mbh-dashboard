@@ -1,0 +1,4249 @@
+{
+  "book_number": 17,
+  "parva_name": "महाप्रस्थानिकपर्व",
+  "total_shlokas": 110,
+  "exact_matches": 46,
+  "partial_matches": 64,
+  "no_matches": 0,
+  "adhyayas": [
+    {
+      "adhyaya_id": "P17_U01_A001",
+      "adhyaya_name": "प्रथमोऽध्यायः",
+      "chapter": 1,
+      "shlokas": [
+        {
+          "id": "sriranga_17_001_001",
+          "verse": 1,
+          "source_text": "जनमेजय उवाच।\n              एवं वृष्ण्यन्धककुले श्रुत्वा मौसलमाहवम्। पाण्डवाः किमकुर्वंत तथा कृष्णे दिवं गते॥१॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "ce",
+          "matched_text": "एवं वृष्ण्यन्धककुले श्रुत्वा मौसलमाहवम् पाण्डवाः किमकुर्वन्त तथा कृष्णे दिवं गते",
+          "matched_id": "critical_17_001_0001",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "delete",
+                "text": "जनमेजय उवाच। "
+              },
+              {
+                "type": "equal",
+                "text": "एवं वृष्ण्यन्धककुले श्रुत्वा मौसलमाहवम्"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " पाण्डवाः किमकुर्व"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "त तथा कृष्णे दिवं गते"
+              },
+              {
+                "type": "delete",
+                "text": "॥१॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "एवं वृष्ण्यन्धककुले श्रुत्वा मौसलमाहवम्"
+              },
+              {
+                "type": "equal",
+                "text": " पाण्डवाः किमकुर्व"
+              },
+              {
+                "type": "insert",
+                "text": "न्"
+              },
+              {
+                "type": "equal",
+                "text": "त तथा कृष्णे दिवं गते"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_002",
+          "verse": 2,
+          "source_text": "वैशम्पायन उवाच।\n              श्रुत्वैवं कौरवो राजा वृष्णीनां कदनं महत्। प्रस्थाने मतिमाधाय वाक्यमर्जुनमब्रवीत्॥२॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_003",
+          "verse": 3,
+          "source_text": "कालः पचति भूतानि सर्वाण्येव महामते। कालपाशमहं मन्ये त्वमपि द्रष्टुमर्हसि॥३॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_004",
+          "verse": 4,
+          "source_text": "इत्युक्तः स तु कौन्तेयः कालः कालः इति ब्रुवन्। अन्वपद्यत तद्वाक्यं भ्रातुर्ज्येष्ठस्य धीमतः॥४॥",
+          "match_status": "partial",
+          "similarity": 0.9518,
+          "match_corpus": "mndutt",
+          "matched_text": "इत्युक्तः स तु कौन्तेयः कालः काल इति ब्रुवन्। अन्वपद्यत तद् वाक्यं भ्रातुर्येष्ठस्य धीमतः॥",
+          "matched_id": "mndutt_17_308_004",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "इत्युक्तः स तु कौन्तेयः कालः काल"
+              },
+              {
+                "type": "delete",
+                "text": "ः"
+              },
+              {
+                "type": "equal",
+                "text": " इति ब्रुवन्। अन्वपद्यत तद्"
+              },
+              {
+                "type": "equal",
+                "text": "वाक्यं भ्रातुर"
+              },
+              {
+                "type": "delete",
+                "text": "्ज"
+              },
+              {
+                "type": "equal",
+                "text": "्येष्ठस्य धीमतः॥"
+              },
+              {
+                "type": "delete",
+                "text": "४॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "इत्युक्तः स तु कौन्तेयः कालः काल"
+              },
+              {
+                "type": "equal",
+                "text": " इति ब्रुवन्। अन्वपद्यत तद्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "वाक्यं भ्रातुर"
+              },
+              {
+                "type": "equal",
+                "text": "्येष्ठस्य धीमतः॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_005",
+          "verse": 5,
+          "source_text": "अजुनस्य मतं ज्ञात्वा भीमसेनो यमौ तथा। अन्वपद्यन्त तद्वाक्यं यदुक्तं सव्यसाचिना॥५॥",
+          "match_status": "partial",
+          "similarity": 0.9203,
+          "match_corpus": "mndutt",
+          "matched_text": "अर्जुनस्य मतं ज्ञात्वा भीमसेनो यमौ तथा। अन्वपद्यन्त तद् वाक्यं यदुक्तं सव्यसाचिना॥",
+          "matched_id": "mndutt_17_308_005",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "अ"
+              },
+              {
+                "type": "equal",
+                "text": "जुनस्य मतं ज्ञात्वा भीमसेनो यमौ तथा। अन्वपद्यन्त तद्"
+              },
+              {
+                "type": "equal",
+                "text": "वाक्यं यदुक्तं सव्यसाचिना॥"
+              },
+              {
+                "type": "delete",
+                "text": "५॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "अ"
+              },
+              {
+                "type": "insert",
+                "text": "र्"
+              },
+              {
+                "type": "equal",
+                "text": "जुनस्य मतं ज्ञात्वा भीमसेनो यमौ तथा। अन्वपद्यन्त तद्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "वाक्यं यदुक्तं सव्यसाचिना॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_006",
+          "verse": 6,
+          "source_text": "ततो युयुत्सुमानाय्य प्रव्रजन् धर्मकाम्यया। राज्यं परिददौ सर्वं वैश्यापुत्रं युधिष्ठिरः॥६॥",
+          "match_status": "partial",
+          "similarity": 0.9623,
+          "match_corpus": "mndutt",
+          "matched_text": "ततो युयुत्सुमानाय्य प्रव्रजन् धर्मकाम्यया। राज्यं परिददौ सर्वं वैश्यापुत्रे युधिष्ठिरः॥",
+          "matched_id": "mndutt_17_308_006",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "ततो युयुत्सुमानाय्य प्रव्रजन् धर्मकाम्यया। राज्यं परिददौ सर्वं वैश्यापुत्र"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": " युधिष्ठिरः॥"
+              },
+              {
+                "type": "delete",
+                "text": "६॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "ततो युयुत्सुमानाय्य प्रव्रजन् धर्मकाम्यया। राज्यं परिददौ सर्वं वैश्यापुत्र"
+              },
+              {
+                "type": "insert",
+                "text": "े"
+              },
+              {
+                "type": "equal",
+                "text": " युधिष्ठिरः॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_007",
+          "verse": 7,
+          "source_text": "अभिषिच्य स्वराज्ये च राजानं च परिक्षितम्। दुःखार्तश्चाब्रवीद्राजा सुभद्रां पाण्डवाग्रजः॥७॥",
+          "match_status": "partial",
+          "similarity": 0.9756,
+          "match_corpus": "mndutt",
+          "matched_text": "अभिषिच्य स्वराज्ये च राजानं च परिक्षितम्। दुःखार्तश्चाब्रवीद् राजा सुभद्रा पाण्डवाग्रजः॥",
+          "matched_id": "mndutt_17_308_007",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "अभिषिच्य स्वराज्ये च राजानं च परिक्षितम्। दुःखार्तश्चाब्रवीद्"
+              },
+              {
+                "type": "equal",
+                "text": "राजा सुभद्रा"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": " पाण्डवाग्रजः॥"
+              },
+              {
+                "type": "delete",
+                "text": "७॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "अभिषिच्य स्वराज्ये च राजानं च परिक्षितम्। दुःखार्तश्चाब्रवीद्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "राजा सुभद्रा"
+              },
+              {
+                "type": "equal",
+                "text": " पाण्डवाग्रजः॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_008",
+          "verse": 8,
+          "source_text": "एष पुत्रस्य पुत्रस्ते कुरुराजो भविष्यति। यदूनां परिशेषश्च वज्रो राजा कृतश्च ह॥८॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_009",
+          "verse": 9,
+          "source_text": "परिक्षिद्धास्तिनपुरे शक्रप्रस्थे च यादवः। वज्रो राजा त्वया रक्ष्यो मा चाधर्मे मनः कृथाः॥९॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_010",
+          "verse": 10,
+          "source_text": "इत्युक्त्वा धर्मराजः स वासुदेवस्य धीमतः। मातुलस्य च वृद्धस्य रामादीनां तथैव च॥१०॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_011",
+          "verse": 11,
+          "source_text": "भ्रातृभिः सह धर्मात्मा कृत्वोदकमतन्द्रितः। श्राद्धान्युद्दिश्य सर्वेषां चकार विधिवत्तदा॥११॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_012",
+          "verse": 12,
+          "source_text": "द्वैपायनं नारदं च मार्कंडेयं तपोधनम्। भारद्वाजं याज्ञवल्क्यं हरिमुद्दिश्य यत्नवान्॥१२॥",
+          "match_status": "partial",
+          "similarity": 0.913,
+          "match_corpus": "mndutt",
+          "matched_text": "द्वैपायनं नारदं च मार्कण्डेयं तपोधनम्। भारद्वाजं याज्ञवल्क्यं हरिमुद्दिश्य यत्नवान्॥",
+          "matched_id": "mndutt_17_308_010",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "द्वैपायनं नारदं च मार्क"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "डेयं तपोधनम्। भारद्वाजं याज्ञवल्क्यं हरिमुद्दिश्य यत्नवान्॥"
+              },
+              {
+                "type": "delete",
+                "text": "१२॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "द्वैपायनं नारदं च मार्क"
+              },
+              {
+                "type": "insert",
+                "text": "ण्"
+              },
+              {
+                "type": "equal",
+                "text": "डेयं तपोधनम्। भारद्वाजं याज्ञवल्क्यं हरिमुद्दिश्य यत्नवान्॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_013",
+          "verse": 13,
+          "source_text": "अभोजयत्स्वादुभोज्यं कीर्तयित्वा च शार्ङ्गिणम्। ददौ रत्नानि वासांसि ग्रामानश्वान् रथांस्तथा॥१३॥",
+          "match_status": "partial",
+          "similarity": 0.9472,
+          "match_corpus": "mndutt",
+          "matched_text": "अभोजयत् स्वादु भोज्यं कीर्तयित्वा च शाङ्गिणम्। ददौ रत्नानि वासांसि ग्रामानश्वान् रथांस्तथा॥",
+          "matched_id": "mndutt_17_308_011",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "अभोजयत्"
+              },
+              {
+                "type": "equal",
+                "text": "स्वादु"
+              },
+              {
+                "type": "equal",
+                "text": "भोज्यं कीर्तयित्वा च शा"
+              },
+              {
+                "type": "delete",
+                "text": "र्"
+              },
+              {
+                "type": "equal",
+                "text": "ङ्गिणम्। ददौ रत्नानि वासांसि ग्रामानश्वान् रथांस्तथा॥"
+              },
+              {
+                "type": "delete",
+                "text": "१३॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "अभोजयत्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "स्वादु"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "भोज्यं कीर्तयित्वा च शा"
+              },
+              {
+                "type": "equal",
+                "text": "ङ्गिणम्। ददौ रत्नानि वासांसि ग्रामानश्वान् रथांस्तथा॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_014",
+          "verse": 14,
+          "source_text": "स्त्रियश्च द्विजमुख्येभ्यस्तदा शतसहस्रशः। कृपमभ्यर्च्य च गुरुमथ पौरपुरस्कृतम्॥१४॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_015",
+          "verse": 15,
+          "source_text": "शिष्यं परिक्षितं तस्मै ददौ भरतसत्तमः। ततस्तु प्रकृतीः सर्वाः समानाय्य युधिष्ठिरः॥१५॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_016",
+          "verse": 16,
+          "source_text": "सर्वमाचष्ट राजर्षिश्चिकीर्षितमथात्मनः। ते श्रुत्वैव वचस्तस्य पौरजानपदा जनाः॥१६॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_017",
+          "verse": 17,
+          "source_text": "भृशमुद्विग्नमनसो नाभ्यनन्दन्त तद्वचः। नैवं कर्तव्यमिति ते तदोचुस्तं जनाधिपम्॥१७॥",
+          "match_status": "partial",
+          "similarity": 0.9557,
+          "match_corpus": "mndutt",
+          "matched_text": "भृशमुद्विग्नमनमो नाभ्यनन्दन्त तद्वचः। नैवं कर्तव्यमिति ते तदोचुस्तं जनाधिपम्॥",
+          "matched_id": "mndutt_17_308_012",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "भृशमुद्विग्नमन"
+              },
+              {
+                "type": "delete",
+                "text": "स"
+              },
+              {
+                "type": "equal",
+                "text": "ो नाभ्यनन्दन्त तद्वचः। नैवं कर्तव्यमिति ते तदोचुस्तं जनाधिपम्॥"
+              },
+              {
+                "type": "delete",
+                "text": "१७॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "भृशमुद्विग्नमन"
+              },
+              {
+                "type": "insert",
+                "text": "म"
+              },
+              {
+                "type": "equal",
+                "text": "ो नाभ्यनन्दन्त तद्वचः। नैवं कर्तव्यमिति ते तदोचुस्तं जनाधिपम्॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_018",
+          "verse": 18,
+          "source_text": "न च राजा तथाऽकार्षोत्कालपर्यायधर्मवित्। ततोऽनुमान्य धर्मात्मा पौरजानपदं जनम्॥१८॥",
+          "match_status": "partial",
+          "similarity": 0.9778,
+          "match_corpus": "mndutt",
+          "matched_text": "न च राजा तथाकार्षीत् कालपर्यायधर्मवित्। ततोऽनुमान्य धर्मात्मा पौरजानपदं जनम्॥",
+          "matched_id": "mndutt_17_308_013",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "न च राजा तथा"
+              },
+              {
+                "type": "delete",
+                "text": "ऽ"
+              },
+              {
+                "type": "equal",
+                "text": "कार्ष"
+              },
+              {
+                "type": "delete",
+                "text": "ो"
+              },
+              {
+                "type": "equal",
+                "text": "त्"
+              },
+              {
+                "type": "equal",
+                "text": "कालपर्यायधर्मवित्। ततोऽनुमान्य धर्मात्मा पौरजानपदं जनम्॥"
+              },
+              {
+                "type": "delete",
+                "text": "१८॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "न च राजा तथा"
+              },
+              {
+                "type": "equal",
+                "text": "कार्ष"
+              },
+              {
+                "type": "insert",
+                "text": "ी"
+              },
+              {
+                "type": "equal",
+                "text": "त्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "कालपर्यायधर्मवित्। ततोऽनुमान्य धर्मात्मा पौरजानपदं जनम्॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_019",
+          "verse": 19,
+          "source_text": "गमनाय मतिं चक्रे भ्रातरश्चास्य ते तदा। ततः स राजा कौरव्यो धर्मपुत्रो युधिष्ठिरः॥१९॥",
+          "match_status": "partial",
+          "similarity": 0.9667,
+          "match_corpus": "mndutt",
+          "matched_text": "गमनाय मतिं चक्रे भ्रातरशास्य ते तदा। ततः स राजा कौरव्यो धर्मपुत्रो युधिष्ठिरः॥",
+          "matched_id": "mndutt_17_308_014",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "गमनाय मतिं चक्रे भ्रातरश"
+              },
+              {
+                "type": "delete",
+                "text": "्च"
+              },
+              {
+                "type": "equal",
+                "text": "ास्य ते तदा। ततः स राजा कौरव्यो धर्मपुत्रो युधिष्ठिरः॥"
+              },
+              {
+                "type": "delete",
+                "text": "१९॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "गमनाय मतिं चक्रे भ्रातरश"
+              },
+              {
+                "type": "equal",
+                "text": "ास्य ते तदा। ततः स राजा कौरव्यो धर्मपुत्रो युधिष्ठिरः॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_020",
+          "verse": 20,
+          "source_text": "उत्सृज्याभरणान्यङ्गाज्जगृहे वल्कलान्युत। भीमार्जुनयमाश्चैव द्रोपदी च यशस्विनी॥२०॥",
+          "match_status": "partial",
+          "similarity": 0.9496,
+          "match_corpus": "mndutt",
+          "matched_text": "उत्सृज्याभरणान्यङ्गाज्जगृहे वल्कलान्युत। भीमार्जुनयमाश्चैव द्रौपदी च यशस्विनी॥",
+          "matched_id": "mndutt_17_308_014",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "उत्सृज्याभरणान्यङ्गाज्जगृहे वल्कलान्युत। भीमार्जुनयमाश्चैव द्र"
+              },
+              {
+                "type": "delete",
+                "text": "ो"
+              },
+              {
+                "type": "equal",
+                "text": "पदी च यशस्विनी॥"
+              },
+              {
+                "type": "delete",
+                "text": "२०॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "उत्सृज्याभरणान्यङ्गाज्जगृहे वल्कलान्युत। भीमार्जुनयमाश्चैव द्र"
+              },
+              {
+                "type": "insert",
+                "text": "ौ"
+              },
+              {
+                "type": "equal",
+                "text": "पदी च यशस्विनी॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_021",
+          "verse": 21,
+          "source_text": "तथैव जगृहुः सर्वे वल्कलानि नराधिप। विधिवत्कारयित्वेष्टिं नैष्ठिकीं भरतर्षभ॥२१॥",
+          "match_status": "partial",
+          "similarity": 0.9338,
+          "match_corpus": "mndutt",
+          "matched_text": "तथैव जगृहु: सर्वे वल्कलानि नराधिप। विधिवत् कारयित्वेष्टिं नैष्ठिकी भरतर्षभ॥",
+          "matched_id": "mndutt_17_308_014",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "तथैव जगृहु"
+              },
+              {
+                "type": "delete",
+                "text": "ः"
+              },
+              {
+                "type": "equal",
+                "text": " सर्वे वल्कलानि नराधिप। विधिवत्"
+              },
+              {
+                "type": "equal",
+                "text": "कारयित्वेष्टिं नैष्ठिकी"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": " भरतर्षभ॥"
+              },
+              {
+                "type": "delete",
+                "text": "२१॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "तथैव जगृहु"
+              },
+              {
+                "type": "insert",
+                "text": ":"
+              },
+              {
+                "type": "equal",
+                "text": " सर्वे वल्कलानि नराधिप। विधिवत्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "कारयित्वेष्टिं नैष्ठिकी"
+              },
+              {
+                "type": "equal",
+                "text": " भरतर्षभ॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_022",
+          "verse": 22,
+          "source_text": "समुत्सृज्याप्सु सर्वेऽग्नीन् प्रतस्थुर्नरपुंगवाः। ततः प्ररुरुदुः सर्वाः स्त्रियो दृष्ट्वा नरोत्तमान्॥२२॥",
+          "match_status": "partial",
+          "similarity": 0.94,
+          "match_corpus": "mndutt",
+          "matched_text": "समुत्सृज्याप्सु सर्वेऽग्नीन् प्रतस्थुर्नरपुङ्गवाः। तत: प्ररुरुदुः सर्वाः स्त्रियो दृष्ट्वा नरोत्तमान्॥",
+          "matched_id": "mndutt_17_308_014",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "समुत्सृज्याप्सु सर्वेऽग्नीन् प्रतस्थुर्नरपु"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "गवाः। तत"
+              },
+              {
+                "type": "delete",
+                "text": "ः"
+              },
+              {
+                "type": "equal",
+                "text": " प्ररुरुदुः सर्वाः स्त्रियो दृष्ट्वा नरोत्तमान्॥"
+              },
+              {
+                "type": "delete",
+                "text": "२२॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "समुत्सृज्याप्सु सर्वेऽग्नीन् प्रतस्थुर्नरपु"
+              },
+              {
+                "type": "insert",
+                "text": "ङ्"
+              },
+              {
+                "type": "equal",
+                "text": "गवाः। तत"
+              },
+              {
+                "type": "insert",
+                "text": ":"
+              },
+              {
+                "type": "equal",
+                "text": " प्ररुरुदुः सर्वाः स्त्रियो दृष्ट्वा नरोत्तमान्॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_023",
+          "verse": 23,
+          "source_text": "प्रस्थितान् द्रौपदी षष्ठान् पुरा द्यूतजितान् यथा। हृर्षोऽभवच्च सर्वेषां भ्रातॄणां गमनं प्रति॥२३॥",
+          "match_status": "partial",
+          "similarity": 0.9273,
+          "match_corpus": "mndutt",
+          "matched_text": "प्रस्थितान् द्रौपदीषष्ठान् पुरा द्यूतजितान् यथा। हर्षोऽभवच्च सर्वेषां भ्रातॄणां गमनं प्रति॥",
+          "matched_id": "mndutt_17_308_015",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "प्रस्थितान् द्रौपदी"
+              },
+              {
+                "type": "delete",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "षष्ठान् पुरा द्यूतजितान् यथा। ह"
+              },
+              {
+                "type": "delete",
+                "text": "ृ"
+              },
+              {
+                "type": "equal",
+                "text": "र्षोऽभवच्च सर्वेषां भ्रातॄणां गमनं प्रति॥"
+              },
+              {
+                "type": "delete",
+                "text": "२३॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "प्रस्थितान् द्रौपदी"
+              },
+              {
+                "type": "equal",
+                "text": "षष्ठान् पुरा द्यूतजितान् यथा। ह"
+              },
+              {
+                "type": "equal",
+                "text": "र्षोऽभवच्च सर्वेषां भ्रातॄणां गमनं प्रति॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_024",
+          "verse": 24,
+          "source_text": "युधिष्ठिरमतं ज्ञात्वा वृष्णिक्षयमवेक्ष्य च। भ्रातरः पञ्च कृष्णा च षष्ठी श्वा चैव सप्तमः॥२४॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_025",
+          "verse": 25,
+          "source_text": "आत्मना सप्तमो राजा निर्ययौ गजसाह्वयात्। पौरैरनुगतो दूरं सर्वैरन्तः पुरैस्तथा॥२५॥",
+          "match_status": "partial",
+          "similarity": 0.8667,
+          "match_corpus": "mndutt",
+          "matched_text": "आत्मना सप्तमो राजा निर्ययौ गजसाह्वयात्। पौरेरनुगतो दूरं सर्वैरन्तःपुरैस्तथा।॥",
+          "matched_id": "mndutt_17_308_016",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "आत्मना सप्तमो राजा निर्ययौ गजसाह्वयात्। पौर"
+              },
+              {
+                "type": "delete",
+                "text": "ै"
+              },
+              {
+                "type": "equal",
+                "text": "रनुगतो दूरं सर्वैरन्तः"
+              },
+              {
+                "type": "delete",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "पुरैस्तथा"
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              },
+              {
+                "type": "delete",
+                "text": "२५॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "आत्मना सप्तमो राजा निर्ययौ गजसाह्वयात्। पौर"
+              },
+              {
+                "type": "insert",
+                "text": "े"
+              },
+              {
+                "type": "equal",
+                "text": "रनुगतो दूरं सर्वैरन्तः"
+              },
+              {
+                "type": "equal",
+                "text": "पुरैस्तथा"
+              },
+              {
+                "type": "insert",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_026",
+          "verse": 26,
+          "source_text": "न चैनमशकत्कश्चिन्निवर्तस्वेति भाषितुम्। न्यवर्तंत ततः सर्वे नरा नगरवासिनः॥२६॥",
+          "match_status": "partial",
+          "similarity": 0.9514,
+          "match_corpus": "mndutt",
+          "matched_text": "न चैनमशकत् कश्चिन्निवर्तस्वेति भाषितुम्। न्यवर्तन्त ततः सर्वे नरा नगरवासिनः॥",
+          "matched_id": "mndutt_17_308_017",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "न चैनमशकत्"
+              },
+              {
+                "type": "equal",
+                "text": "कश्चिन्निवर्तस्वेति भाषितुम्। न्यवर्त"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "त ततः सर्वे नरा नगरवासिनः॥"
+              },
+              {
+                "type": "delete",
+                "text": "२६॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "न चैनमशकत्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "कश्चिन्निवर्तस्वेति भाषितुम्। न्यवर्त"
+              },
+              {
+                "type": "insert",
+                "text": "न्"
+              },
+              {
+                "type": "equal",
+                "text": "त ततः सर्वे नरा नगरवासिनः॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_027",
+          "verse": 27,
+          "source_text": "कृपप्रभृतयश्चैव युयुत्सुं पर्यवारयन्। विवेश गङ्गां कौरव्य उलूपी भुजगात्मजा॥२७॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_028",
+          "verse": 28,
+          "source_text": "चित्राङ्गदा ययौ चापि मणिपूरपुरं प्रति। शिष्टाः परिक्षितं त्वन्या मातरः पर्यवारयन्॥२८॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_029",
+          "verse": 29,
+          "source_text": "पाण्डवाश्च महात्मानो द्रौपदी च यशस्विनी। कृतोपवासाः कौरव्य प्रययुः प्राङ्मुखास्ततः॥२९॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "ce"
+        },
+        {
+          "id": "sriranga_17_001_030",
+          "verse": 30,
+          "source_text": "योगयुक्ता महात्मानस्त्यागधर्ममुपेयुषः। अभिजग्मुर्बहून्देशान्सरितः सागरांस्तथा॥३०॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_031",
+          "verse": 31,
+          "source_text": "युधिष्ठिरो ययावग्रे भीमस्तु तदनन्तरम्। अर्जुनस्तस्य चान्वेव ययौ चापि यथाक्रमम्॥३१॥",
+          "match_status": "partial",
+          "similarity": 0.9445,
+          "match_corpus": "mndutt",
+          "matched_text": "युधिष्ठिरो ययावग्रे भीमस्तु तदनन्तरम्। अर्जुनस्तस्य चान्वेव यमौ चापि यथाक्रमम्॥",
+          "matched_id": "mndutt_17_308_022",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिरो ययावग्रे भीमस्तु तदनन्तरम्। अर्जुनस्तस्य चान्वेव य"
+              },
+              {
+                "type": "delete",
+                "text": "य"
+              },
+              {
+                "type": "equal",
+                "text": "ौ चापि यथाक्रमम्॥"
+              },
+              {
+                "type": "delete",
+                "text": "३१॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिरो ययावग्रे भीमस्तु तदनन्तरम्। अर्जुनस्तस्य चान्वेव य"
+              },
+              {
+                "type": "insert",
+                "text": "म"
+              },
+              {
+                "type": "equal",
+                "text": "ौ चापि यथाक्रमम्॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_032",
+          "verse": 32,
+          "source_text": "पृष्ठतस्तु वरारोहा श्यामा पद्मदलेक्षणा। द्रौपदी योषितां श्रेष्ठा ययौ भरतसत्तम॥३२॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_033",
+          "verse": 33,
+          "source_text": "श्वा चैवानुययावेकः प्रस्थितान्पाण्डवान्वनम्। क्रमेण ते ययुर्वीरा लौहित्यं सलिलार्णवम्॥३३॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_034",
+          "verse": 34,
+          "source_text": "गाण्डीवं तु धनुर्दिव्यं न मुमोच धनंजयः। रत्नलोभान्महाराज ते चाक्षय्ये महेषुधी॥३४॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "sarit"
+        },
+        {
+          "id": "sriranga_17_001_035",
+          "verse": 35,
+          "source_text": "अग्निं ते ददृशुस्तत्र स्थितं शैलमिवाग्रतः। मार्गमावृत्य तिष्ठन्तं साक्षात्पुरुषविग्रहम्॥३५॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_036",
+          "verse": 36,
+          "source_text": "ततो देवः ससप्तार्चिः पाण्डवानिदमब्रवीत्। भो भो पाण्डुसुता वीराः पावकं मां निबोधत॥३६॥",
+          "match_status": "partial",
+          "similarity": 0.95,
+          "match_corpus": "mndutt",
+          "matched_text": "ततो देवः स सप्तार्चिः पाण्डवानिदमब्रवीत्। भो भोः पाण्डुसुता वीराः पावकं मां निबोधत॥",
+          "matched_id": "mndutt_17_308_026",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "ततो देवः स"
+              },
+              {
+                "type": "equal",
+                "text": "सप्तार्चिः पाण्डवानिदमब्रवीत्। भो भो"
+              },
+              {
+                "type": "equal",
+                "text": " पाण्डुसुता वीराः पावकं मां निबोधत॥"
+              },
+              {
+                "type": "delete",
+                "text": "३६॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "ततो देवः स"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "सप्तार्चिः पाण्डवानिदमब्रवीत्। भो भो"
+              },
+              {
+                "type": "insert",
+                "text": "ः"
+              },
+              {
+                "type": "equal",
+                "text": " पाण्डुसुता वीराः पावकं मां निबोधत॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_037",
+          "verse": 37,
+          "source_text": "युधिष्ठिर महाबाहो भीमसेन परन्तप। अर्जुनाश्विसुतौ वीरौ निबोधत वचो मम॥३७॥",
+          "match_status": "partial",
+          "similarity": 0.9048,
+          "match_corpus": "mndutt",
+          "matched_text": "युधिष्ठिर महाबाहो भीमसेन परंतप। अर्जुनाश्विसुतौ वीरौ निबोधत वचो मम॥",
+          "matched_id": "mndutt_17_308_027",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर महाबाहो भीमसेन पर"
+              },
+              {
+                "type": "delete",
+                "text": "न्"
+              },
+              {
+                "type": "equal",
+                "text": "तप। अर्जुनाश्विसुतौ वीरौ निबोधत वचो मम॥"
+              },
+              {
+                "type": "delete",
+                "text": "३७॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर महाबाहो भीमसेन पर"
+              },
+              {
+                "type": "insert",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "तप। अर्जुनाश्विसुतौ वीरौ निबोधत वचो मम॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_038",
+          "verse": 38,
+          "source_text": "अहमग्निः कुरुश्रेष्ठा मया दग्धं च खाण्डवम्। अर्जुनस्य प्रभावेण तथा नारायणस्य च॥३८॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_039",
+          "verse": 39,
+          "source_text": "अयं वः फाल्गुनो भ्राता गाण्डीवं परमायुधम्। परित्यज्य वने यातु नानेनार्थोऽस्ति कश्चन॥३९॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_040",
+          "verse": 40,
+          "source_text": "चक्ररत्नं तु यत्कृष्णे स्थितमासीन्महात्मनि। गतं तच्च पुनर्हस्ते कालेनैष्यति तस्य ह॥४०॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "चक्ररत्नं तु यत् कृष्णे स्थितमासीन्महात्मनि। गतं तच्च पुनर्हस्ते कालेनैष्यति तस्य ह॥",
+          "matched_id": "mndutt_17_308_030",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "चक्ररत्नं तु यत्"
+              },
+              {
+                "type": "equal",
+                "text": "कृष्णे स्थितमासीन्महात्मनि। गतं तच्च पुनर्हस्ते कालेनैष्यति तस्य ह॥"
+              },
+              {
+                "type": "delete",
+                "text": "४०॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "चक्ररत्नं तु यत्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "कृष्णे स्थितमासीन्महात्मनि। गतं तच्च पुनर्हस्ते कालेनैष्यति तस्य ह॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_041",
+          "verse": 41,
+          "source_text": "वरुणादाहृतं पूर्वं मयैतत्पार्थकारणात्। गाण्डीवं धनुषां श्रेष्ठं वरुणायैव दीयताम्॥४१॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_042",
+          "verse": 42,
+          "source_text": "ततस्ते भ्रातरः सर्वे धनञ्जयमचोदयन्। सजले प्राक्षिपच्चैतत्तथाऽक्षय्ये महेषुधी॥४२॥",
+          "match_status": "partial",
+          "similarity": 0.8921,
+          "match_corpus": "mndutt",
+          "matched_text": "ततस्ते भ्रातरः सर्वं धनञ्जयमचोदयन्। स जले प्राक्षिपच्चैतत्तथाक्षय्ये महेषुधी॥",
+          "matched_id": "mndutt_17_308_032",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "ततस्ते भ्रातरः सर्व"
+              },
+              {
+                "type": "delete",
+                "text": "े"
+              },
+              {
+                "type": "equal",
+                "text": " धनञ्जयमचोदयन्। स"
+              },
+              {
+                "type": "equal",
+                "text": "जले प्राक्षिपच्चैतत्तथा"
+              },
+              {
+                "type": "delete",
+                "text": "ऽ"
+              },
+              {
+                "type": "equal",
+                "text": "क्षय्ये महेषुधी॥"
+              },
+              {
+                "type": "delete",
+                "text": "४२॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "ततस्ते भ्रातरः सर्व"
+              },
+              {
+                "type": "insert",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": " धनञ्जयमचोदयन्। स"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "जले प्राक्षिपच्चैतत्तथा"
+              },
+              {
+                "type": "equal",
+                "text": "क्षय्ये महेषुधी॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_001_043",
+          "verse": 43,
+          "source_text": "ततोऽग्निर्भरतश्रेष्ठ तत्रैवान्तरधीयत। ययुश्च पाण्डवा वीरास्ततस्ते दक्षिणामुखाः॥४३॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_044",
+          "verse": 44,
+          "source_text": "ततस्ते तूत्तरेणैव तीरेण लवणाम्भसः। जग्मुर्भरतशार्दूल दिशं दक्षिणपश्चिमाम्॥४४॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_001_045",
+          "verse": 45,
+          "source_text": "ततः पुनः समावृत्ताः पश्चिमां दिशमेव ते। ददृशुर्द्वारकां चापि सागरेण परिप्लुताम्॥४५॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "ce"
+        },
+        {
+          "id": "sriranga_17_001_046",
+          "verse": 46,
+          "source_text": "उदीचीं पुनरावृत्त्य ययुर्भरतसत्तमाः। प्रादक्षिण्यं चिकीर्षन्तः पृथिव्या योगधर्मिणः॥४६॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "ce"
+        }
+      ],
+      "upaparva_name": "महाप्रस्थानिकपर्व",
+      "upaparva_id": "P17_U01"
+    },
+    {
+      "adhyaya_id": "P17_U01_A002",
+      "adhyaya_name": "द्वितीयोऽध्यायः",
+      "chapter": 2,
+      "shlokas": [
+        {
+          "id": "sriranga_17_002_001",
+          "verse": 1,
+          "source_text": "वैशम्पायन उवाच।\n              ततस्ते नियतात्मान उदीचीं दिशमास्थिताः। ददृशुर्योगयुक्ताश्च हिमवन्तं महागिरिम्॥१॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "वैशम्पायन उवाच ततस्ते नियतात्मान उदीची दिशमास्थिताः। ददृशुर्योगयुक्ताश्च हिमवन्तं महागिरिम्॥ तु",
+          "matched_id": "mndutt_17_309_001",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "वैशम्पायन उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " ततस्ते नियतात्मान उदीची"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": " दिशमास्थिताः। ददृशुर्योगयुक्ताश्च हिमवन्तं महागिरिम्॥"
+              },
+              {
+                "type": "delete",
+                "text": "१॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "वैशम्पायन उवाच"
+              },
+              {
+                "type": "equal",
+                "text": " ततस्ते नियतात्मान उदीची"
+              },
+              {
+                "type": "equal",
+                "text": " दिशमास्थिताः। ददृशुर्योगयुक्ताश्च हिमवन्तं महागिरिम्॥"
+              },
+              {
+                "type": "insert",
+                "text": " तु"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_002",
+          "verse": 2,
+          "source_text": "तं चाप्यतिक्रमन्तस्ते ददृशुर्वालुकार्णवम्। अवैक्षन्त महाशैलं मेरुं शिखरिणां वरम्॥२॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_002_003",
+          "verse": 3,
+          "source_text": "तेषां गच्छतां शीघ्रं सर्वेषां योगधर्मिणाम्। याज्ञसेनी भ्रष्टयोगा निपपात महीतले॥३॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "तेषां तु गच्छतां शीघ्रं सर्वेषां योगधर्मिणाम्। याज्ञसेनी भ्रष्टयोगा निपपात महीतले॥",
+          "matched_id": "mndutt_17_309_003",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "तेषां"
+              },
+              {
+                "type": "equal",
+                "text": " गच्छतां शीघ्रं सर्वेषां योगधर्मिणाम्। याज्ञसेनी भ्रष्टयोगा निपपात महीतले॥"
+              },
+              {
+                "type": "delete",
+                "text": "३॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "तेषां"
+              },
+              {
+                "type": "insert",
+                "text": " तु"
+              },
+              {
+                "type": "equal",
+                "text": " गच्छतां शीघ्रं सर्वेषां योगधर्मिणाम्। याज्ञसेनी भ्रष्टयोगा निपपात महीतले॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_004",
+          "verse": 4,
+          "source_text": "तां तु प्रपतितां दृष्ट्वा भीमसेनो महाबलः। उवाच धर्मराजानं याज्ञसेनीमवेक्ष्य ह॥४॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "ce"
+        },
+        {
+          "id": "sriranga_17_002_005",
+          "verse": 5,
+          "source_text": "नाधर्मश्चरितः कश्चिद्राजपुत्र्या परंतप। कारणं किं नु तद्ब्रूहि यत्कृष्णा पतिता भुवि॥५॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_002_006",
+          "verse": 6,
+          "source_text": "युधिष्ठिर उवाच।\n              पक्षपातो महानस्याविशेषेण धनञ्जये। तस्यैतत्फलमद्यैषा भुंक्ते पुरुषसत्तम॥६॥",
+          "match_status": "partial",
+          "similarity": 0.9367,
+          "match_corpus": "mndutt",
+          "matched_text": "युधिष्ठिर उवाच पक्षपातो महानस्या विशेषेण धनञ्जये। तस्यैतत् फलमद्यैषा भुङ्क्ते पुरुषसत्तम॥",
+          "matched_id": "mndutt_17_309_005",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " पक्षपातो महानस्या"
+              },
+              {
+                "type": "equal",
+                "text": "विशेषेण धनञ्जये। तस्यैतत्"
+              },
+              {
+                "type": "equal",
+                "text": "फलमद्यैषा भु"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "क्ते पुरुषसत्तम॥"
+              },
+              {
+                "type": "delete",
+                "text": "६॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर उवाच"
+              },
+              {
+                "type": "equal",
+                "text": " पक्षपातो महानस्या"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "विशेषेण धनञ्जये। तस्यैतत्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "फलमद्यैषा भु"
+              },
+              {
+                "type": "insert",
+                "text": "ङ्"
+              },
+              {
+                "type": "equal",
+                "text": "क्ते पुरुषसत्तम॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_007",
+          "verse": 7,
+          "source_text": "वैशम्पायन उवाच।\n              एवमुक्त्वाऽनवेक्ष्यैनां ययौ भरतसत्तमः। समाधाय मनो धीमान् धर्मात्मा पुरुषर्षभः॥७॥",
+          "match_status": "partial",
+          "similarity": 0.9612,
+          "match_corpus": "mndutt",
+          "matched_text": "वैशम्पायन उवाच एवमुक्त्वानवेक्ष्यैनां ययौ भरतसत्तमः। समाधाय मनो धीमान् धर्मात्मा पुरुषर्षभः॥",
+          "matched_id": "mndutt_17_309_006",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "वैशम्पायन उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " एवमुक्त्वा"
+              },
+              {
+                "type": "delete",
+                "text": "ऽ"
+              },
+              {
+                "type": "equal",
+                "text": "नवेक्ष्यैनां ययौ भरतसत्तमः। समाधाय मनो धीमान् धर्मात्मा पुरुषर्षभः॥"
+              },
+              {
+                "type": "delete",
+                "text": "७॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "वैशम्पायन उवाच"
+              },
+              {
+                "type": "equal",
+                "text": " एवमुक्त्वा"
+              },
+              {
+                "type": "equal",
+                "text": "नवेक्ष्यैनां ययौ भरतसत्तमः। समाधाय मनो धीमान् धर्मात्मा पुरुषर्षभः॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_008",
+          "verse": 8,
+          "source_text": "सहदेवस्ततो विद्वान्निपपात महीतले। तं चापि पतितं दृष्ट्वा भीमो राजानमब्रवीत्॥८॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_002_009",
+          "verse": 9,
+          "source_text": "योऽयमस्मासु सर्वेषु शुश्रूषुरनहङ्कृतः। सोऽयं माद्रवतीपुत्रः कस्मान्निपतितो भुवि॥९॥",
+          "match_status": "partial",
+          "similarity": 0.8878,
+          "match_corpus": "mndutt",
+          "matched_text": "योऽयमस्मासु सर्वेषु शुश्रूषुरनहंकृतः। सोऽयं माद्रवतीपुत्रः कस्मान् निपतितो भुवि॥",
+          "matched_id": "mndutt_17_309_007",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "योऽयमस्मासु सर्वेषु शुश्रूषुरनह"
+              },
+              {
+                "type": "delete",
+                "text": "ङ्"
+              },
+              {
+                "type": "equal",
+                "text": "कृतः। सोऽयं माद्रवतीपुत्रः कस्मान्"
+              },
+              {
+                "type": "equal",
+                "text": "निपतितो भुवि॥"
+              },
+              {
+                "type": "delete",
+                "text": "९॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "योऽयमस्मासु सर्वेषु शुश्रूषुरनह"
+              },
+              {
+                "type": "insert",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "कृतः। सोऽयं माद्रवतीपुत्रः कस्मान्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "निपतितो भुवि॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_010",
+          "verse": 10,
+          "source_text": "युधिष्ठिर उवाच।\n              आत्मनः सदृशं प्राज्ञं नैषोऽमन्यत कञ्चन। तेन दोषेण पतितस्तस्मादेष नृपात्मजः॥१०॥",
+          "match_status": "partial",
+          "similarity": 0.95,
+          "match_corpus": "sarit",
+          "matched_text": "आत्मनः सदृशं प्राज्ञं नैषोऽमन्यत कञ्चन । तेन दोषेण पतितो विद्वानेष नृपात्मजः ॥ वैशम्पायन उवाच ।",
+          "matched_id": "sarit_17_002_010",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "delete",
+                "text": "युधिष्ठिर उवाच। "
+              },
+              {
+                "type": "equal",
+                "text": "आत्मनः सदृशं प्राज्ञं नैषोऽमन्यत कञ्चन"
+              },
+              {
+                "type": "equal",
+                "text": "। तेन दोषेण पतित"
+              },
+              {
+                "type": "delete",
+                "text": "स"
+              },
+              {
+                "type": "equal",
+                "text": "्"
+              },
+              {
+                "type": "delete",
+                "text": "तस्म"
+              },
+              {
+                "type": "equal",
+                "text": "ा"
+              },
+              {
+                "type": "delete",
+                "text": "द"
+              },
+              {
+                "type": "equal",
+                "text": "ेष नृपात्मजः"
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              },
+              {
+                "type": "delete",
+                "text": "१०॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "आत्मनः सदृशं प्राज्ञं नैषोऽमन्यत कञ्चन"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "। तेन दोषेण पतित"
+              },
+              {
+                "type": "insert",
+                "text": "ो विद"
+              },
+              {
+                "type": "equal",
+                "text": "्"
+              },
+              {
+                "type": "insert",
+                "text": "व"
+              },
+              {
+                "type": "equal",
+                "text": "ा"
+              },
+              {
+                "type": "insert",
+                "text": "न"
+              },
+              {
+                "type": "equal",
+                "text": "ेष नृपात्मजः"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              },
+              {
+                "type": "insert",
+                "text": " वैशम्पायन उवाच ।"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_011",
+          "verse": 11,
+          "source_text": "वैशम्पायन उवाच।\n              इत्युक्त्वा तं समुत्सृज्य सहदेवं ययौ तदा। भ्रातृभिः सह कौन्तेयः शुना चैव युधिष्ठिरः॥११॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_002_012",
+          "verse": 12,
+          "source_text": "कृष्णां निपतितां दृष्ट्वा सहदेवं च पाण्डवम्। आर्तो बन्धुप्रियः शूरो नकुलो निपपात ह॥१२॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_002_013",
+          "verse": 13,
+          "source_text": "तस्मिन्निपतिते वीरे नकुले चारुदर्शने। पुनरेव तदा भीमो राजानमिदमब्रवीत्॥१३॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_002_014",
+          "verse": 14,
+          "source_text": "योऽयमक्षतधर्मात्मा भ्राता वचनकारकः। रूपेणाप्रतिमो लोके नकुलः पतितो भुवि॥१४॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_002_015",
+          "verse": 15,
+          "source_text": "इत्युक्तो भीमसेनेन प्रत्युवाच युधिष्ठिरः। नकुलं प्रति धर्मात्मा सर्वबुद्धिमतां वरः॥१५॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_002_016",
+          "verse": 16,
+          "source_text": "रूपेण मत्समो नास्ति कश्चिदित्यस्य दर्शनम्। अधिकश्चाहमेवैक इत्यस्य मनसिस्थितम्॥१६॥",
+          "match_status": "partial",
+          "similarity": 0.9778,
+          "match_corpus": "mndutt",
+          "matched_text": "रूपेण मत्समो नास्ति कश्चिदित्यस्य दर्शनम्। अधिकश्चाहमेवैक इत्यस्य मनसि स्थितम्॥",
+          "matched_id": "mndutt_17_309_013",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "रूपेण मत्समो नास्ति कश्चिदित्यस्य दर्शनम्। अधिकश्चाहमेवैक इत्यस्य मनसि"
+              },
+              {
+                "type": "equal",
+                "text": "स्थितम्॥"
+              },
+              {
+                "type": "delete",
+                "text": "१६॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "रूपेण मत्समो नास्ति कश्चिदित्यस्य दर्शनम्। अधिकश्चाहमेवैक इत्यस्य मनसि"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "स्थितम्॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_017",
+          "verse": 17,
+          "source_text": "नकुलः पतितस्तस्मादागच्छ त्वं वृकोदर। यस्य यद्विहितं वीर सोऽवश्यं तदुपाश्रुते॥१७॥",
+          "match_status": "partial",
+          "similarity": 0.9773,
+          "match_corpus": "mndutt",
+          "matched_text": "नकुलः पतितस्तस्मादागच्छ त्वं वृकोदर। यस्य यद् विहितं वीर सोऽवश्यं तदुपाश्नुते॥",
+          "matched_id": "mndutt_17_309_014",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "नकुलः पतितस्तस्मादागच्छ त्वं वृकोदर। यस्य यद्"
+              },
+              {
+                "type": "equal",
+                "text": "विहितं वीर सोऽवश्यं तदुपाश्"
+              },
+              {
+                "type": "delete",
+                "text": "र"
+              },
+              {
+                "type": "equal",
+                "text": "ुते॥"
+              },
+              {
+                "type": "delete",
+                "text": "१७॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "नकुलः पतितस्तस्मादागच्छ त्वं वृकोदर। यस्य यद्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "विहितं वीर सोऽवश्यं तदुपाश्"
+              },
+              {
+                "type": "insert",
+                "text": "न"
+              },
+              {
+                "type": "equal",
+                "text": "ुते॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_018",
+          "verse": 18,
+          "source_text": "तांस्तु प्रपतितान् दृष्ट्वा पाण्डवः श्वेतवाहनः। पपात शोकसन्तप्तस्ततोऽनु परवीरहा॥१८॥",
+          "match_status": "partial",
+          "similarity": 0.9778,
+          "match_corpus": "mndutt",
+          "matched_text": "तांस्तु प्रपतितान् दृष्ट्वा पाण्डवः श्वेतवाहनः। पपात शोकसन्तप्तस्ततो नु परवीरहा॥",
+          "matched_id": "mndutt_17_309_015",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "तांस्तु प्रपतितान् दृष्ट्वा पाण्डवः श्वेतवाहनः। पपात शोकसन्तप्तस्ततो"
+              },
+              {
+                "type": "delete",
+                "text": "ऽ"
+              },
+              {
+                "type": "equal",
+                "text": "नु परवीरहा॥"
+              },
+              {
+                "type": "delete",
+                "text": "१८॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "तांस्तु प्रपतितान् दृष्ट्वा पाण्डवः श्वेतवाहनः। पपात शोकसन्तप्तस्ततो"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "नु परवीरहा॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_019",
+          "verse": 19,
+          "source_text": "तस्मिंस्तु पुरुषव्याघ्रे पतिते शक्रतेजसि। म्रियमाणे दुराधर्षे भीमो राजानमब्रवीत्॥१९॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "ce"
+        },
+        {
+          "id": "sriranga_17_002_020",
+          "verse": 20,
+          "source_text": "अनृतं न स्मराम्यस्य स्वैरेष्वपि महात्मनः। अथ कस्य विकारोऽयं येनायं पतितो भुवि॥२०॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_002_021",
+          "verse": 21,
+          "source_text": "युधिष्ठिर उवाच।\n              एकाह्ना निर्दहेयं वै शत्रुनित्यर्जुनोऽब्रवीत्। न च तत्कृतवानेष शूरमानी ततोऽपतत्॥२१॥",
+          "match_status": "partial",
+          "similarity": 0.9499,
+          "match_corpus": "mndutt",
+          "matched_text": "युधिष्ठिर उवाच एकाह्रा निर्दहेयं वै शत्रूनित्यर्जुनोऽब्रवीत्। न च तत् कृतवानेष शूरमानी ततोऽपतत्॥",
+          "matched_id": "mndutt_17_309_017",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " एकाह्"
+              },
+              {
+                "type": "delete",
+                "text": "न"
+              },
+              {
+                "type": "equal",
+                "text": "ा निर्दहेयं वै शत्र"
+              },
+              {
+                "type": "delete",
+                "text": "ु"
+              },
+              {
+                "type": "equal",
+                "text": "नित्यर्जुनोऽब्रवीत्। न च तत्"
+              },
+              {
+                "type": "equal",
+                "text": "कृतवानेष शूरमानी ततोऽपतत्॥"
+              },
+              {
+                "type": "delete",
+                "text": "२१॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर उवाच"
+              },
+              {
+                "type": "equal",
+                "text": " एकाह्"
+              },
+              {
+                "type": "insert",
+                "text": "र"
+              },
+              {
+                "type": "equal",
+                "text": "ा निर्दहेयं वै शत्र"
+              },
+              {
+                "type": "insert",
+                "text": "ू"
+              },
+              {
+                "type": "equal",
+                "text": "नित्यर्जुनोऽब्रवीत्। न च तत्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "कृतवानेष शूरमानी ततोऽपतत्॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_022",
+          "verse": 22,
+          "source_text": "अवमेने धनुर्ग्राहानेष सर्वांश्च फाल्गुनः। तथा चैतन्न तु तथा कर्तव्यं भूतिमिच्छता॥२२॥",
+          "match_status": "partial",
+          "similarity": 0.9309,
+          "match_corpus": "mndutt",
+          "matched_text": "अवमेने धनुर्गाहानेष सर्वांश्च फाल्गुनः। तथा चैतन्न तु तथा कर्तव्यं भूतिमिच्छता॥",
+          "matched_id": "mndutt_17_309_018",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "अवमेने धनुर्ग"
+              },
+              {
+                "type": "delete",
+                "text": "्र"
+              },
+              {
+                "type": "equal",
+                "text": "ाहानेष सर्वांश्च फाल्गुनः। तथा चैतन्न तु तथा कर्तव्यं भूतिमिच्छता॥"
+              },
+              {
+                "type": "delete",
+                "text": "२२॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "अवमेने धनुर्ग"
+              },
+              {
+                "type": "equal",
+                "text": "ाहानेष सर्वांश्च फाल्गुनः। तथा चैतन्न तु तथा कर्तव्यं भूतिमिच्छता॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_023",
+          "verse": 23,
+          "source_text": "वैशम्पायन उवाच।\n              इत्युक्त्वा प्रस्थितो राजा भीमोऽथ निपपात ह। पतितश्चाब्रवीद्भीमो धर्मराजं युधिष्ठिरम्॥२३॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "ce",
+          "matched_text": "इत्युक्त्वा प्रस्थितो राजा भीमोऽथ निपपात ह पतितश्चाब्रवीद्भीमो धर्मराजं युधिष्ठिरम्",
+          "matched_id": "critical_17_002_0023",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "delete",
+                "text": "वैशम्पायन उवाच। "
+              },
+              {
+                "type": "equal",
+                "text": "इत्युक्त्वा प्रस्थितो राजा भीमोऽथ निपपात ह"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " पतितश्चाब्रवीद्भीमो धर्मराजं युधिष्ठिरम्"
+              },
+              {
+                "type": "delete",
+                "text": "॥२३॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "इत्युक्त्वा प्रस्थितो राजा भीमोऽथ निपपात ह"
+              },
+              {
+                "type": "equal",
+                "text": " पतितश्चाब्रवीद्भीमो धर्मराजं युधिष्ठिरम्"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_024",
+          "verse": 24,
+          "source_text": "भो भो राजन्नवेक्षस्व पतितोऽह प्रियस्तव। किं निमित्तं च पतनं ब्रूहि मे यदि वेत्थ ह॥२४॥",
+          "match_status": "partial",
+          "similarity": 0.9741,
+          "match_corpus": "mndutt",
+          "matched_text": "भो भो राजन्नवेक्षस्व पतितोऽहं प्रियस्तव। किं निमित्तं च पतनं ब्रूहि मे यदि वेत्थ ह॥",
+          "matched_id": "mndutt_17_309_019",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "भो भो राजन्नवेक्षस्व पतितोऽह"
+              },
+              {
+                "type": "equal",
+                "text": " प्रियस्तव। किं निमित्तं च पतनं ब्रूहि मे यदि वेत्थ ह॥"
+              },
+              {
+                "type": "delete",
+                "text": "२४॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "भो भो राजन्नवेक्षस्व पतितोऽह"
+              },
+              {
+                "type": "insert",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": " प्रियस्तव। किं निमित्तं च पतनं ब्रूहि मे यदि वेत्थ ह॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_025",
+          "verse": 25,
+          "source_text": "युधिष्ठिर उवाच।\n              अविभुक्तं च भवता प्राणेन च विकत्थसे। अनवेक्ष्य परं पार्थ तेनासि पतितः क्षितौ॥२५॥",
+          "match_status": "partial",
+          "similarity": 0.9233,
+          "match_corpus": "mndutt",
+          "matched_text": "युधिष्ठिर उवाच अतिभुक्तं च भवता प्राणेन च विकत्थसे। अनवेक्ष्यं परं पार्थ तेनासि पतित: क्षितौ॥",
+          "matched_id": "mndutt_17_309_020",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " अ"
+              },
+              {
+                "type": "delete",
+                "text": "व"
+              },
+              {
+                "type": "equal",
+                "text": "िभुक्तं च भवता प्राणेन च विकत्थसे। अनवेक्ष्य"
+              },
+              {
+                "type": "equal",
+                "text": " परं पार्थ तेनासि पतित"
+              },
+              {
+                "type": "delete",
+                "text": "ः"
+              },
+              {
+                "type": "equal",
+                "text": " क्षितौ॥"
+              },
+              {
+                "type": "delete",
+                "text": "२५॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर उवाच"
+              },
+              {
+                "type": "equal",
+                "text": " अ"
+              },
+              {
+                "type": "insert",
+                "text": "त"
+              },
+              {
+                "type": "equal",
+                "text": "िभुक्तं च भवता प्राणेन च विकत्थसे। अनवेक्ष्य"
+              },
+              {
+                "type": "insert",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": " परं पार्थ तेनासि पतित"
+              },
+              {
+                "type": "insert",
+                "text": ":"
+              },
+              {
+                "type": "equal",
+                "text": " क्षितौ॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_002_026",
+          "verse": 26,
+          "source_text": "इत्युक्त्वा तं महाबाहुर्जगामानवलोकयन्। श्वाऽप्येकोऽनुययौ यस्ते बहुशः कीर्तितो मया॥२६॥",
+          "match_status": "partial",
+          "similarity": 0.9778,
+          "match_corpus": "ce",
+          "matched_text": "इत्युक्त्वा तं महाबाहुर्जगामानवलोकयन् श्वा त्वेकोऽनुययौ यस्ते बहुशः कीर्तितो मया",
+          "matched_id": "critical_17_002_0026",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "इत्युक्त्वा तं महाबाहुर्जगामानवलोकयन्"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " श्वा"
+              },
+              {
+                "type": "delete",
+                "text": "ऽप"
+              },
+              {
+                "type": "equal",
+                "text": "्"
+              },
+              {
+                "type": "delete",
+                "text": "य"
+              },
+              {
+                "type": "equal",
+                "text": "ेकोऽनुययौ यस्ते बहुशः कीर्तितो मया"
+              },
+              {
+                "type": "delete",
+                "text": "॥२६॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "इत्युक्त्वा तं महाबाहुर्जगामानवलोकयन्"
+              },
+              {
+                "type": "equal",
+                "text": " श्वा"
+              },
+              {
+                "type": "insert",
+                "text": " त"
+              },
+              {
+                "type": "equal",
+                "text": "्"
+              },
+              {
+                "type": "insert",
+                "text": "व"
+              },
+              {
+                "type": "equal",
+                "text": "ेकोऽनुययौ यस्ते बहुशः कीर्तितो मया"
+              }
+            ]
+          }
+        }
+      ],
+      "upaparva_name": "महाप्रस्थानिकपर्व",
+      "upaparva_id": "P17_U01"
+    },
+    {
+      "adhyaya_id": "P17_U01_A003",
+      "adhyaya_name": "तृतीयोऽध्यायः",
+      "chapter": 3,
+      "shlokas": [
+        {
+          "id": "sriranga_17_003_001",
+          "verse": 1,
+          "source_text": "वैशम्पायन उवाच।\n              ततः सन्नादयन् शक्रो दिवं भूमिं च सर्वशः। रथेनोपययौ पार्थमारोहेत्यब्रवीच्च तम्॥१॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "वैशम्पायन उवाच ततः सन्नादयशक्रो दिवं भूमिं च सर्वशः। रथेनोपययौ पार्थमारोहेत्यब्रवीच्च तम्॥",
+          "matched_id": "mndutt_17_310_001",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "वैशम्पायन उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " ततः सन्नादय"
+              },
+              {
+                "type": "delete",
+                "text": "न् "
+              },
+              {
+                "type": "equal",
+                "text": "शक्रो दिवं भूमिं च सर्वशः। रथेनोपययौ पार्थमारोहेत्यब्रवीच्च तम्॥"
+              },
+              {
+                "type": "delete",
+                "text": "१॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "वैशम्पायन उवाच"
+              },
+              {
+                "type": "equal",
+                "text": " ततः सन्नादय"
+              },
+              {
+                "type": "equal",
+                "text": "शक्रो दिवं भूमिं च सर्वशः। रथेनोपययौ पार्थमारोहेत्यब्रवीच्च तम्॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_002",
+          "verse": 2,
+          "source_text": "स्वभातॄन् पतितान् दृष्ट्वा धर्मराजो युधिष्ठिरः। अब्रवीच्छोकसन्तप्तः सहस्राक्षमिदं वचः॥२॥",
+          "match_status": "partial",
+          "similarity": 0.8219,
+          "match_corpus": "mndutt",
+          "matched_text": "स्वभ्रातृन् पतितान् दृष्ट्वा धर्मराजो युधिष्ठिरः। अब्रवीच्छोकसंतप्तः सहस्राक्षमिदं वचः॥",
+          "matched_id": "mndutt_17_310_002",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "स्वभ"
+              },
+              {
+                "type": "equal",
+                "text": "ात"
+              },
+              {
+                "type": "delete",
+                "text": "ॄ"
+              },
+              {
+                "type": "equal",
+                "text": "न् पतितान् दृष्ट्वा धर्मराजो युधिष्ठिरः। अब्रवीच्छोकस"
+              },
+              {
+                "type": "delete",
+                "text": "न्"
+              },
+              {
+                "type": "equal",
+                "text": "तप्तः सहस्राक्षमिदं वचः॥"
+              },
+              {
+                "type": "delete",
+                "text": "२॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "स्वभ"
+              },
+              {
+                "type": "insert",
+                "text": "्र"
+              },
+              {
+                "type": "equal",
+                "text": "ात"
+              },
+              {
+                "type": "insert",
+                "text": "ृ"
+              },
+              {
+                "type": "equal",
+                "text": "न् पतितान् दृष्ट्वा धर्मराजो युधिष्ठिरः। अब्रवीच्छोकस"
+              },
+              {
+                "type": "insert",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "तप्तः सहस्राक्षमिदं वचः॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_003",
+          "verse": 3,
+          "source_text": "भ्रातरः पतितामेऽत्र गच्छेयुस्ते मया सह। न विना भ्रातृभिः स्वर्गमिच्छे गन्तुं सुरेश्वर॥३॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "भ्रातरः पतिता मेऽत्र गच्छेयुस्ते मया सह। न विना भ्रातृभिः स्वर्गमिच्छे गन्तुं सुरेश्वर॥",
+          "matched_id": "mndutt_17_310_002",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "भ्रातरः पतिता"
+              },
+              {
+                "type": "equal",
+                "text": "मेऽत्र गच्छेयुस्ते मया सह। न विना भ्रातृभिः स्वर्गमिच्छे गन्तुं सुरेश्वर॥"
+              },
+              {
+                "type": "delete",
+                "text": "३॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "भ्रातरः पतिता"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "मेऽत्र गच्छेयुस्ते मया सह। न विना भ्रातृभिः स्वर्गमिच्छे गन्तुं सुरेश्वर॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_004",
+          "verse": 4,
+          "source_text": "सुकुमारी सुखार्हा च राजपुत्री पुरंदर। साऽस्माभिः सह गच्छेत तद्भवाननुमन्यताम्॥४॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "sarit",
+          "matched_text": "सुकुमारी सुखार्हा च राजपुत्री पुरंदर । साऽस्माभिः सह गच्छेत तद्भवाननुमन्यताम् ॥ शक्र उवाच ।",
+          "matched_id": "sarit_17_003_004",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "सुकुमारी सुखार्हा च राजपुत्री पुरंदर"
+              },
+              {
+                "type": "equal",
+                "text": "। साऽस्माभिः सह गच्छेत तद्भवाननुमन्यताम्"
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              },
+              {
+                "type": "delete",
+                "text": "४॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "सुकुमारी सुखार्हा च राजपुत्री पुरंदर"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "। साऽस्माभिः सह गच्छेत तद्भवाननुमन्यताम्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              },
+              {
+                "type": "insert",
+                "text": " शक्र उवाच ।"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_005",
+          "verse": 5,
+          "source_text": "शक्र उवाच।\n              भ्रातॄन् द्रक्ष्यसि स्वर्गे त्वमग्रता स्त्रिदिवं गतान्। कृष्णया सहितान्सर्वान्माशुचो भरतर्षभ॥५॥",
+          "match_status": "partial",
+          "similarity": 0.9559,
+          "match_corpus": "mndutt",
+          "matched_text": "शक्र उवाच भ्रातॄन् द्रक्ष्यसि स्वर्गे त्वमग्रतस्त्रिदिवं गतान्। कृष्णया सहितान् सर्वान् मा शुचो भरतर्षभ॥",
+          "matched_id": "mndutt_17_310_004",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "शक्र उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " भ्रातॄन् द्रक्ष्यसि स्वर्गे त्वमग्रत"
+              },
+              {
+                "type": "delete",
+                "text": "ा "
+              },
+              {
+                "type": "equal",
+                "text": "स्त्रिदिवं गतान्। कृष्णया सहितान्"
+              },
+              {
+                "type": "equal",
+                "text": "सर्वान्"
+              },
+              {
+                "type": "equal",
+                "text": "मा"
+              },
+              {
+                "type": "equal",
+                "text": "शुचो भरतर्षभ॥"
+              },
+              {
+                "type": "delete",
+                "text": "५॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "शक्र उवाच"
+              },
+              {
+                "type": "equal",
+                "text": " भ्रातॄन् द्रक्ष्यसि स्वर्गे त्वमग्रत"
+              },
+              {
+                "type": "equal",
+                "text": "स्त्रिदिवं गतान्। कृष्णया सहितान्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "सर्वान्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "मा"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "शुचो भरतर्षभ॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_006",
+          "verse": 6,
+          "source_text": "निक्षिप्य मानुषं देहं गतास्ते भरतर्षभ। अनेन त्वं शरीरेण स्वर्गं गन्ता न संशयः॥६॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "ce"
+        },
+        {
+          "id": "sriranga_17_003_007",
+          "verse": 7,
+          "source_text": "युधिष्ठिर उवाच।\n              अयं श्वा भूतभव्येश भक्तो मां नित्यमेव ह। स गच्छेत मया सार्धमानृशंस्याहि मे मतिः॥७॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "युधिष्ठिर उवाच अयं श्वा भूतभव्येश भक्तो मां नित्यमेव ह। स गच्छेत मया सार्धमानृशंस्या हि मे मतिः॥",
+          "matched_id": "mndutt_17_310_006",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " अयं श्वा भूतभव्येश भक्तो मां नित्यमेव ह। स गच्छेत मया सार्धमानृशंस्या"
+              },
+              {
+                "type": "equal",
+                "text": "हि मे मतिः॥"
+              },
+              {
+                "type": "delete",
+                "text": "७॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर उवाच"
+              },
+              {
+                "type": "equal",
+                "text": " अयं श्वा भूतभव्येश भक्तो मां नित्यमेव ह। स गच्छेत मया सार्धमानृशंस्या"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "हि मे मतिः॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_008",
+          "verse": 8,
+          "source_text": "शक्र उवाच।\n              अमर्त्यत्वं मत्समत्वं च राजन् श्रियं कृत्स्नां महतीं चैव सिद्धिम्। संप्राप्तोऽद्य स्वर्गसुखानि च त्वं त्यज श्वानं नात्र नृशंसमस्ति॥८॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_003_009",
+          "verse": 9,
+          "source_text": "युधिष्ठिर उवाच।\n              अनार्यमार्येण सहस्रनेत्रशक्यं कर्तुं दुष्करमेतदार्य। मा मे श्रिया सङ्गमनं तयाऽस्तु यस्याः कृते भक्तजनं त्यजेयम्॥९॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "युधिष्ठिर उवाच अनार्यमार्येण सहस्रनेत्र शक्यं कर्तुं दुष्करमेतदार्य। मा मे श्रिया सङ्गमनं तयास्तु यस्याः कृते भक्तजनं त्यजेयम्॥",
+          "matched_id": "mndutt_17_310_008",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " अनार्यमार्येण सहस्रनेत्र"
+              },
+              {
+                "type": "equal",
+                "text": "शक्यं कर्तुं दुष्करमेतदार्य। मा मे श्रिया सङ्गमनं तया"
+              },
+              {
+                "type": "delete",
+                "text": "ऽ"
+              },
+              {
+                "type": "equal",
+                "text": "स्तु यस्याः कृते भक्तजनं त्यजेयम्॥"
+              },
+              {
+                "type": "delete",
+                "text": "९॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर उवाच"
+              },
+              {
+                "type": "equal",
+                "text": " अनार्यमार्येण सहस्रनेत्र"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "शक्यं कर्तुं दुष्करमेतदार्य। मा मे श्रिया सङ्गमनं तया"
+              },
+              {
+                "type": "equal",
+                "text": "स्तु यस्याः कृते भक्तजनं त्यजेयम्॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_010",
+          "verse": 10,
+          "source_text": "इंद्र उवाच।\n              स्वर्गे लोकेश्ववतां नास्ति धिष्ण्यमिष्टापूर्तं क्रोधवशाहरन्ति। ततो विचार्य क्रियतां धर्मराजत्यज श्वानं नात्र नृशंसमस्ति॥१०॥",
+          "match_status": "partial",
+          "similarity": 0.8738,
+          "match_corpus": "mndutt",
+          "matched_text": "शक्र उवाच स्वर्गे लोके श्ववतां नास्ति धिष्ण्य मिष्टापूर्ते क्रोधवशा हरन्ति। ततो विचार्य क्रियतां धर्मराज त्यज श्वानं नात्र नृशंसमस्ति॥",
+          "matched_id": "mndutt_17_310_009",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "delete",
+                "text": "इंद"
+              },
+              {
+                "type": "equal",
+                "text": "्र उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " स्वर्गे लोके"
+              },
+              {
+                "type": "equal",
+                "text": "श्ववतां नास्ति धिष्ण्य"
+              },
+              {
+                "type": "equal",
+                "text": "मिष्टापूर्त"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": " क्रोधवशा"
+              },
+              {
+                "type": "equal",
+                "text": "हरन्ति। ततो विचार्य क्रियतां धर्मराज"
+              },
+              {
+                "type": "equal",
+                "text": "त्यज श्वानं नात्र नृशंसमस्ति॥"
+              },
+              {
+                "type": "delete",
+                "text": "१०॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "insert",
+                "text": "शक"
+              },
+              {
+                "type": "equal",
+                "text": "्र उवाच"
+              },
+              {
+                "type": "equal",
+                "text": " स्वर्गे लोके"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "श्ववतां नास्ति धिष्ण्य"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "मिष्टापूर्त"
+              },
+              {
+                "type": "insert",
+                "text": "े"
+              },
+              {
+                "type": "equal",
+                "text": " क्रोधवशा"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "हरन्ति। ततो विचार्य क्रियतां धर्मराज"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "त्यज श्वानं नात्र नृशंसमस्ति॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_011",
+          "verse": 11,
+          "source_text": "युधिष्ठिर उवाच।\n              भक्तत्यागं प्राहुरत्यन्त पापं तुल्यं लोके ब्रह्मवध्याकृतेन। तस्मान्नाहं जातु कथं च नाद्यत्यक्ष्याम्येनं स्वसुखार्थी महेंद्र॥११॥",
+          "match_status": "partial",
+          "similarity": 0.8723,
+          "match_corpus": "mndutt",
+          "matched_text": "युधिष्ठिर उवाच भक्तत्यागं प्राहुरत्यन्तपापं तुल्यं लोके ब्रह्मवध्याकृतेन। तस्मान्नाहं जातु कथंचनाद्य त्यक्ष्याम्येनं स्वसुखार्थी महेन्द्र॥",
+          "matched_id": "mndutt_17_310_010",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " भक्तत्यागं प्राहुरत्यन्त"
+              },
+              {
+                "type": "delete",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "पापं तुल्यं लोके ब्रह्मवध्याकृतेन। तस्मान्नाहं जातु कथं"
+              },
+              {
+                "type": "delete",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "च"
+              },
+              {
+                "type": "delete",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "नाद्य"
+              },
+              {
+                "type": "equal",
+                "text": "त्यक्ष्याम्येनं स्वसुखार्थी महे"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "द्र॥"
+              },
+              {
+                "type": "delete",
+                "text": "११॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "युधिष्ठिर उवाच"
+              },
+              {
+                "type": "equal",
+                "text": " भक्तत्यागं प्राहुरत्यन्त"
+              },
+              {
+                "type": "equal",
+                "text": "पापं तुल्यं लोके ब्रह्मवध्याकृतेन। तस्मान्नाहं जातु कथं"
+              },
+              {
+                "type": "equal",
+                "text": "च"
+              },
+              {
+                "type": "equal",
+                "text": "नाद्य"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "त्यक्ष्याम्येनं स्वसुखार्थी महे"
+              },
+              {
+                "type": "insert",
+                "text": "न्"
+              },
+              {
+                "type": "equal",
+                "text": "द्र॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_012",
+          "verse": 12,
+          "source_text": "भीतं भक्तं नान्यदस्तीति चार्त प्राप्तं क्षीणं रक्षणे प्राणलिप्सुम्। प्राणत्यागादप्यहं नैव भोक्तुं यतेयं वै नित्यमेतद्ब्रुतं मे॥१२॥",
+          "match_status": "partial",
+          "similarity": 0.95,
+          "match_corpus": "mndutt",
+          "matched_text": "भीतं भक्तं नान्यदस्तीति चात प्राप्तं क्षीणं रक्षणे प्राणलिप्सुम्। प्राणत्यागादप्यहं नैव मोक्तुं यतेयं वै नित्यमेतद् व्रतं मे॥",
+          "matched_id": "mndutt_17_310_011",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "भीतं भक्तं नान्यदस्तीति चा"
+              },
+              {
+                "type": "delete",
+                "text": "र्"
+              },
+              {
+                "type": "equal",
+                "text": "त प्राप्तं क्षीणं रक्षणे प्राणलिप्सुम्। प्राणत्यागादप्यहं नैव "
+              },
+              {
+                "type": "delete",
+                "text": "भ"
+              },
+              {
+                "type": "equal",
+                "text": "ोक्तुं यतेयं वै नित्यमेतद्"
+              },
+              {
+                "type": "delete",
+                "text": "ब"
+              },
+              {
+                "type": "equal",
+                "text": "्र"
+              },
+              {
+                "type": "delete",
+                "text": "ु"
+              },
+              {
+                "type": "equal",
+                "text": "तं मे॥"
+              },
+              {
+                "type": "delete",
+                "text": "१२॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "भीतं भक्तं नान्यदस्तीति चा"
+              },
+              {
+                "type": "equal",
+                "text": "त प्राप्तं क्षीणं रक्षणे प्राणलिप्सुम्। प्राणत्यागादप्यहं नैव "
+              },
+              {
+                "type": "insert",
+                "text": "म"
+              },
+              {
+                "type": "equal",
+                "text": "ोक्तुं यतेयं वै नित्यमेतद्"
+              },
+              {
+                "type": "insert",
+                "text": " व"
+              },
+              {
+                "type": "equal",
+                "text": "्र"
+              },
+              {
+                "type": "equal",
+                "text": "तं मे॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_013",
+          "verse": 13,
+          "source_text": "इंद्र उवाच।\n              शुना दृष्टं क्रोधवशा हरन्ति यद्दत्तमिष्टं विवृतमथो हुतं च। तस्माच्छुनस्त्यागमिमं कुरुष्व शुनस्त्यागात्प्राप्स्यसे देवलोकम्॥१३॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "इन्द्र उवाच शुना दृष्टं क्रोधवशा हरन्ति यद्दत्तमिष्टं विवृतमथो हुतं च। तस्माच्छुनस्त्यागमिमं कुरुष्व शुनस्त्यागाद् प्राप्स्यसे देवलोकम्॥",
+          "matched_id": "mndutt_17_310_012",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "इ"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "द्र उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " शुना दृष्टं क्रोधवशा हरन्ति यद्दत्तमिष्टं विवृतमथो हुतं च। तस्माच्छुनस्त्यागमिमं कुरुष्व शुनस्त्यागा"
+              },
+              {
+                "type": "delete",
+                "text": "त"
+              },
+              {
+                "type": "equal",
+                "text": "्"
+              },
+              {
+                "type": "equal",
+                "text": "प्राप्स्यसे देवलोकम्॥"
+              },
+              {
+                "type": "delete",
+                "text": "१३॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "इ"
+              },
+              {
+                "type": "insert",
+                "text": "न्"
+              },
+              {
+                "type": "equal",
+                "text": "द्र उवाच"
+              },
+              {
+                "type": "equal",
+                "text": " शुना दृष्टं क्रोधवशा हरन्ति यद्दत्तमिष्टं विवृतमथो हुतं च। तस्माच्छुनस्त्यागमिमं कुरुष्व शुनस्त्यागा"
+              },
+              {
+                "type": "insert",
+                "text": "द"
+              },
+              {
+                "type": "equal",
+                "text": "्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "प्राप्स्यसे देवलोकम्॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_014",
+          "verse": 14,
+          "source_text": "त्यक्त्वा भ्रातॄन् दयितां चापि कृष्णां प्राप्तो लोकः कर्मणा स्वेन वीर। श्वानं चैनं न त्यजसे कथं नु त्यागं कृत्स्नं चास्थितोमुह्यसेऽद्य॥१४॥",
+          "match_status": "partial",
+          "similarity": 0.9619,
+          "match_corpus": "sarit",
+          "matched_text": "त्यक्त्वा भ्रातॄन्दयितां चापि कृष्णां\n\t\t\t\t\t\t\tप्राप्तो लोकः कर्मणा स्वेन वीर । श्वानं चैनं न त्यजसे कथं नु\n\t\t\t\t\t\t\tत्यागं कृत्स्नं चास्थितो मुह्यसेऽद्य ॥ युधिष्ठिर उवाच ।",
+          "matched_id": "sarit_17_003_014",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "त्यक्त्वा भ्रातॄन्"
+              },
+              {
+                "type": "delete",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "दयितां चापि कृष्णां प्राप्तो लोकः कर्मणा स्वेन वीर"
+              },
+              {
+                "type": "equal",
+                "text": "। श्वानं चैनं न त्यजसे कथं नु त्यागं कृत्स्नं चास्थितो"
+              },
+              {
+                "type": "equal",
+                "text": "मुह्यसेऽद्य"
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              },
+              {
+                "type": "delete",
+                "text": "१४॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "त्यक्त्वा भ्रातॄन्"
+              },
+              {
+                "type": "equal",
+                "text": "दयितां चापि कृष्णां प्राप्तो लोकः कर्मणा स्वेन वीर"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "। श्वानं चैनं न त्यजसे कथं नु त्यागं कृत्स्नं चास्थितो"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "मुह्यसेऽद्य"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              },
+              {
+                "type": "insert",
+                "text": " युधिष्ठिर उवाच ।"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_015",
+          "verse": 15,
+          "source_text": "युधिष्ठिर उवाच।\n              न विद्यते सन्धिरथापि विग्रहो मृतैर्मर्त्यैरिति लोकेषु निष्ठा। न ते मया जीवयितुं हि शक्या स्ततस्त्यागस्तेषु कृतो न जीवताम्॥१५॥",
+          "match_status": "partial",
+          "similarity": 0.9368,
+          "match_corpus": "sarit",
+          "matched_text": "न विद्यते संधिरथापि विग्रहो\n\t\t\t\t\t\t\tमृतैर्मर्त्यैरिति लोकेषु निष्ठा । न ते मया जीवयितुं हि शक्या-\n\t\t\t\t\t\t\tस्ततस्त्यागस्तेषु कृतो न जीवताम् ॥",
+          "matched_id": "sarit_17_003_015",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "delete",
+                "text": "युधिष्ठिर उवाच। "
+              },
+              {
+                "type": "equal",
+                "text": "न विद्यते स"
+              },
+              {
+                "type": "delete",
+                "text": "न्"
+              },
+              {
+                "type": "equal",
+                "text": "धिरथापि विग्रहो मृतैर्मर्त्यैरिति लोकेषु निष्ठा"
+              },
+              {
+                "type": "equal",
+                "text": "। न ते मया जीवयितुं हि शक्या"
+              },
+              {
+                "type": "equal",
+                "text": " स्ततस्त्यागस्तेषु कृतो न जीवताम्"
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              },
+              {
+                "type": "delete",
+                "text": "१५॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "न विद्यते स"
+              },
+              {
+                "type": "insert",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "धिरथापि विग्रहो मृतैर्मर्त्यैरिति लोकेषु निष्ठा"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "। न ते मया जीवयितुं हि शक्या"
+              },
+              {
+                "type": "insert",
+                "text": "-"
+              },
+              {
+                "type": "equal",
+                "text": " स्ततस्त्यागस्तेषु कृतो न जीवताम्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_016",
+          "verse": 16,
+          "source_text": "भीतिप्रदानं शरणागतस्य स्त्रियावधो ब्राह्मणस्वापहारः। मित्रद्रोहस्तानि चत्वारि शक्र भक्तत्यागश्चैव समो मतो मे॥१६॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "भीतिप्रदानं शरणागतस्य स्त्रिया वधो ब्राह्मणस्वापहारः। मित्रद्रोहस्तानि चत्वारि शक्र भक्तत्यागश्चैव समो मतो मे॥",
+          "matched_id": "mndutt_17_310_015",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "भीतिप्रदानं शरणागतस्य स्त्रिया"
+              },
+              {
+                "type": "equal",
+                "text": "वधो ब्राह्मणस्वापहारः। मित्रद्रोहस्तानि चत्वारि शक्र भक्तत्यागश्चैव समो मतो मे॥"
+              },
+              {
+                "type": "delete",
+                "text": "१६॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "भीतिप्रदानं शरणागतस्य स्त्रिया"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "वधो ब्राह्मणस्वापहारः। मित्रद्रोहस्तानि चत्वारि शक्र भक्तत्यागश्चैव समो मतो मे॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_017",
+          "verse": 17,
+          "source_text": "वैशम्पायन उवाच।\n              तद्धर्मराजस्य वचो निशम्य धर्मस्वरूपी भगवानुवाच। युधिष्ठिरं प्रीतियुक्तो नरेन्द्रं श्लक्ष्णैर्वाक्यैः संस्तवसम्प्रयुक्तैः॥१७॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "ce",
+          "matched_text": "तद्धर्मराजस्य वचो निशम्य; धर्मस्वरूपी भगवानुवाच युधिष्ठिरं प्रीतियुक्तो नरेन्द्रं; श्लक्ष्णैर्वाक्यैः संस्तवसंप्रयुक्तैः",
+          "matched_id": "critical_17_003_0016",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "delete",
+                "text": "वैशम्पायन उवाच। "
+              },
+              {
+                "type": "equal",
+                "text": "तद्धर्मराजस्य वचो निशम्य"
+              },
+              {
+                "type": "equal",
+                "text": " धर्मस्वरूपी भगवानुवाच"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " युधिष्ठिरं प्रीतियुक्तो नरेन्द्रं"
+              },
+              {
+                "type": "equal",
+                "text": " श्लक्ष्णैर्वाक्यैः संस्तवस"
+              },
+              {
+                "type": "delete",
+                "text": "म्"
+              },
+              {
+                "type": "equal",
+                "text": "प्रयुक्तैः"
+              },
+              {
+                "type": "delete",
+                "text": "॥१७॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "तद्धर्मराजस्य वचो निशम्य"
+              },
+              {
+                "type": "insert",
+                "text": ";"
+              },
+              {
+                "type": "equal",
+                "text": " धर्मस्वरूपी भगवानुवाच"
+              },
+              {
+                "type": "equal",
+                "text": " युधिष्ठिरं प्रीतियुक्तो नरेन्द्रं"
+              },
+              {
+                "type": "insert",
+                "text": ";"
+              },
+              {
+                "type": "equal",
+                "text": " श्लक्ष्णैर्वाक्यैः संस्तवस"
+              },
+              {
+                "type": "insert",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "प्रयुक्तैः"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_018",
+          "verse": 18,
+          "source_text": "धर्मराज उवाच।\n              अभिजातोऽसि राजेन्द्र पितुर्वृत्तेन मेधया। अनुक्रोशेन चानेन सर्वभूतेषु भारत॥१८॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "ce",
+          "matched_text": "अभिजातोऽसि राजेन्द्र पितुर्वृत्तेन मेधया अनुक्रोशेन चानेन सर्वभूतेषु भारत",
+          "matched_id": "critical_17_003_0017",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "delete",
+                "text": "धर्मराज उवाच। "
+              },
+              {
+                "type": "equal",
+                "text": "अभिजातोऽसि राजेन्द्र पितुर्वृत्तेन मेधया"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " अनुक्रोशेन चानेन सर्वभूतेषु भारत"
+              },
+              {
+                "type": "delete",
+                "text": "॥१८॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "अभिजातोऽसि राजेन्द्र पितुर्वृत्तेन मेधया"
+              },
+              {
+                "type": "equal",
+                "text": " अनुक्रोशेन चानेन सर्वभूतेषु भारत"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_019",
+          "verse": 19,
+          "source_text": "पुरा द्वैतवने चासि मया पुत्र परीक्षितः। पानीयार्थे पराक्रान्ता यत्र ते भ्रातरो हताः॥१९॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "ce"
+        },
+        {
+          "id": "sriranga_17_003_020",
+          "verse": 20,
+          "source_text": "भीमार्जुनौ परित्यज्य यत्र त्वं भ्रातरावुभौ। मात्रोः साम्यमभीप्सन्वै नकुलं जीवमिच्छसि॥२०॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "भीमार्जुनौ परित्यज्य यत्र त्वं भ्रातरावुभौ। मात्रोः साम्यमभीप्सन् वै नकुलं जीवमिच्छसि।॥",
+          "matched_id": "mndutt_17_310_019",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "भीमार्जुनौ परित्यज्य यत्र त्वं भ्रातरावुभौ। मात्रोः साम्यमभीप्सन्"
+              },
+              {
+                "type": "equal",
+                "text": "वै नकुलं जीवमिच्छसि"
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              },
+              {
+                "type": "delete",
+                "text": "२०॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "भीमार्जुनौ परित्यज्य यत्र त्वं भ्रातरावुभौ। मात्रोः साम्यमभीप्सन्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "वै नकुलं जीवमिच्छसि"
+              },
+              {
+                "type": "insert",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_021",
+          "verse": 21,
+          "source_text": "अयं श्वा भक्त इत्येवं त्यक्तो देवरथस्त्वया। तस्मात्स्वर्गे न ते तुल्यः कश्चिदस्ति नराधिपः॥२१॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "अयं श्वा भक्त इत्येवं त्यक्तो देवरथस्त्वया। तस्मात् स्वर्गे न ते तुल्यः कश्चिदस्ति नराधिपः॥",
+          "matched_id": "mndutt_17_310_020",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "अयं श्वा भक्त इत्येवं त्यक्तो देवरथस्त्वया। तस्मात्"
+              },
+              {
+                "type": "equal",
+                "text": "स्वर्गे न ते तुल्यः कश्चिदस्ति नराधिपः॥"
+              },
+              {
+                "type": "delete",
+                "text": "२१॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "अयं श्वा भक्त इत्येवं त्यक्तो देवरथस्त्वया। तस्मात्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "स्वर्गे न ते तुल्यः कश्चिदस्ति नराधिपः॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_022",
+          "verse": 22,
+          "source_text": "अतस्तवाक्षया लोकाः स्वशरीरेण भारत। प्राप्तोऽसि भरतश्रेष्ठ दिव्यां गतिमनुत्तमाम्॥२२॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_003_023",
+          "verse": 23,
+          "source_text": "वैशम्पायन उवाच।\n              ततो धर्मश्च शक्रश्च मरुतश्चाश्विनावपि। देवा देवर्षयश्चैव रथमारोप्य पाण्डवम्॥२३॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_003_024",
+          "verse": 24,
+          "source_text": "प्रययुः स्वैर्विमानैस्ते सिद्धाः कामविहारिणः। सर्वे विरजसः पुण्याः पुण्यवाग्बुद्धिकर्मिणः॥२४॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_003_025",
+          "verse": 25,
+          "source_text": "सतं रथं समास्थाय राजाकुरुकुलोद्वहः। ऊर्ध्वमाचक्रमेशीघ्रं तेजसाऽऽवृत्य रोदसी॥२५॥",
+          "match_status": "partial",
+          "similarity": 0.8826,
+          "match_corpus": "mndutt",
+          "matched_text": "स तं रथं समास्थाय राजा कुरुकुलोद्वहः। अर्ध्वमाचक्रमे शीघ्रं तेजसाऽऽवृत्य रोदसी।॥",
+          "matched_id": "mndutt_17_310_023",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "स"
+              },
+              {
+                "type": "equal",
+                "text": "तं रथं समास्थाय राजा"
+              },
+              {
+                "type": "equal",
+                "text": "कुरुकुलोद्वहः। "
+              },
+              {
+                "type": "delete",
+                "text": "ऊ"
+              },
+              {
+                "type": "equal",
+                "text": "र्ध्वमाचक्रमे"
+              },
+              {
+                "type": "equal",
+                "text": "शीघ्रं तेजसाऽऽवृत्य रोदसी"
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              },
+              {
+                "type": "delete",
+                "text": "२५॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "स"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "तं रथं समास्थाय राजा"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "कुरुकुलोद्वहः। "
+              },
+              {
+                "type": "insert",
+                "text": "अ"
+              },
+              {
+                "type": "equal",
+                "text": "र्ध्वमाचक्रमे"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "शीघ्रं तेजसाऽऽवृत्य रोदसी"
+              },
+              {
+                "type": "insert",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_026",
+          "verse": 26,
+          "source_text": "ततो देवनिकाय्यस्थो नारदः सर्वलोकवित्। उवाचाच्चैस्तदा वाक्यं बृहद्वादी बृहत्तपाः॥२६॥",
+          "match_status": "partial",
+          "similarity": 0.9606,
+          "match_corpus": "mndutt",
+          "matched_text": "ततो देवनिकायस्थो नारदः सर्वलोकवित्। उवाचोच्चैस्तदा वाक्यं बृहद्वादी बृहत्तपाः॥",
+          "matched_id": "mndutt_17_310_024",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "ततो देवनिका"
+              },
+              {
+                "type": "delete",
+                "text": "य्"
+              },
+              {
+                "type": "equal",
+                "text": "यस्थो नारदः सर्वलोकवित्। उवाच"
+              },
+              {
+                "type": "delete",
+                "text": "ा"
+              },
+              {
+                "type": "equal",
+                "text": "च्चैस्तदा वाक्यं बृहद्वादी बृहत्तपाः॥"
+              },
+              {
+                "type": "delete",
+                "text": "२६॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "ततो देवनिका"
+              },
+              {
+                "type": "equal",
+                "text": "यस्थो नारदः सर्वलोकवित्। उवाच"
+              },
+              {
+                "type": "insert",
+                "text": "ो"
+              },
+              {
+                "type": "equal",
+                "text": "च्चैस्तदा वाक्यं बृहद्वादी बृहत्तपाः॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_027",
+          "verse": 27,
+          "source_text": "येऽपि राजर्षयः सर्वे ते चापि समुपस्थिताः। कीर्तिं प्रच्छाद्य तेषां वै कुरुराजोऽधितिष्ठति॥२७॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_003_028",
+          "verse": 28,
+          "source_text": "लोकानावृत्य यशसा तेजसा वृत्तसम्पदा। स्वशरीरेण सम्प्राप्तं नान्यं शुश्रुम पाण्डवात्॥२८॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_003_029",
+          "verse": 29,
+          "source_text": "तेजांसि यानि दृष्टानि भूमिष्ठेन त्वया विभो। वेश्मानि भुवि देवानां पश्यामूनि सहस्रशः॥२९॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_003_030",
+          "verse": 30,
+          "source_text": "नारदस्य वचः श्रुत्वा राजा वचनमब्रवीत्। देवानामंत्र्य धर्मात्मा स्वपक्षांश्चैव पार्थिवान्॥३०॥",
+          "match_status": "partial",
+          "similarity": 0.9778,
+          "match_corpus": "sarit",
+          "matched_text": "नारदस्य वचः श्रुत्वा राजा वचनमब्रवीत् । भ्रातॄनपश्यन्धर्मात्मा स्वपक्षांश्चैव पार्थिवान् ॥",
+          "matched_id": "sarit_17_003_030",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "नारदस्य वचः श्रुत्वा राजा वचनमब्रवीत्"
+              },
+              {
+                "type": "equal",
+                "text": "। "
+              },
+              {
+                "type": "delete",
+                "text": "देवानामंत"
+              },
+              {
+                "type": "equal",
+                "text": "्र"
+              },
+              {
+                "type": "equal",
+                "text": "्य"
+              },
+              {
+                "type": "delete",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "धर्मात्मा स्वपक्षांश्चैव पार्थिवान्"
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              },
+              {
+                "type": "delete",
+                "text": "३०॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "नारदस्य वचः श्रुत्वा राजा वचनमब्रवीत्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "। "
+              },
+              {
+                "type": "insert",
+                "text": "भ"
+              },
+              {
+                "type": "equal",
+                "text": "्र"
+              },
+              {
+                "type": "insert",
+                "text": "ातॄनपश"
+              },
+              {
+                "type": "equal",
+                "text": "्य"
+              },
+              {
+                "type": "insert",
+                "text": "न्"
+              },
+              {
+                "type": "equal",
+                "text": "धर्मात्मा स्वपक्षांश्चैव पार्थिवान्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_031",
+          "verse": 31,
+          "source_text": "शुभं वा यदि वा पापं भ्रातॄणां स्थानमद्य मे। तदेव प्रातुमिच्छामि लोकानन्यान्न कामये॥३१॥",
+          "match_status": "partial",
+          "similarity": 0.9167,
+          "match_corpus": "ce",
+          "matched_text": "शुभं वा यदि वा पापं भ्रातॄणां स्थानमद्य मे तदेव प्राप्तुमिच्छामि लोकानन्यान्न कामये",
+          "matched_id": "critical_17_003_0029",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "शुभं वा यदि वा पापं भ्रातॄणां स्थानमद्य मे"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " तदेव प्रा"
+              },
+              {
+                "type": "equal",
+                "text": "तुमिच्छामि लोकानन्यान्न कामये"
+              },
+              {
+                "type": "delete",
+                "text": "॥३१॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "शुभं वा यदि वा पापं भ्रातॄणां स्थानमद्य मे"
+              },
+              {
+                "type": "equal",
+                "text": " तदेव प्रा"
+              },
+              {
+                "type": "insert",
+                "text": "प्"
+              },
+              {
+                "type": "equal",
+                "text": "तुमिच्छामि लोकानन्यान्न कामये"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_032",
+          "verse": 32,
+          "source_text": "राज्ञस्तु वचनं श्रुत्वा देवराजः पुरन्दरः। आनृशंस्यसमायुक्तं प्रत्युवाच युधिष्ठिरम्॥३२॥",
+          "match_status": "partial",
+          "similarity": 0.9002,
+          "match_corpus": "mndutt",
+          "matched_text": "राज्ञस्तु वचनं श्रुत्वा देवराजः : पुरंदरः। आनृशस्यसमायुक्तं प्रत्युवाच युधिष्ठिरम्॥",
+          "matched_id": "mndutt_17_310_028",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "राज्ञस्तु वचनं श्रुत्वा देवराजः "
+              },
+              {
+                "type": "equal",
+                "text": "पुर"
+              },
+              {
+                "type": "delete",
+                "text": "न्"
+              },
+              {
+                "type": "equal",
+                "text": "दरः। आनृश"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "स्यसमायुक्तं प्रत्युवाच युधिष्ठिरम्॥"
+              },
+              {
+                "type": "delete",
+                "text": "३२॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "राज्ञस्तु वचनं श्रुत्वा देवराजः "
+              },
+              {
+                "type": "insert",
+                "text": ": "
+              },
+              {
+                "type": "equal",
+                "text": "पुर"
+              },
+              {
+                "type": "insert",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": "दरः। आनृश"
+              },
+              {
+                "type": "equal",
+                "text": "स्यसमायुक्तं प्रत्युवाच युधिष्ठिरम्॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_033",
+          "verse": 33,
+          "source_text": "स्थानेऽस्मिन्वस राजेन्द्र कर्मभिर्निर्जिते शुभैः। किं त्वं मानुष्यकं स्नेहमद्यापि परिकर्षसि॥३३॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "स्थानेऽस्मिन् वस राजेन्द्र कर्मभिर्निर्जिते शुभैः। किं त्वं मानुष्यकं स्नेहमद्यापि परिकर्षसि॥",
+          "matched_id": "mndutt_17_310_028",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "स्थानेऽस्मिन्"
+              },
+              {
+                "type": "equal",
+                "text": "वस राजेन्द्र कर्मभिर्निर्जिते शुभैः। किं त्वं मानुष्यकं स्नेहमद्यापि परिकर्षसि॥"
+              },
+              {
+                "type": "delete",
+                "text": "३३॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "स्थानेऽस्मिन्"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "वस राजेन्द्र कर्मभिर्निर्जिते शुभैः। किं त्वं मानुष्यकं स्नेहमद्यापि परिकर्षसि॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_034",
+          "verse": 34,
+          "source_text": "सिद्धिं प्राप्तोऽसि परमां यथा नान्यः पुमान् क्वचित्। नैव ते भ्रातरः स्थानं सम्प्राप्ताः कुरुनन्दन॥३४॥",
+          "match_status": "partial",
+          "similarity": 0.9784,
+          "match_corpus": "mndutt",
+          "matched_text": "सिद्धि प्राप्तोऽसि परमां यथा नान्यः पुमान् क्वचित्। नैव ते भ्रातरः स्थानं सम्प्राप्ताः कुरुनन्दन॥",
+          "matched_id": "mndutt_17_310_029",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "सिद्धि"
+              },
+              {
+                "type": "delete",
+                "text": "ं"
+              },
+              {
+                "type": "equal",
+                "text": " प्राप्तोऽसि परमां यथा नान्यः पुमान् क्वचित्। नैव ते भ्रातरः स्थानं सम्प्राप्ताः कुरुनन्दन॥"
+              },
+              {
+                "type": "delete",
+                "text": "३४॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "सिद्धि"
+              },
+              {
+                "type": "equal",
+                "text": " प्राप्तोऽसि परमां यथा नान्यः पुमान् क्वचित्। नैव ते भ्रातरः स्थानं सम्प्राप्ताः कुरुनन्दन॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_035",
+          "verse": 35,
+          "source_text": "अद्यापि मानुषो भावः स्पृशते त्वां नराधिप। स्वर्गोऽयं पश्य देवर्षीन् सिद्धांश्च त्रिदिवालयान्॥३५॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "ce",
+          "matched_text": "अद्यापि मानुषो भावः स्पृशते त्वां नराधिप स्वर्गोऽयं पश्य देवर्षीन्सिद्धांश्च त्रिदिवालयान्",
+          "matched_id": "critical_17_003_0033",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "अद्यापि मानुषो भावः स्पृशते त्वां नराधिप"
+              },
+              {
+                "type": "delete",
+                "text": "।"
+              },
+              {
+                "type": "equal",
+                "text": " स्वर्गोऽयं पश्य देवर्षीन्"
+              },
+              {
+                "type": "delete",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "सिद्धांश्च त्रिदिवालयान्"
+              },
+              {
+                "type": "delete",
+                "text": "॥३५॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "अद्यापि मानुषो भावः स्पृशते त्वां नराधिप"
+              },
+              {
+                "type": "equal",
+                "text": " स्वर्गोऽयं पश्य देवर्षीन्"
+              },
+              {
+                "type": "equal",
+                "text": "सिद्धांश्च त्रिदिवालयान्"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_036",
+          "verse": 36,
+          "source_text": "युधिष्ठिरस्तु देवेन्द्रमेवंवादिनमीश्वरम्। पुनरेवाब्रवीद्धीमानिदं वचनमर्थवत्॥३६॥",
+          "match_status": "exact",
+          "similarity": 1.0,
+          "match_corpus": "mndutt"
+        },
+        {
+          "id": "sriranga_17_003_037",
+          "verse": 37,
+          "source_text": "तैर्विना नोत्सहे वस्तुमिहदैत्यनिबर्हण। गन्तुमिच्छामि तत्राहं यत्र ते भ्रातरो गताः॥३७॥",
+          "match_status": "partial",
+          "similarity": 0.98,
+          "match_corpus": "mndutt",
+          "matched_text": "तैर्विना नोत्सहे वस्तुमिह दैत्यनिबर्हण। गन्तुमिच्छामि तत्राहं यत्र ते भ्रातरो गताः॥",
+          "matched_id": "mndutt_17_310_031",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "तैर्विना नोत्सहे वस्तुमिह"
+              },
+              {
+                "type": "equal",
+                "text": "दैत्यनिबर्हण। गन्तुमिच्छामि तत्राहं यत्र ते भ्रातरो गताः॥"
+              },
+              {
+                "type": "delete",
+                "text": "३७॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "तैर्विना नोत्सहे वस्तुमिह"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "दैत्यनिबर्हण। गन्तुमिच्छामि तत्राहं यत्र ते भ्रातरो गताः॥"
+              }
+            ]
+          }
+        },
+        {
+          "id": "sriranga_17_003_038",
+          "verse": 38,
+          "source_text": "यत्र सा बृहती श्यामा बुद्धिसत्वगुणान्विता। द्रौपदी योषितां श्रेष्ठा यत्र चैवगता मम॥३८॥",
+          "match_status": "partial",
+          "similarity": 0.8857,
+          "match_corpus": "mndutt",
+          "matched_text": "यत्र सा बृहती श्यामा बुद्धिसत्त्वगुणान्विता। द्रौपदी योषितां श्रेष्ठा यत्र चैव गता मम॥",
+          "matched_id": "mndutt_17_310_032",
+          "diff": {
+            "source_diff": [
+              {
+                "type": "equal",
+                "text": "यत्र सा बृहती श्यामा बुद्धिस"
+              },
+              {
+                "type": "equal",
+                "text": "त्वगुणान्विता। द्रौपदी योषितां श्रेष्ठा यत्र चैव"
+              },
+              {
+                "type": "equal",
+                "text": "गता मम॥"
+              },
+              {
+                "type": "delete",
+                "text": "३८॥"
+              }
+            ],
+            "target_diff": [
+              {
+                "type": "equal",
+                "text": "यत्र सा बृहती श्यामा बुद्धिस"
+              },
+              {
+                "type": "insert",
+                "text": "त्"
+              },
+              {
+                "type": "equal",
+                "text": "त्वगुणान्विता। द्रौपदी योषितां श्रेष्ठा यत्र चैव"
+              },
+              {
+                "type": "insert",
+                "text": " "
+              },
+              {
+                "type": "equal",
+                "text": "गता मम॥"
+              }
+            ]
+          }
+        }
+      ],
+      "upaparva_name": "महाप्रस्थानिकपर्व",
+      "upaparva_id": "P17_U01"
+    }
+  ]
+}

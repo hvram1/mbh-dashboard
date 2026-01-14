@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="sa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्रीरङ्ग महाभारत पाठक | Sriranga Mahabharata Reader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #faf8f5;
+            --bg-secondary: #fff;
+            --bg-hover: #f5f2ed;
+            --text-primary: #2c1810;
+            --text-secondary: #5c4033;
+            --text-muted: #8b7355;
+            --border-color: #e0d5c5;
+            --accent-gold: #c4a35a;
+            --accent-orange: #e07020;
+            --marker-partial: #e07020;
+            --marker-none: #d32f2f;
+            --diff-delete: #ffcdd2;
+            --diff-insert: #c8e6c9;
+            --sidebar-width: 320px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        /* Layout */
+        .app-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: var(--sidebar-width);
+            background: var(--bg-secondary);
+            border-right: 1px solid var(--border-color);
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+            z-index: 100;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
+            color: #fff;
+            text-align: center;
+        }
+
+        .sidebar-header h1 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .sidebar-header .subtitle {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .nav-section {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .nav-section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .book-select {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 1rem;
+            font-family: inherit;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background: var(--bg-primary);
+            cursor: pointer;
+        }
+
+        .adhyaya-list {
+            max-height: calc(100vh - 280px);
+            overflow-y: auto;
+        }
+
+        .adhyaya-item {
+            padding: 12px 15px;
+            cursor: pointer;
+            border-bottom: 1px solid var(--border-color);
+            transition: background 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .adhyaya-item:hover {
+            background: var(--bg-hover);
+        }
+
+        .adhyaya-item.active {
+            background: var(--bg-hover);
+            border-left: 3px solid var(--accent-gold);
+        }
+
+        .adhyaya-info {
+            flex: 1;
+        }
+
+        .adhyaya-name {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .adhyaya-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .adhyaya-badges {
+            display: flex;
+            gap: 4px;
+        }
+
+        .badge {
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+
+        .badge-partial {
+            background: rgba(224, 112, 32, 0.15);
+            color: var(--marker-partial);
+        }
+
+        .badge-none {
+            background: rgba(211, 47, 47, 0.15);
+            color: var(--marker-none);
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: var(--sidebar-width);
+            flex: 1;
+            padding: 30px 40px;
+            max-width: 900px;
+        }
+
+        .content-header {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .content-header h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .content-header .meta {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+
+        /* Legend */
+        .legend {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding: 12px 15px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            font-size: 0.85rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .marker {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            font-size: 0.7rem;
+        }
+
+        .marker-partial {
+            background: var(--marker-partial);
+            color: #fff;
+        }
+
+        .marker-none {
+            background: var(--marker-none);
+            color: #fff;
+        }
+
+        /* Shlokas */
+        .shlokas-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .shloka-card {
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            padding: 16px 20px;
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .shloka-card.partial.popover-open {
+            border-color: var(--marker-partial);
+            box-shadow: 0 2px 8px rgba(224, 112, 32, 0.15);
+        }
+
+        .shloka-card.none {
+            border-color: rgba(211, 47, 47, 0.3);
+        }
+
+        .shloka-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .shloka-number {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .shloka-marker {
+            margin-left: auto;
+        }
+
+        .shloka-text {
+            font-size: 1.15rem;
+            line-height: 2;
+            white-space: pre-wrap;
+        }
+
+        /* Tooltip / Popover - Dark theme for clear distinction */
+        .diff-popover {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -10px;
+            right: -10px;
+            margin-top: 12px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border: 2px solid var(--marker-partial);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 4px rgba(224, 112, 32, 0.15);
+            z-index: 50;
+            color: #e8e8e8;
+        }
+
+        .diff-popover::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid var(--marker-partial);
+        }
+
+        .diff-popover::after {
+            content: '🔍 तुलना | Comparison';
+            position: absolute;
+            top: -28px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--marker-partial);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        /* Only show on click - controlled by .visible class */
+        .diff-popover.visible {
+            display: block;
+            animation: popoverFadeIn 0.2s ease-out;
+        }
+
+        /* Clickable marker styling */
+        .marker-clickable {
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .marker-clickable:hover {
+            transform: scale(1.2);
+            box-shadow: 0 2px 8px rgba(224, 112, 32, 0.4);
+        }
+
+        .marker-clickable.active {
+            transform: scale(1.1);
+            box-shadow: 0 0 0 3px rgba(224, 112, 32, 0.3);
+        }
+
+        @keyframes popoverFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .diff-section {
+            margin-bottom: 16px;
+            padding: 14px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            border-left: 3px solid;
+        }
+
+        .diff-section:first-child {
+            border-left-color: #ff6b6b;
+        }
+
+        .diff-section:last-child {
+            margin-bottom: 0;
+            border-left-color: #51cf66;
+        }
+
+        .diff-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #adb5bd;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+
+        .diff-label .corpus-tag {
+            font-size: 0.65rem;
+            padding: 3px 8px;
+            background: var(--accent-gold);
+            color: #fff;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .diff-text {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #f1f3f5;
+        }
+
+        .diff-delete {
+            background: rgba(255, 107, 107, 0.3);
+            padding: 2px 4px;
+            border-radius: 3px;
+            text-decoration: line-through;
+            text-decoration-color: #ff6b6b;
+            color: #ffa8a8;
+        }
+
+        .diff-insert {
+            background: rgba(81, 207, 102, 0.3);
+            padding: 2px 4px;
+            border-radius: 3px;
+            color: #8ce99a;
+            font-weight: 500;
+        }
+
+        .similarity-badge {
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            background: rgba(255, 255, 255, 0.15);
+            color: #ffd43b;
+            border-radius: 12px;
+            font-weight: 600;
+            border: 1px solid rgba(255, 212, 59, 0.3);
+        }
+
+        /* Stats */
+        .stats-bar {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+        }
+
+        .stat-value {
+            font-weight: 600;
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: var(--text-muted);
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border-color);
+            border-top-color: var(--accent-gold);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Welcome Screen */
+        .welcome-screen {
+            text-align: center;
+            padding: 80px 40px;
+        }
+
+        .welcome-screen h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .welcome-screen p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .om-symbol {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: var(--accent-gold);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+
+            .app-container {
+                flex-direction: column;
+            }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>श्रीरङ्ग महाभारतम्</h1>
+                <div class="subtitle">Sriranga Mahabharata Reader</div>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">पर्व चयन | Select Book</div>
+                <select class="book-select" id="bookSelect">
+                    <option value="">-- पर्व चुनें --</option>
+                </select>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">अध्याय | Chapters</div>
+                <div class="adhyaya-list" id="adhyayaList">
+                    <div class="loading">
+                        <div class="loading-spinner"></div>
+                        <p>पर्व चुनें...</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" id="mainContent">
+            <div class="welcome-screen">
+                <div class="om-symbol">ॐ</div>
+                <h2>श्रीरङ्ग महाभारत पाठक</h2>
+                <p>पर्व और अध्याय का चयन करें श्लोक पढ़ने के लिए।<br>
+                Select a book and chapter to start reading.</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Application State
+        const state = {
+            booksData: null,
+            currentBook: null,
+            currentBookData: null,
+            currentAdhyaya: null
+        };
+
+        // DOM Elements
+        const bookSelect = document.getElementById('bookSelect');
+        const adhyayaList = document.getElementById('adhyayaList');
+        const mainContent = document.getElementById('mainContent');
+
+        // Data path prefix
+        const DATA_PATH = 'data/';
+
+        // Initialize
+        async function init() {
+            try {
+                const response = await fetch(`${DATA_PATH}books_summary.json`);
+                state.booksData = await response.json();
+                populateBookSelect();
+            } catch (error) {
+                console.error('Failed to load books summary:', error);
+                showError('Failed to load data. Please ensure data files are generated.');
+            }
+        }
+
+        function populateBookSelect() {
+            bookSelect.innerHTML = '<option value="">-- पर्व चुनें --</option>';
+            
+            state.booksData.forEach(book => {
+                const option = document.createElement('option');
+                option.value = book.book_number;
+                option.textContent = `${book.book_number}. ${book.parva_name || `Book ${book.book_number}`}`;
+                bookSelect.appendChild(option);
+            });
+        }
+
+        // Load book data
+        async function loadBook(bookNumber) {
+            if (!bookNumber) return;
+
+            state.currentBook = bookNumber;
+            state.currentAdhyaya = null;
+
+            // Show loading in adhyaya list
+            adhyayaList.innerHTML = `
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <p>लोड हो रहा है...</p>
+                </div>
+            `;
+
+            try {
+                const paddedNum = String(bookNumber).padStart(2, '0');
+                const response = await fetch(`${DATA_PATH}book_${paddedNum}_viewer.json`);
+                state.currentBookData = await response.json();
+                populateAdhyayaList();
+            } catch (error) {
+                console.error('Failed to load book data:', error);
+                adhyayaList.innerHTML = '<p style="padding: 15px; color: #d32f2f;">डेटा लोड करने में त्रुटि</p>';
+            }
+        }
+
+        function populateAdhyayaList() {
+            if (!state.currentBookData) return;
+
+            adhyayaList.innerHTML = '';
+
+            state.currentBookData.adhyayas.forEach(adhyaya => {
+                const partialCount = adhyaya.shlokas.filter(s => s.match_status === 'partial').length;
+                const noneCount = adhyaya.shlokas.filter(s => s.match_status === 'none').length;
+
+                const item = document.createElement('div');
+                item.className = 'adhyaya-item';
+                item.dataset.adhyayaId = adhyaya.adhyaya_id;
+
+                item.innerHTML = `
+                    <div class="adhyaya-info">
+                        <div class="adhyaya-name">${adhyaya.adhyaya_name}</div>
+                        <div class="adhyaya-meta">अध्याय ${adhyaya.chapter} • ${adhyaya.shlokas.length} श्लोक</div>
+                    </div>
+                    <div class="adhyaya-badges">
+                        ${partialCount > 0 ? `<span class="badge badge-partial">${partialCount}</span>` : ''}
+                        ${noneCount > 0 ? `<span class="badge badge-none">${noneCount}</span>` : ''}
+                    </div>
+                `;
+
+                item.addEventListener('click', () => selectAdhyaya(adhyaya));
+                adhyayaList.appendChild(item);
+            });
+        }
+
+        function selectAdhyaya(adhyaya) {
+            state.currentAdhyaya = adhyaya;
+
+            // Update active state in sidebar
+            document.querySelectorAll('.adhyaya-item').forEach(item => {
+                item.classList.toggle('active', item.dataset.adhyayaId === adhyaya.adhyaya_id);
+            });
+
+            renderShlokas(adhyaya);
+        }
+
+        function renderShlokas(adhyaya) {
+            const exactCount = adhyaya.shlokas.filter(s => s.match_status === 'exact').length;
+            const partialCount = adhyaya.shlokas.filter(s => s.match_status === 'partial').length;
+            const noneCount = adhyaya.shlokas.filter(s => s.match_status === 'none').length;
+
+            let html = `
+                <div class="content-header">
+                    <h2>${adhyaya.adhyaya_name}</h2>
+                    <div class="meta">
+                        ${state.currentBookData.parva_name} • अध्याय ${adhyaya.chapter}
+                        ${adhyaya.upaparva_name ? ` • ${adhyaya.upaparva_name}` : ''}
+                    </div>
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item">
+                        <span class="marker marker-partial">≈</span>
+                        <span>आंशिक मिलान (Partial Match) - क्लिक करें</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="marker marker-none">✕</span>
+                        <span>कोई मिलान नहीं (No Match)</span>
+                    </div>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat-item">
+                        <span>कुल:</span>
+                        <span class="stat-value">${adhyaya.shlokas.length}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>पूर्ण:</span>
+                        <span class="stat-value" style="color: #2e7d32;">${exactCount}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>आंशिक:</span>
+                        <span class="stat-value" style="color: var(--marker-partial);">${partialCount}</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>अमिलित:</span>
+                        <span class="stat-value" style="color: var(--marker-none);">${noneCount}</span>
+                    </div>
+                </div>
+
+                <div class="shlokas-container">
+            `;
+
+            adhyaya.shlokas.forEach(shloka => {
+                html += renderShloka(shloka);
+            });
+
+            html += '</div>';
+            mainContent.innerHTML = html;
+        }
+
+        function renderShloka(shloka) {
+            const statusClass = shloka.match_status;
+            let markerHtml = '';
+            let popoverHtml = '';
+
+            if (shloka.match_status === 'partial') {
+                markerHtml = `
+                    <div class="shloka-marker">
+                        <span class="marker marker-partial marker-clickable" 
+                              data-shloka-id="${shloka.id}" 
+                              title="क्लिक करें तुलना देखने के लिए | Click to see comparison">≈</span>
+                    </div>
+                `;
+                popoverHtml = renderDiffPopover(shloka);
+            } else if (shloka.match_status === 'none') {
+                markerHtml = `
+                    <div class="shloka-marker">
+                        <span class="marker marker-none" title="कोई मिलान नहीं">✕</span>
+                    </div>
+                `;
+            }
+
+            return `
+                <div class="shloka-card ${statusClass}" tabindex="${shloka.match_status === 'partial' ? '0' : '-1'}">
+                    <div class="shloka-header">
+                        <span class="shloka-number">॥ ${shloka.verse} ॥</span>
+                        ${markerHtml}
+                    </div>
+                    <div class="shloka-text">${escapeHtml(shloka.source_text)}</div>
+                    ${popoverHtml}
+                </div>
+            `;
+        }
+
+        function renderDiffPopover(shloka) {
+            if (!shloka.diff) return '';
+
+            const similarity = shloka.similarity ? (shloka.similarity * 100).toFixed(1) : '?';
+            const corpusLabel = getCorpusLabel(shloka.match_corpus);
+
+            let sourceDiffHtml = '';
+            if (shloka.diff.source_diff) {
+                shloka.diff.source_diff.forEach(part => {
+                    if (part.type === 'delete') {
+                        sourceDiffHtml += `<span class="diff-delete">${escapeHtml(part.text)}</span>`;
+                    } else {
+                        sourceDiffHtml += escapeHtml(part.text);
+                    }
+                });
+            }
+
+            let targetDiffHtml = '';
+            if (shloka.diff.target_diff) {
+                shloka.diff.target_diff.forEach(part => {
+                    if (part.type === 'insert') {
+                        targetDiffHtml += `<span class="diff-insert">${escapeHtml(part.text)}</span>`;
+                    } else {
+                        targetDiffHtml += escapeHtml(part.text);
+                    }
+                });
+            }
+
+            return `
+                <div class="diff-popover">
+                    <div class="diff-section">
+                        <div class="diff-label">
+                            श्रीरङ्ग पाठ (Source)
+                            <span class="similarity-badge">${similarity}% समान</span>
+                        </div>
+                        <div class="diff-text">${sourceDiffHtml}</div>
+                    </div>
+                    <div class="diff-section">
+                        <div class="diff-label">
+                            मिलान पाठ (Match)
+                            <span class="corpus-tag">${corpusLabel}</span>
+                        </div>
+                        <div class="diff-text">${targetDiffHtml}</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function getCorpusLabel(corpus) {
+            const labels = {
+                'ce': 'Critical Edition',
+                'sarit': 'SARIT',
+                'mndutt': 'MN Dutt',
+                'none': 'None'
+            };
+            return labels[corpus] || corpus;
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function showError(message) {
+            mainContent.innerHTML = `
+                <div class="welcome-screen">
+                    <div class="om-symbol" style="color: #d32f2f;">⚠</div>
+                    <h2>त्रुटि | Error</h2>
+                    <p>${message}</p>
+                </div>
+            `;
+        }
+
+        // Track currently open popover
+        let currentOpenPopover = null;
+        let currentOpenMarker = null;
+
+        function togglePopover(marker) {
+            const shlokaCard = marker.closest('.shloka-card');
+            const popover = shlokaCard.querySelector('.diff-popover');
+            
+            if (!popover) return;
+
+            // If clicking the same marker, close it
+            if (currentOpenPopover === popover) {
+                closeCurrentPopover();
+                return;
+            }
+
+            // Close any previously open popover
+            closeCurrentPopover();
+
+            // Open the new popover
+            popover.classList.add('visible');
+            shlokaCard.classList.add('popover-open');
+            marker.classList.add('active');
+            currentOpenPopover = popover;
+            currentOpenMarker = marker;
+
+            // Scroll the shloka into view if needed
+            shlokaCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function closeCurrentPopover() {
+            if (currentOpenPopover) {
+                currentOpenPopover.classList.remove('visible');
+                const card = currentOpenPopover.closest('.shloka-card');
+                if (card) card.classList.remove('popover-open');
+            }
+            if (currentOpenMarker) {
+                currentOpenMarker.classList.remove('active');
+            }
+            currentOpenPopover = null;
+            currentOpenMarker = null;
+        }
+
+        // Event Listeners
+        bookSelect.addEventListener('change', (e) => {
+            loadBook(e.target.value);
+        });
+
+        // Click handler for markers (using event delegation)
+        mainContent.addEventListener('click', (e) => {
+            const marker = e.target.closest('.marker-clickable');
+            if (marker) {
+                e.stopPropagation();
+                togglePopover(marker);
+                return;
+            }
+
+            // Click outside popover closes it
+            if (!e.target.closest('.diff-popover')) {
+                closeCurrentPopover();
+            }
+        });
+
+        // Close popover on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeCurrentPopover();
+            }
+        });
+
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

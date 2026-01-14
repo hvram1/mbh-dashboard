@@ -480,21 +480,222 @@
             color: var(--accent-gold);
         }
 
-        /* Responsive */
-        @media (max-width: 900px) {
-            .sidebar {
-                width: 100%;
-                height: auto;
-                position: relative;
+        /* Mobile menu toggle button */
+        .mobile-menu-toggle {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #8B4513 0%, #654321 100%);
+            color: white;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 200;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+
+        .mobile-menu-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .mobile-menu-toggle.active {
+            background: var(--marker-partial);
+        }
+
+        /* Responsive - Tablet */
+        @media (max-width: 1024px) {
+            .main-content {
+                padding: 25px 30px;
             }
 
-            .main-content {
-                margin-left: 0;
-                padding: 20px;
+            .legend {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+        }
+
+        /* Responsive - Mobile */
+        @media (max-width: 768px) {
+            :root {
+                --sidebar-width: 100%;
             }
 
             .app-container {
                 flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                max-height: 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+                z-index: 150;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            }
+
+            .sidebar.open {
+                max-height: 85vh;
+                overflow-y: auto;
+            }
+
+            .sidebar-header {
+                padding: 15px;
+            }
+
+            .sidebar-header h1 {
+                font-size: 1.1rem;
+            }
+
+            .nav-section {
+                padding: 12px;
+            }
+
+            .adhyaya-list {
+                max-height: 50vh;
+            }
+
+            .adhyaya-item {
+                padding: 10px 12px;
+            }
+
+            .adhyaya-name {
+                font-size: 0.9rem;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .main-content {
+                margin-left: 0;
+                margin-top: 0;
+                padding: 15px;
+                max-width: 100%;
+            }
+
+            .content-header {
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+            }
+
+            .content-header h2 {
+                font-size: 1.2rem;
+            }
+
+            .content-header .meta {
+                font-size: 0.8rem;
+            }
+
+            .legend {
+                flex-direction: column;
+                gap: 8px;
+                padding: 10px 12px;
+                font-size: 0.8rem;
+            }
+
+            .stats-bar {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .stat-item {
+                font-size: 0.8rem;
+            }
+
+            .shloka-card {
+                padding: 12px 14px;
+            }
+
+            .shloka-text {
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+
+            .shloka-number {
+                font-size: 0.75rem;
+            }
+
+            /* Popover adjustments for mobile */
+            .diff-popover {
+                position: fixed;
+                top: auto;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0;
+                border-radius: 16px 16px 0 0;
+                max-height: 70vh;
+                overflow-y: auto;
+                padding: 20px 15px 30px;
+            }
+
+            .diff-popover::before {
+                display: none;
+            }
+
+            .diff-popover::after {
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                position: relative;
+                display: block;
+                margin-bottom: 15px;
+            }
+
+            .diff-section {
+                padding: 12px;
+            }
+
+            .diff-text {
+                font-size: 0.95rem;
+                line-height: 1.7;
+            }
+
+            .welcome-screen {
+                padding: 40px 20px;
+            }
+
+            .welcome-screen h2 {
+                font-size: 1.4rem;
+            }
+
+            .om-symbol {
+                font-size: 3rem;
+            }
+        }
+
+        /* Responsive - Small Mobile */
+        @media (max-width: 400px) {
+            .shloka-text {
+                font-size: 0.95rem;
+                line-height: 1.7;
+            }
+
+            .diff-text {
+                font-size: 0.9rem;
+            }
+
+            .marker {
+                width: 16px;
+                height: 16px;
+                font-size: 0.6rem;
+            }
+
+            .book-select {
+                font-size: 0.9rem;
+                padding: 8px 10px;
             }
         }
 
@@ -544,6 +745,11 @@
             </div>
         </aside>
 
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+            ☰
+        </button>
+
         <!-- Main Content -->
         <main class="main-content" id="mainContent">
             <div class="welcome-screen">
@@ -568,6 +774,26 @@
         const bookSelect = document.getElementById('bookSelect');
         const adhyayaList = document.getElementById('adhyayaList');
         const mainContent = document.getElementById('mainContent');
+        const sidebar = document.querySelector('.sidebar');
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+
+        // Mobile menu functions
+        function toggleMobileMenu() {
+            sidebar.classList.toggle('open');
+            mobileMenuToggle.classList.toggle('active');
+            mobileMenuToggle.textContent = sidebar.classList.contains('open') ? '✕' : '☰';
+        }
+
+        function closeMobileMenu() {
+            sidebar.classList.remove('open');
+            mobileMenuToggle.classList.remove('active');
+            mobileMenuToggle.textContent = '☰';
+        }
+
+        // Check if mobile view
+        function isMobileView() {
+            return window.innerWidth <= 768;
+        }
 
         // Data path prefix - works for both local and GitHub Pages
         function getBasePath() {
@@ -892,7 +1118,27 @@
         // Event Listeners
         bookSelect.addEventListener('change', (e) => {
             loadBook(e.target.value);
+            // Close mobile menu after selecting a book
+            if (isMobileView()) {
+                // Don't close immediately - let user pick chapter
+            }
         });
+
+        // Mobile menu toggle
+        mobileMenuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMobileMenu();
+        });
+
+        // Close mobile menu when clicking on an adhyaya (handled in selectAdhyaya)
+        // Add this behavior to selectAdhyaya by wrapping original behavior
+        const originalSelectAdhyaya = selectAdhyaya;
+        selectAdhyaya = function(adhyaya) {
+            originalSelectAdhyaya(adhyaya);
+            if (isMobileView()) {
+                closeMobileMenu();
+            }
+        };
 
         // Click handler for markers (using event delegation)
         mainContent.addEventListener('click', (e) => {
@@ -913,6 +1159,27 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 closeCurrentPopover();
+                if (isMobileView()) {
+                    closeMobileMenu();
+                }
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (isMobileView() && sidebar.classList.contains('open')) {
+                if (!sidebar.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                    closeMobileMenu();
+                }
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            if (!isMobileView()) {
+                sidebar.classList.remove('open');
+                mobileMenuToggle.classList.remove('active');
+                mobileMenuToggle.textContent = '☰';
             }
         });
 

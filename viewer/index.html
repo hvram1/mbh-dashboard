@@ -263,6 +263,139 @@
             margin-left: auto;
         }
 
+        /* Entity Icons */
+        .entity-icons {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+            margin-left: 8px;
+        }
+
+        .entity-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            padding: 2px 5px;
+            border-radius: 4px;
+            background: rgba(196, 163, 90, 0.15);
+            cursor: pointer;
+            transition: all 0.15s ease;
+            position: relative;
+        }
+
+        .entity-icon:hover {
+            background: rgba(196, 163, 90, 0.3);
+            transform: scale(1.1);
+        }
+
+        .entity-icon .count {
+            font-size: 0.6rem;
+            margin-left: 2px;
+            opacity: 0.8;
+        }
+
+        .entity-icon.person { background: rgba(59, 130, 246, 0.15); }
+        .entity-icon.acharya { background: rgba(168, 85, 247, 0.15); }
+        .entity-icon.place { background: rgba(34, 197, 94, 0.15); }
+        .entity-icon.vishnu_name { background: rgba(59, 130, 246, 0.2); }
+        .entity-icon.shiva_name { background: rgba(239, 68, 68, 0.15); }
+        .entity-icon.celestial { background: rgba(251, 191, 36, 0.15); }
+        .entity-icon.people_group { background: rgba(236, 72, 153, 0.15); }
+        .entity-icon.ritual { background: rgba(249, 115, 22, 0.15); }
+        .entity-icon.weapon { background: rgba(107, 114, 128, 0.2); }
+
+        /* Entity Popover */
+        .entity-popover {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1a1a2e;
+            border: 1px solid var(--accent-gold);
+            border-radius: 8px;
+            padding: 10px 14px;
+            min-width: 180px;
+            max-width: 280px;
+            z-index: 60;
+            color: #e8e8e8;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+            margin-bottom: 8px;
+        }
+
+        .entity-popover::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid var(--accent-gold);
+        }
+
+        .entity-popover.visible {
+            display: block;
+            animation: popoverFadeIn 0.2s ease-out;
+        }
+
+        .entity-popover-title {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-gold);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .entity-list {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .entity-item {
+            font-size: 0.85rem;
+            padding: 4px 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .entity-item .devanagari {
+            color: #fff;
+        }
+
+        .entity-item .key {
+            font-size: 0.7rem;
+            color: #888;
+            font-style: italic;
+        }
+
+        /* Highlighted entity terms in shloka text */
+        .entity-highlight {
+            background: linear-gradient(135deg, rgba(196, 163, 90, 0.3), rgba(196, 163, 90, 0.15));
+            padding: 2px 4px;
+            border-radius: 4px;
+            border-bottom: 2px solid var(--accent-gold);
+            transition: all 0.2s ease;
+        }
+
+        .entity-highlight.person { border-color: #3b82f6; background: rgba(59, 130, 246, 0.2); }
+        .entity-highlight.acharya { border-color: #a855f7; background: rgba(168, 85, 247, 0.2); }
+        .entity-highlight.place { border-color: #22c55e; background: rgba(34, 197, 94, 0.2); }
+        .entity-highlight.vishnu_name { border-color: #3b82f6; background: rgba(59, 130, 246, 0.25); }
+        .entity-highlight.shiva_name { border-color: #ef4444; background: rgba(239, 68, 68, 0.2); }
+        .entity-highlight.celestial { border-color: #fbbf24; background: rgba(251, 191, 36, 0.2); }
+        .entity-highlight.people_group { border-color: #ec4899; background: rgba(236, 72, 153, 0.2); }
+        .entity-highlight.ritual { border-color: #f97316; background: rgba(249, 115, 22, 0.2); }
+        .entity-highlight.weapon { border-color: #6b7280; background: rgba(107, 114, 128, 0.25); }
+
         .shloka-text {
             font-size: 1.15rem;
             line-height: 2;
@@ -967,6 +1100,12 @@
             const statusClass = shloka.match_status;
             let markerHtml = '';
             let popoverHtml = '';
+            let entityIconsHtml = '';
+
+            // Render entity icons if present
+            if (shloka.entities && Object.keys(shloka.entities).length > 0) {
+                entityIconsHtml = renderEntityIcons(shloka);
+            }
 
             if (shloka.match_status === 'partial') {
                 markerHtml = `
@@ -989,12 +1128,71 @@
                 <div class="shloka-card ${statusClass}" tabindex="${shloka.match_status === 'partial' ? '0' : '-1'}">
                     <div class="shloka-header">
                         <span class="shloka-number">॥ ${shloka.verse} ॥</span>
+                        ${entityIconsHtml}
                         ${markerHtml}
                     </div>
                     <div class="shloka-text">${escapeHtml(shloka.source_text)}</div>
                     ${popoverHtml}
                 </div>
             `;
+        }
+
+        // Entity icons and labels
+        const ENTITY_ICONS = {
+            'person': '👤',
+            'acharya': '🎓',
+            'place': '📍',
+            'vishnu_name': '🔵',
+            'shiva_name': '🔴',
+            'celestial': '✨',
+            'people_group': '👥',
+            'ritual': '🔥',
+            'weapon': '⚔️',
+            'parva': '📖',
+            'epithet': '💫',
+            'other': '◆'
+        };
+
+        const ENTITY_LABELS = {
+            'person': 'व्यक्ति (Person)',
+            'acharya': 'आचार्य (Teacher)',
+            'place': 'स्थान (Place)',
+            'vishnu_name': 'विष्णु नाम',
+            'shiva_name': 'शिव नाम',
+            'celestial': 'देवता (Celestial)',
+            'people_group': 'जनसमूह (Group)',
+            'ritual': 'यज्ञ (Ritual)',
+            'weapon': 'शस्त्र (Weapon)',
+            'parva': 'पर्व (Book)',
+            'epithet': 'उपनाम (Epithet)',
+            'other': 'अन्य (Other)'
+        };
+
+        function renderEntityIcons(shloka) {
+            if (!shloka.entities) return '';
+            
+            let html = '<div class="entity-icons">';
+            
+            for (const [type, entities] of Object.entries(shloka.entities)) {
+                const icon = ENTITY_ICONS[type] || '◆';
+                const label = ENTITY_LABELS[type] || type;
+                const count = entities.length;
+                
+                // Create popover content
+                const entitiesJson = JSON.stringify(entities).replace(/'/g, '&#39;').replace(/"/g, '&quot;');
+                
+                html += `
+                    <span class="entity-icon ${type}" 
+                          data-type="${type}"
+                          data-entities="${entitiesJson}"
+                          title="${label}: ${count}">
+                        ${icon}<span class="count">${count}</span>
+                    </span>
+                `;
+            }
+            
+            html += '</div>';
+            return html;
         }
 
         function renderDiffPopover(shloka) {
@@ -1140,18 +1338,130 @@
             }
         };
 
+        // Active entity popover tracking
+        let activeEntityPopover = null;
+        let highlightedElements = [];
+
+        function clearHighlights() {
+            highlightedElements.forEach(el => {
+                // Remove highlight wrapper, restore original text
+                if (el.parentNode) {
+                    const text = el.textContent;
+                    el.parentNode.replaceChild(document.createTextNode(text), el);
+                }
+            });
+            highlightedElements = [];
+        }
+
+        function highlightEntitiesInShloka(shlokaCard, entities, type) {
+            // Clear any existing highlights
+            clearHighlights();
+
+            // Find the shloka-text element
+            const textElement = shlokaCard.querySelector('.shloka-text');
+            if (!textElement) return;
+
+            // Get all unique texts to highlight
+            const textsToHighlight = [...new Set(entities.map(e => e.text))];
+            
+            // Work with the HTML content
+            let html = textElement.innerHTML;
+            
+            textsToHighlight.forEach(text => {
+                if (!text) return;
+                // Escape special regex chars in the text
+                const escapedText = text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                // Match the text (not inside a tag)
+                const regex = new RegExp(`(${escapedText})`, 'g');
+                html = html.replace(regex, `<span class="entity-highlight ${type}">$1</span>`);
+            });
+
+            textElement.innerHTML = html;
+
+            // Track highlighted elements for later removal
+            textElement.querySelectorAll('.entity-highlight').forEach(el => {
+                highlightedElements.push(el);
+            });
+
+            // Scroll first highlighted element into view if off-screen
+            const firstHighlight = textElement.querySelector('.entity-highlight');
+            if (firstHighlight) {
+                firstHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        function showEntityPopover(iconElement) {
+            // Close any existing entity popover first
+            closeEntityPopover();
+
+            const type = iconElement.dataset.type;
+            const entities = JSON.parse(iconElement.dataset.entities);
+            
+            // Find the parent shloka card
+            const shlokaCard = iconElement.closest('.shloka-card');
+            if (shlokaCard) {
+                highlightEntitiesInShloka(shlokaCard, entities, type);
+            }
+
+            // Also show the popover with entity list
+            const label = ENTITY_LABELS[type] || type;
+            const icon = ENTITY_ICONS[type] || '◆';
+
+            // Create popover
+            const popover = document.createElement('div');
+            popover.className = 'entity-popover visible';
+            
+            let entitiesHtml = entities.map(e => `
+                <div class="entity-item">
+                    <span class="devanagari">${escapeHtml(e.text)}</span>
+                    <span class="key">${escapeHtml(e.key)}</span>
+                </div>
+            `).join('');
+
+            popover.innerHTML = `
+                <div class="entity-popover-title">${icon} ${label}</div>
+                <div class="entity-list">${entitiesHtml}</div>
+            `;
+
+            iconElement.style.position = 'relative';
+            iconElement.appendChild(popover);
+            activeEntityPopover = popover;
+        }
+
+        function closeEntityPopover() {
+            if (activeEntityPopover) {
+                activeEntityPopover.remove();
+                activeEntityPopover = null;
+            }
+            clearHighlights();
+        }
+
         // Click handler for markers (using event delegation)
         mainContent.addEventListener('click', (e) => {
+            // Handle entity icon clicks
+            const entityIcon = e.target.closest('.entity-icon');
+            if (entityIcon) {
+                e.stopPropagation();
+                if (activeEntityPopover && activeEntityPopover.parentElement === entityIcon) {
+                    closeEntityPopover();
+                } else {
+                    showEntityPopover(entityIcon);
+                }
+                return;
+            }
+
             const marker = e.target.closest('.marker-clickable');
             if (marker) {
                 e.stopPropagation();
+                closeEntityPopover();
                 togglePopover(marker);
                 return;
             }
 
             // Click outside popover closes it
-            if (!e.target.closest('.diff-popover')) {
+            if (!e.target.closest('.diff-popover') && !e.target.closest('.entity-popover')) {
                 closeCurrentPopover();
+                closeEntityPopover();
             }
         });
 
